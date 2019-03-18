@@ -55,7 +55,7 @@ namespace translayor
     private:
         std::string _type;
         ByteArray _data;
-        IStream* _stream;
+        IStream* _stream; // 事件对应的数据流
     };
 
     class EventQueue
@@ -84,7 +84,7 @@ namespace translayor
                     return nullptr;
                 }
 
-                _waitCondition.wait_for(locker,std::chrono::milliseconds(_timeout));// 线程等待
+                _waitCondition.wait_for(locker,std::chrono::milliseconds(_timeout));// 如果没数据会等待一段时间
             }
 
             if(!_events.empty())
