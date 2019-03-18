@@ -37,7 +37,7 @@ namespace translayor
         * 如果是非阻塞模式,检查一下队列中是否有元素,如果没有则返回false.如果有元素,则从队列中取出元素
         * 并使用std::move触发移动构造函数,将其赋值给用户传递的值,接着我们将元素从队列中删除,并返回true
         */
-        void Pop(Type &record,bool isBlocked = true)
+        bool Pop(Type &record,bool isBlocked = true)
         {
             if(isBlocked)
             {

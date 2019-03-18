@@ -39,7 +39,7 @@ namespace translayor
     private:
         bool _shutdown;
         int32_t _threads;
-        std::function<void(Type& record) _handler;
+        std::function<void(Type& record)> _handler;
         std::vector<std::thread> _workers;
         ConcurrentQueue <Type> _tasks;
     };
