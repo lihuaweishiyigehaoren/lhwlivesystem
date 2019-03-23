@@ -25,9 +25,9 @@ namespace translayor {
     {
         LOG(LOG_DEBUG) << "EPollLoop::EPollLoop";
 
-        sigset_t set;
-        sigemptyset(&set);
-        sigaddset(&set, SIGPIPE);
+        sigset_t set; // 设置进程信号
+        sigemptyset(&set); // 清空进程信号设置
+        sigaddset(&set, SIGPIPE); 
         sigprocmask(SIG_BLOCK, &set, NULL);
 
         _Initialize();
@@ -95,7 +95,7 @@ namespace translayor {
     {
         auto func = std::bind(&EPollLoop::_EPollThread, this);
         std::thread listenThread(func);
-        listenThread.detach();
+        listenThread.detach(); // 将主线程从子线程中剥离 
     }
 
     /*
