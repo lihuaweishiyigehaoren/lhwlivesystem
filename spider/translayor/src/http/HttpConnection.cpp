@@ -10,7 +10,7 @@ namespace translayor {
             _connection(connection) {
         LOG(LOG_DEBUG) << _connection ;
         auto tcpDataHandler = std::bind(&HttpConnection::HandleData, this, std::placeholders::_1, std::placeholders::_2);
-        _connection->OnData(tcpDataHandler);
+        _connection->OnData(tcpDataHandler); // jiang TcpConnection的OnDataIndication事件绑定到HandleData成员函数
     }
 
     int32_t HttpConnection::HandleData(const char* buffer, int64_t size) {

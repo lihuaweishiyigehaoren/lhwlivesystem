@@ -2,6 +2,7 @@
 #include "HttpContext.h"
 
 namespace translayor {
+    // 在HttpContext的基础上实现,描述HTTP的请求信息,在HttpContext的基础上需要增加诸如方法类型和路径之类的信息
     class HttpRequest : public HttpContext {
     public:
         HttpRequest() {}

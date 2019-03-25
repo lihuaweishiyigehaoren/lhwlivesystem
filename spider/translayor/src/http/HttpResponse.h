@@ -3,6 +3,7 @@
 #include "HttpContext.h"
 
 namespace translayor {
+    // 将对象转换为字符串
     class HttpResponse : public HttpContext {
     public:
         HttpResponse() {}
@@ -27,7 +28,7 @@ namespace translayor {
     private:
         std::string GetResponseLine() const;
 
-        int32_t _statusCode;
+        int32_t _statusCode; // 状态代码
         std::string _statusMessage;
     };
 }

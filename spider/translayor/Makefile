@@ -1,4 +1,4 @@
-BIN := build/server
+BIN := build/libspider.a
 INCLUDE_DIR :=-I../logging
 CXX_SRC_DIR :=src
 TARGET_DIR := build/targets
@@ -10,6 +10,6 @@ LD := g++
 
 CFLAGS := $(INCLUDE_DIR) -Wall -O3 -fPIC
 CXXFLAGS := -std=c++11
-LDFLAGS := -lpthread
+# LDFLAGS := -lpthread
 
-include ../../builder/Makefile.executable
+include ../../builder/Makefile.static-library
