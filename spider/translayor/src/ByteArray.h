@@ -46,7 +46,5 @@ namespace translayor
 
             return buffer1;
         }
-
-        ~ByteArray();
     };
 }

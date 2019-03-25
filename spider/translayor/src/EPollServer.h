@@ -9,8 +9,8 @@ namespace translayor
     class EPollServer : public BasicServer<EPollConnectionPtr>
     {
     public:
-        EPollServer();
-        virtual ~EPollServer();
+        EPollServer(){}
+        virtual ~EPollServer(){}
 
         int32_t Listen(const std::string& host, int32_t port, int32_t backlog = 20) override;
 

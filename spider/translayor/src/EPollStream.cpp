@@ -31,7 +31,7 @@ namespace translayor
         LOG(LOG_DEBUG) << "EPollConnection::Send";
 
         struct epoll_event ev;
-        NativeSocket clienSocket = GetNativeSocket();
+        NativeSocket clientSocket = GetNativeSocket();
 
         if (EPollLoop::Get()->ModifyEpollEvents(_events | EPOLLOUT, clientSocket))
         {
@@ -45,7 +45,7 @@ namespace translayor
         while(n > 0)
         {
             int32_t nwrite;
-            nwrite = write(clientSocket, buf + size - n, n)
+            nwrite = write(clientSocket, buf + size - n, n);
             if(nwrite < n)
             {
                 if(nwrite == -1 && errno != EAGAIN)

@@ -5,7 +5,6 @@
 
 #include <cstdint>
 #include <cassert>
-#include <EPollLoop.h>
 
 #ifndef DISABLE_ASSERT
 #ifdef assert
@@ -36,7 +35,7 @@ namespace translayor
         bzero(&addr,sizeof(addr));
         addr.sin_family = AF_INET;
         addr.sin_port = htons(port);
-        add.sin_addr.s_addr = inet_addr(host.c_str());
+        addr.sin_addr.s_addr = inet_addr(host.c_str());
 
         int32_t errorCode = bind(listenfd,(struct sockaddr*)& addr,sizeof(addr));
         if (errorCode < 0)
@@ -83,7 +82,7 @@ namespace translayor
         int32_t remote = 0;
 
         int32_t listenfd = GetNativeSocket();
-        while((conn_sock = accept(listenfd,(struct sockaddr*)& remote, (socklen_t*)& addrlen))>0)
+        while((conn_sock = ::accept(listenfd,(struct sockaddr*)& remote, (socklen_t*)& addrlen))>0)
         {
             translayor::SetNonBlocking(conn_sock);
 

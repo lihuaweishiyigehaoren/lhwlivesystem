@@ -19,7 +19,7 @@ namespace translayor
     {
     public:
         EPollStream(NativeSocket nativeSocket) : 
-            BasicStream(NativeSocket) {}
+            BasicStream(nativeSocket) {}
 
         virtual ~EPollStream() {}
 

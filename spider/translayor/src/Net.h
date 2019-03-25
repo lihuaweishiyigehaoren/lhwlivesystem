@@ -58,7 +58,7 @@ namespace translayor
     class IConnectable
     {
     public:
-        virtual void connect(const std::string & host, int32_t port) = 0;
+        virtual void Connect(const std::string & host, int32_t port) = 0;
     };
 
     // 基本的数据流类
@@ -103,6 +103,6 @@ namespace translayor
         virtual void OnConnect(ConnectHandler handler)=0;
         virtual void OnDisconnect(DisconnectHandler handler)=0;
 
-        virtual ConnectionType accept(int32_t listenfd)=0;
+        virtual ConnectionType Accept(int32_t listenfd)=0;
     };
 }
