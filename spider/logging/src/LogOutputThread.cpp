@@ -3,7 +3,6 @@
 #include "LogItemQueue.h"
 #include "IOStreamManager.h"
 
-namespace hurricane {
 namespace logging {
 
 static LogItemThread LogItemThreadInstance;
@@ -28,7 +27,7 @@ void LogItemThread::ThreadEntry()
         logItemQueue.Pop(logItem);
 
         std::vector<std::ostream*> outputStreams =
-                hurricane::logging::IOStreamManager::GetInstance().GetDefaultOutputStreams(
+                logging::IOStreamManager::GetInstance().GetDefaultOutputStreams(
                     logItem.GetSeverity());
         for ( std::ostream* outputStream : outputStreams ) {
             *outputStream << logItem.GetContent();
@@ -36,5 +35,4 @@ void LogItemThread::ThreadEntry()
     }
 }
 
-}
 }

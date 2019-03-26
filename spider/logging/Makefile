@@ -1,5 +1,5 @@
-BIN := build/libspider.a
-INCLUDE_DIR :=-I../logging/src
+BIN := build/liblogging.a
+INCLUDE_DIR :=-I
 CXX_SRC_DIR := src
 TARGET_DIR := build/targets
 OBJ_DIR := build/objs

@@ -1,7 +1,6 @@
 
 #include "LogItemQueue.h"
 
-namespace hurricane {
 namespace logging {
 
 LogItemQueue& LogItemQueue::GetInstance()
@@ -15,5 +14,4 @@ LogItemQueue::LogItemQueue()
 {
 }
 
-}
 }

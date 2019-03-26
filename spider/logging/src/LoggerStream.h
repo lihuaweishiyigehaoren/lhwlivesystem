@@ -5,7 +5,6 @@
 
 #include <string>
 
-namespace hurricane {
 namespace logging {
 
 class LoggerStream {
@@ -29,5 +28,4 @@ private:
     Severity _severity;
 };
 
-}
 }

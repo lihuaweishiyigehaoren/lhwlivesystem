@@ -8,7 +8,6 @@
 #include <map>
 #include <set>
 
-namespace hurricane {
 namespace logging {
 
 class IOStreamManager {
@@ -19,14 +18,14 @@ public:
 
     std::vector<std::ostream*> GetDefaultOutputStreams(Severity severity);
     void SetOutputStream(std::ostream* outputStream, bool toManage = true);
-    void SetOutputStream(hurricane::logging::Severity severity,
+    void SetOutputStream(logging::Severity severity,
                          std::ostream* outputStream, bool toManage = true);
-    void SetOutputStream(std::vector<hurricane::logging::Severity> severities,
+    void SetOutputStream(std::vector<logging::Severity> severities,
                          std::ostream* outputStream, bool toManage = true);
 
     void SetOutputFile(const std::string& fileName);
-    void SetOutputFile(hurricane::logging::Severity severity, const std::string& fileName);
-    void SetOutputFile(std::vector<hurricane::logging::Severity> severities, const std::string& fileName);
+    void SetOutputFile(logging::Severity severity, const std::string& fileName);
+    void SetOutputFile(std::vector<logging::Severity> severities, const std::string& fileName);
 
 private:
     IOStreamManager();
@@ -37,5 +36,4 @@ private:
     std::set<std::ostream*> _managedStreams;
 };
 
-}
 }

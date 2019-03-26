@@ -2,13 +2,12 @@
 #include "DirectLoggerStream.h"
 #include "IOStreamManager.h"
 
-namespace hurricane {
 namespace logging {
 
 DirectLoggerStream::DirectLoggerStream(Severity severity) :
         LoggerStream(severity)
 {
-    _outputStreams = hurricane::logging::IOStreamManager::GetInstance().GetDefaultOutputStreams(severity);
+    _outputStreams = logging::IOStreamManager::GetInstance().GetDefaultOutputStreams(severity);
 }
 
 DirectLoggerStream::~DirectLoggerStream()
@@ -27,5 +26,4 @@ void DirectLoggerStream::Submit()
 
 }
 
-}
 }

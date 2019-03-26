@@ -3,7 +3,6 @@
 
 #include <thread>
 
-namespace hurricane {
 namespace logging {
 
 class LogItemThread {
@@ -19,5 +18,4 @@ private:
     std::thread _workThread;
 };
 
-}
 }

@@ -10,7 +10,6 @@
 #include "Check.h"
 #include "System.h"
 
-namespace hurricane {
 namespace logging {
 
 class LOGGING_API Logging {
@@ -20,5 +19,4 @@ public:
     static void SetLogFile(const std::vector<Severity> severities, const std::string& fileName);
 };
 
-}
 }

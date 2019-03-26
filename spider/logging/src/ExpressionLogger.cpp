@@ -2,7 +2,6 @@
 
 #include "ExpressionLogger.h"
 
-namespace hurricane {
 namespace logging {
 
 ExpressionLogger::ExpressionLogger(Severity severity,
@@ -27,5 +26,4 @@ void ExpressionLogger::SetExpression(const std::string& expression)
     _expression = expression;
 }
 
-}
 }

@@ -4,7 +4,6 @@
 
 #include "Logger.h"
 
-namespace hurricane {
 namespace logging {
 
 class ExpressionLogger : public Logger {
@@ -20,5 +19,4 @@ private:
     std::string _expression;
 };
 
-}
 }

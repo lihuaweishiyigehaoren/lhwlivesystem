@@ -2,7 +2,6 @@
 
 #include "ExpressionLogger.h"
 
-namespace hurricane {
 namespace logging {
 
 class CheckLogger : public ExpressionLogger {
@@ -14,5 +13,4 @@ public:
     virtual void OutputPrefix();
 };
 
-}
 }

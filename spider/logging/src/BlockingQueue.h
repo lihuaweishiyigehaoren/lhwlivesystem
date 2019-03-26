@@ -5,7 +5,6 @@
 #include <queue>
 #include <chrono>
 
-namespace hurricane {
 namespace logging {
 template <class T>
 class BlockingQueue {
@@ -72,5 +71,4 @@ private:
     std::condition_variable _emptyCv;
     std::queue<T> _queue;
 };
-}
 }

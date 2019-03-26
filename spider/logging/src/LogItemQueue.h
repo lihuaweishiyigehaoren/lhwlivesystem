@@ -5,7 +5,6 @@
 
 #include <string>
 
-namespace hurricane {
 namespace logging {
 
 class LogItemQueue : public BlockingQueue<LogItem> {
@@ -19,5 +18,4 @@ private:
 };
 
 
-}
 }

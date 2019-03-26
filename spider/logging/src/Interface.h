@@ -10,7 +10,7 @@
 
 #ifdef USE_KLOG
 
-#define LOG(severity) (hurricane::logging::Logger( \
+#define LOG(severity) (logging::Logger( \
         (severity), \
         __FILE__, \
         __LINE__ \
@@ -18,7 +18,7 @@
 
 #define LOG_IF(severity, expr) !(KLOG_PREDICT_BRANCH_NOT_TAKEN(!(!(expr)))) ? \
     (void) 0 : \
-    hurricane::logging::LogMessageVoidify() & (hurricane::logging::ExpressionLogger( \
+    logging::LogMessageVoidify() & (logging::ExpressionLogger( \
             (severity), \
             __FILE__, \
             __LINE__, \
@@ -28,7 +28,7 @@
 
 #define LOG_CHECK(expr) !(KLOG_PREDICT_BRANCH_NOT_TAKEN(!(expr))) ? \
     (void) 0 : \
-    hurricane::logging::LogMessageVoidify() & hurricane::logging::CheckLogger( \
+    logging::LogMessageVoidify() & logging::CheckLogger( \
         LOG_FATAL, \
         __FILE__, \
         __LINE__, \
@@ -41,7 +41,7 @@
 #define DLOG_CHECK(expr) LOG_CHECK(expr)
 #else // NDEBUG
 #define DLOG(severity) !(KLOG_PREDICT_BRANCH_NOT_TAKEN(0)) ? \
-    (void) 0 : hurricane::logging::LogMessageVoidify() & LOG(severity)
+    (void) 0 : logging::LogMessageVoidify() & LOG(severity)
 #define DLOG_IF(severity, expr) DLOG(severity)
 #define DLOG_CHECK(expr) DLOG(LOG_FATAL)
 #endif // NDEBUG
@@ -50,7 +50,7 @@
 
 #define LOG(severity) !(KLOG_PREDICT_BRANCH_NOT_TAKEN(0)) ? \
     (void) 0 : \
-    hurricane::logging::LogMessageVoidify() & (hurricane::logging::Logger( \
+    logging::LogMessageVoidify() & (logging::Logger( \
         (severity), \
         __FILE__, \
         __LINE__ \

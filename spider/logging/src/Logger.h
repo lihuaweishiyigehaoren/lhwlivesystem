@@ -10,21 +10,18 @@
 #include <vector>
 #include <memory>
 
-namespace hurricane {
 namespace logging {
 
 class Logger;
 
 }
-}
 
 namespace std {
 
-LOGGING_API hurricane::logging::Logger& endl(hurricane::logging::Logger& logger);
+LOGGING_API logging::Logger& endl(logging::Logger& logger);
 
 }
 
-namespace hurricane {
 namespace logging {
 
 class LOGGING_API Logger {
@@ -88,5 +85,4 @@ class LogMessageVoidify {
 
 void WaitLoggerThread();
 
-}
 }

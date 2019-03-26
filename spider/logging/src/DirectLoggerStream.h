@@ -7,7 +7,6 @@
 #include <ostream>
 #include <vector>
 
-namespace hurricane {
 namespace logging {
 
 class DirectLoggerStream : public LoggerStream {
@@ -22,5 +21,4 @@ private:
     std::vector<std::ostream*> _outputStreams;
 };
 
-}
 }

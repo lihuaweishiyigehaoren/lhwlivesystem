@@ -2,7 +2,6 @@
 
 #include <cassert>
 
-namespace hurricane {
 namespace logging {
 
 CheckLogger::CheckLogger(Severity severity,
@@ -33,5 +32,4 @@ void CheckLogger::OutputPrefix()
     Output(std::string("Expression '") + GetExpression() + "' failed. ");
 }
 
-}
 }

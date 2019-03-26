@@ -2,16 +2,14 @@
 #include "Logger.h"
 
 #ifndef KLOG_ENABLE_THREAD
-#include "logging/DirectLoggerStream.h"
+#include "DirectLoggerStream.h"
 
-namespace hurricane {
 namespace logging {
 
 typedef DirectLoggerStream ActiveLoggerStream;
 
 }
 
-}
 #else
 #include "ThreadLoggerStream.h"
 
@@ -32,7 +30,6 @@ typedef ThreadLoggerStream ActiveLoggerStream;
 #include <sstream>
 #include <map>
 
-namespace hurricane {
 namespace logging {
 
 template <class DestDuration, class SrcDuration>
@@ -177,9 +174,8 @@ void WaitLoggerThread() {
 }
 
 }
-}
 
-hurricane::logging::Logger& std::endl(hurricane::logging::Logger& logger) {
+logging::Logger& std::endl(logging::Logger& logger) {
     logger.endl();
 
     return logger;

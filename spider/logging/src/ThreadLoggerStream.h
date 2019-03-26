@@ -8,7 +8,6 @@
 #include <iostream>
 #include <vector>
 
-namespace hurricane {
 namespace logging {
 
 class ThreadLoggerStream : public LoggerStream {
@@ -24,5 +23,4 @@ private:
     bool _isSubmitted;
 };
 
-}
 }

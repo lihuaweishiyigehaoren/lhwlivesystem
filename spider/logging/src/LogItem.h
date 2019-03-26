@@ -4,7 +4,6 @@
 
 #include <string>
 
-namespace hurricane {
 namespace logging {
 
 class LogItem {
@@ -45,5 +44,4 @@ private:
     std::string _content;
 };
 
-}
 }

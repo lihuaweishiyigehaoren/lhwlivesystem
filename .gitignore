@@ -1,3 +1,5 @@
 ./vscode
 spider/translayor/build
+spider/logging/build
+chatserver/build
 .vscode/

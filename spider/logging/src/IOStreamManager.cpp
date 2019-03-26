@@ -6,7 +6,6 @@
 #include <fstream>
 #include <sstream>
 
-namespace hurricane {
 namespace logging {
 
 std::vector<std::ostream*> IOStreamManager::GetDefaultOutputStreams(Severity severity)
@@ -127,5 +126,4 @@ std::ostream* IOStreamManager::CreateOutputFile(const std::string& fileName)
     return fileStream;
 }
 
-}
 }

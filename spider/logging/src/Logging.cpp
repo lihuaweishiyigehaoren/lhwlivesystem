@@ -3,7 +3,6 @@
 #include "Logging.h"
 #include "IOStreamManager.h"
 
-namespace hurricane {
 namespace logging {
 
 void Logging::SetLogFile(const std::string& fileName)
@@ -21,5 +20,4 @@ void Logging::SetLogFile(const std::vector<Severity> severities, const std::stri
     IOStreamManager::GetInstance().SetOutputFile(severities, fileName);
 }
 
-}
 }

@@ -3,7 +3,6 @@
 #include "ThreadLoggerStream.h"
 #include "LogItemQueue.h"
 
-namespace hurricane {
 namespace logging {
 
 ThreadLoggerStream::ThreadLoggerStream(Severity severity) :
@@ -31,5 +30,4 @@ void ThreadLoggerStream::Submit()
     }
 }
 
-}
 }
