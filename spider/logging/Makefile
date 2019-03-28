@@ -1,4 +1,4 @@
-BIN := build/liblogging.a
+BIN := build/liblogging.so
 INCLUDE_DIR :=-I
 CXX_SRC_DIR := src
 TARGET_DIR := build/targets
