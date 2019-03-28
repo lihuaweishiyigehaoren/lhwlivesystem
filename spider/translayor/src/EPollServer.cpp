@@ -82,10 +82,10 @@ EPollConnectionPtr EPollServer::Accept(int32_t sockfd)
     int32_t remote = 0;
 
     int32_t listenfd = GetNativeSocket();
-    while ((conn_sock = ::accept(listenfd, (struct sockaddr *)&remote, (socklen_t *)&addrlen)) > 0)
+    while ((conn_sock = accept(listenfd, (struct sockaddr *)&remote, (socklen_t *)&addrlen)) > 0)
     {
 
-        // std::cout << "connect one client" << std::endl;
+        std::cout << "connect one client" << std::endl;
 
         translayor::SetNonBlocking(conn_sock);
 

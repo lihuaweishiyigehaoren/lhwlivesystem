@@ -7,13 +7,16 @@
 
 #include "ServerEventQueueLoop.h"
 
-const int32_t DefaultConnectPort = 8080;
+const int32_t DefaultConnectPort = 9000;
 
 int32_t main()
 {
     logging::Logging::SetLogFile("all.log");
     logging::Logging::SetLogFile({ LOG_INFO, LOG_DEBUG}, "out.log");
     logging::Logging::SetLogFile({ LOG_WARNING, LOG_ERROR, LOG_FATAL}, "error.log");
+
+    // LOG(LOG_INFO) << "hello" <<123<< std::endl <<"lkdasjflaj1";
+    // logging::WaitLoggerThread();
 
     translayor::EventQueue mainEventQuene(5);
     translayor::IoLoop::Get()->Start();
@@ -23,7 +26,6 @@ int32_t main()
     translayor::TcpServer server;
 
     translayor::PackageDataSink* packageDataSink = &dataSink;
-    // server.Listen("120.78.146.208", DefaultConnectPort);
     server.Listen("127.0.0.1", DefaultConnectPort);
     server.OnConnect([=](translayor::IStream* stream)
     {

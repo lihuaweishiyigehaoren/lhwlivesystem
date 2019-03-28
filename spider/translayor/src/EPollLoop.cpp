@@ -22,6 +22,7 @@ namespace translayor {
     }
 
     EPollLoop::EPollLoop()
+    // _shutdown(false)
     {
         LOG(LOG_DEBUG) << "EPollLoop::EPollLoop";
 
@@ -94,8 +95,9 @@ namespace translayor {
     void EPollLoop::_Run()
     {
         auto func = std::bind(&EPollLoop::_EPollThread, this);
-        std::thread listenThread(func);
-        listenThread.detach(); // 将主线程从子线程中剥离 
+        std::thread listenThread(func);// 创建一个分支线程,回调到func函数
+        // std::cout << listenThread.get_id() << std::endl;
+        listenThread.detach(); // 将子线程从主线程中剥离
     }
 
     /*
@@ -103,12 +105,14 @@ namespace translayor {
     */
     void EPollLoop::_EPollThread()
     {
+        // 在这里_shutdown的值为0
         LOG(LOG_DEBUG) << "_EPollThread" ;
         NativeSocketEvent events[MAX_EVENT_COUNT];
 
         while (!_shutdown) {
             int32_t nfds;
             nfds = epoll_wait(_eventfd, events, MAX_EVENT_COUNT, -1);
+            std::cout << "_shutdown" <<std::endl;
             if (-1 == nfds) {
                 LOG(LOG_ERROR) << "FATAL epoll_wait failed!" ;
                 exit(EXIT_FAILURE);
@@ -123,6 +127,7 @@ namespace translayor {
     */
     void EPollLoop::_HandleEvent(int32_t eventfd, NativeSocketEvent* events, int32_t nfds)
     {
+
         for (int32_t i = 0; i < nfds; ++i) {
             int32_t fd;
             fd = events[i].data.fd;
@@ -152,6 +157,7 @@ namespace translayor {
         EPollConnectionPtr connection = server->Accept(eventfd);
 
         if (connection != nullptr) {
+            std::cout<<"lihuawei"<<std::endl;
             _streams[connection->GetNativeSocket()] = connection;
         }
     }

@@ -3,9 +3,9 @@
 #include "EPollClient.h"
 #include "CommonUtils.h"
 #include "EPollLoop.h"
+#include "Logging.h"
 
 #include <unistd.h>
-#include <Logging.h>
 
 namespace translayor {
     void EPollClient::Connect(const std::string& host, int32_t port) {
@@ -19,6 +19,8 @@ namespace translayor {
         translayor::SetNonBlocking(GetNativeSocket());
 
         connect(GetNativeSocket(), (struct sockaddr*)&serv_addr, sizeof(serv_addr));
+        std::cout << errno <<std::endl;
+
     }
 
     EPollClientPtr EPollClient::Connect(const std::string& ip, int32_t port, DataSink* dataSink) {
