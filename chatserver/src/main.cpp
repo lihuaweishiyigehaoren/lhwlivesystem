@@ -15,8 +15,8 @@ int32_t main()
     logging::Logging::SetLogFile({ LOG_INFO, LOG_DEBUG}, "out.log");
     logging::Logging::SetLogFile({ LOG_WARNING, LOG_ERROR, LOG_FATAL}, "error.log");
 
-    // LOG(LOG_INFO) << "hello" <<123<< std::endl <<"lkdasjflaj1";
-    // logging::WaitLoggerThread();
+    LOG(LOG_INFO) << "hello " << 123 << std::endl
+                  << "lkdasjflajl";
 
     translayor::EventQueue mainEventQuene(5);
     translayor::IoLoop::Get()->Start();
