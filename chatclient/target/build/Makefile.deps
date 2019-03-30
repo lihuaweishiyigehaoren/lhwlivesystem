@@ -1,0 +1,5 @@
+LOGGING_INCLUDE := -I"../../../../spider/logging/src" 
+TRANSLAYOR_INCLUDE := -I"../../../../spider/translayor/src"
+
+LOGGING_LIB := -L"../../../../spider/logging/target/lib"
+TRANSLAYOR_LIB = -L"../../../../spider/translayor/target/lib"

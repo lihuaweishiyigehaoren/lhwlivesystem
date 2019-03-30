@@ -3,3 +3,5 @@ target/lib/*
 target/build/test-logging/test-logging
 target/run/test-klog/test-klog
 target/run/test-klog/*.log
+target/chatserver/*.o
+target/chatserver/chatserver
