@@ -19,7 +19,7 @@ namespace translayor
 int32_t EPollServer::_Bind(const std::string &host, int32_t port)
 {
     int32_t listenfd;
-    if ((listenfd == socket(AF_INET, SOCK_STREAM, 0)) < 0)
+    if ((listenfd = socket(AF_INET, SOCK_STREAM, 0)) < 0)
     {
         LOG(LOG_ERROR) << "Create socket failed!";
         exit(1);
@@ -27,7 +27,11 @@ int32_t EPollServer::_Bind(const std::string &host, int32_t port)
 
     SetNativeSocket(listenfd);
     int32_t option = 1;
-    setsockopt(listenfd, SOL_SOCKET, SO_REUSEADDR, &option, sizeof(option));
+    int opt = setsockopt(listenfd, SOL_SOCKET, SO_REUSEADDR, &option, sizeof(option));
+    if( opt == -1 )
+    {
+        LOG(LOG_ERROR) << "setsockopt failed";
+    }
 
     translayor::SetNonBlocking(listenfd);
 
@@ -40,6 +44,7 @@ int32_t EPollServer::_Bind(const std::string &host, int32_t port)
     int32_t errorCode = bind(listenfd, (struct sockaddr *)&addr, sizeof(addr));
     if (errorCode < 0)
     {
+        LOG(LOG_ERROR) << errno;
         LOG(LOG_ERROR) << "Bind socket failed!";
         assert(0);
         return errorCode;
@@ -85,7 +90,7 @@ EPollConnectionPtr EPollServer::Accept(int32_t sockfd)
     while ((conn_sock = accept(listenfd, (struct sockaddr *)&remote, (socklen_t *)&addrlen)) > 0)
     {
 
-        std::cout << "connect one client" << std::endl;
+        // std::cout << "connect one client" << std::endl;
 
         translayor::SetNonBlocking(conn_sock);
 

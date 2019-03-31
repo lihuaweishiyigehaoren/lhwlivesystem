@@ -157,7 +157,6 @@ namespace translayor {
         EPollConnectionPtr connection = server->Accept(eventfd);
 
         if (connection != nullptr) {
-            std::cout<<"lihuawei"<<std::endl;
             _streams[connection->GetNativeSocket()] = connection;
         }
     }

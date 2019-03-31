@@ -33,5 +33,5 @@ __-__-__-test-logging-main_cpp.o: ../../../test/test-logging/main.cpp \
  ../../../src/IOStreamManager.h \
  ../../../src/Check.h
 	@echo -e "\e[32m[CXX] \033[0m../../../test/test-logging/main.cpp -> $@"
-	@$(CXX) ../../../test/test-logging/main.cpp -c -o $@ -I../../../src -I../../../src -std=c++11 -O2 -msse3 -mavx -fPIC -DNDEBUG -DUSE_KLOG
+	@$(CXX) ../../../test/test-logging/main.cpp -c -o $@ -I../../../src -I../../../src -std=c++11 -gdwarf-2 -Og -msse3 -mavx -fPIC -DNDEBUG -DUSE_KLOG
 

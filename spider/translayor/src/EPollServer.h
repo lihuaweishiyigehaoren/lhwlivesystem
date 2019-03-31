@@ -6,32 +6,32 @@
 
 namespace translayor
 {
-    class EPollServer : public BasicServer<EPollConnectionPtr>
+class EPollServer : public BasicServer<EPollConnectionPtr>
+{
+  public:
+    EPollServer() {}
+    virtual ~EPollServer() {}
+
+    int32_t Listen(const std::string &host, int32_t port, int32_t backlog = 20) override;
+
+    void OnConnect(ConnectHandler handler)
     {
-    public:
-        EPollServer(){}
-        virtual ~EPollServer(){}
+        _connectHandler = handler;
+    }
 
-        int32_t Listen(const std::string& host, int32_t port, int32_t backlog = 20) override;
+    void OnDisconnect(DisconnectHandler handler)
+    {
+        _disconnectIndication = handler;
+    }
 
-        void OnConnect(ConnectHandler handler)
-        {
-            _connectHandler = handler;
-        }
+    EPollConnectionPtr Accept(int32_t sockfd);
 
-        void OnDisconnect(DisconnectHandler handler)
-        {
-            _disconnectIndication = handler;
-        }
+  private:
+    int32_t _Bind(const std::string &host, int32_t port);
 
-        EPollConnectionPtr Accept(int32_t sockfd);
+    DataSink *_dataSink;
+    ConnectHandler _connectHandler;
+    DisconnectHandler _disconnectIndication;
+};
 
-    private:
-        int32_t _Bind(const std::string& host, int32_t port);
-
-        DataSink * _dataSink;
-        ConnectHandler _connectHandler;
-        DisconnectHandler _disconnectIndication;
-    };
-    
-}
+} // namespace translayor

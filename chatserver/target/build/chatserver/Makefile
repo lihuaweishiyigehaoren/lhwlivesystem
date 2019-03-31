@@ -53,4 +53,4 @@ __-__-__-src-chatserver_cpp.o: ../../../src/main.cpp \
  ../../../../spider/translayor/src/http/HttpContext.h \
  ../../../../spider/translayor/src/http/HttpResponse.h
 	@echo -e "\e[32m[CXX] \033[0m../../../src/main.cpp -> $@"
-	@$(CXX) ../../../src/main.cpp -c -o $@ -I../../../src  $(LOGGING_INCLUDE) $(TRANSLAYOR_INCLUDE) -std=c++11 -O2 -msse3 -mavx -fPIC -DNDEBUG -DOS_LINUX -DUSE_KLOG
+	@$(CXX) ../../../src/main.cpp -c -o $@ -I../../../src  $(LOGGING_INCLUDE) $(TRANSLAYOR_INCLUDE) -std=c++11 -gdwarf-2 -Og -msse3 -mavx -fPIC -DNDEBUG -DOS_LINUX -DUSE_KLOG

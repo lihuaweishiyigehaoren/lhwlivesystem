@@ -50,7 +50,7 @@ __-__-__-src-PackageDataSink_cpp.o: ../../../src/PackageDataSink.cpp \
  ../../../src/http/HttpRequest.h \
  ../../../src/http/HttpResponse.h
 	@echo -e "\e[32m[CXX] \033[0m../../../src/PackageDataSink.cpp -> $@"
-	@$(CXX) ../../../src/PackageDataSink.cpp -c -o $@ -I../../../src $(LOGGING_INCLUDE) -std=c++11 -O2 -msse3 -mavx -fPIC -DNDEBUG -DOS_LINUX -DUSE_KLOG
+	@$(CXX) ../../../src/PackageDataSink.cpp -c -o $@ -I../../../src $(LOGGING_INCLUDE) -std=c++11 -g -Og -msse3 -mavx -fPIC -DNDEBUG -DOS_LINUX -DUSE_KLOG
 
 __-__-__-src-EventQueueLoop_cpp.o: ../../../src/EventQueueLoop.cpp \
  ../../../src/EventQueueLoop.h \
@@ -58,14 +58,14 @@ __-__-__-src-EventQueueLoop_cpp.o: ../../../src/EventQueueLoop.cpp \
  ../../../src/ByteArray.h \
  ../../../src/Exendian.h
 	@echo -e "\e[32m[CXX] \033[0m../../../src/EventQueueLoop.cpp -> $@"
-	@$(CXX) ../../../src/EventQueueLoop.cpp -c -o $@ -I../../../src $(LOGGING_INCLUDE) -std=c++11 -O2 -msse3 -mavx -fPIC -DNDEBUG -DOS_LINUX -DUSE_KLOG
+	@$(CXX) ../../../src/EventQueueLoop.cpp -c -o $@ -I../../../src $(LOGGING_INCLUDE) -std=c++11 -g -Og -msse3 -mavx -fPIC -DNDEBUG -DOS_LINUX -DUSE_KLOG
 
 __-__-__-src-Net_cpp.o: ../../../src/Net.cpp ../../../src/Net.h \
  ../../../src/NetLinux.h \
  ../../../src/ByteArray.h \
  ../../../src/Exendian.h
 	@echo -e "\e[32m[CXX] \033[0m../../../src/Net.cpp -> $@"
-	@$(CXX) ../../../src/Net.cpp -c -o $@ -I../../../src $(LOGGING_INCLUDE) -std=c++11 -O2 -msse3 -mavx -fPIC -DNDEBUG -DOS_LINUX -DUSE_KLOG
+	@$(CXX) ../../../src/Net.cpp -c -o $@ -I../../../src $(LOGGING_INCLUDE) -std=c++11 -g -Og -msse3 -mavx -fPIC -DNDEBUG -DOS_LINUX -DUSE_KLOG
 
 __-__-__-src-EPollClient_cpp.o: ../../../src/EPollClient.cpp \
  ../../../src/EPollLoop.h \
@@ -88,7 +88,7 @@ __-__-__-src-EPollClient_cpp.o: ../../../src/EPollClient.cpp \
  ../../../src/Common.h \
  ../../../src/CommonUtils.h
 	@echo -e "\e[32m[CXX] \033[0m../../../src/EPollClient.cpp -> $@"
-	@$(CXX) ../../../src/EPollClient.cpp -c -o $@ -I../../../src $(LOGGING_INCLUDE) -std=c++11 -O2 -msse3 -mavx -fPIC -DNDEBUG -DOS_LINUX -DUSE_KLOG
+	@$(CXX) ../../../src/EPollClient.cpp -c -o $@ -I../../../src $(LOGGING_INCLUDE) -std=c++11 -g -Og -msse3 -mavx -fPIC -DNDEBUG -DOS_LINUX -DUSE_KLOG
 
 __-__-__-src-EPollConnection_cpp.o: ../../../src/EPollConnection.cpp \
  ../../../src/EPollLoop.h \
@@ -110,7 +110,7 @@ __-__-__-src-EPollConnection_cpp.o: ../../../src/EPollConnection.cpp \
  ../../../src/DataSink.h \
  ../../../src/Common.h 
 	@echo -e "\e[32m[CXX] \033[0m../../../src/EPollConnection.cpp -> $@"
-	@$(CXX) ../../../src/EPollConnection.cpp -c -o $@ -I../../../src $(LOGGING_INCLUDE) -std=c++11 -O2 -msse3 -mavx -fPIC -DNDEBUG -DOS_LINUX -DUSE_KLOG
+	@$(CXX) ../../../src/EPollConnection.cpp -c -o $@ -I../../../src $(LOGGING_INCLUDE) -std=c++11 -g -Og -msse3 -mavx -fPIC -DNDEBUG -DOS_LINUX -DUSE_KLOG
 
 __-__-__-src-EPollServer_cpp.o: ../../../src/EPollServer.cpp \
  ../../../src/EPollServer.h \
@@ -133,7 +133,7 @@ __-__-__-src-EPollServer_cpp.o: ../../../src/EPollServer.cpp \
  ../../../src/Common.h \
  ../../../src/CommonUtils.h 
 	@echo -e "\e[32m[CXX] \033[0m../../../src/EPollServer.cpp -> $@"
-	@$(CXX) ../../../src//EPollServer.cpp -c -o $@ -I../../../src $(LOGGING_INCLUDE) -std=c++11 -O2 -msse3 -mavx -fPIC -DNDEBUG -DOS_LINUX -DUSE_KLOG
+	@$(CXX) ../../../src//EPollServer.cpp -c -o $@ -I../../../src $(LOGGING_INCLUDE) -std=c++11 -g -Og -msse3 -mavx -fPIC -DNDEBUG -DOS_LINUX -DUSE_KLOG
 
 __-__-__-src-EPollStream_cpp.o: ../../../src/EPollStream.cpp \
  ../../../src/EPollStream.h \
@@ -155,7 +155,7 @@ __-__-__-src-EPollStream_cpp.o: ../../../src/EPollStream.cpp \
  ../../../src/DataSink.h \
  ../../../src/Common.h 
 	@echo -e "\e[32m[CXX] \033[0m../../../src/EPollStream.cpp -> $@"
-	@$(CXX) ../../../src/EPollStream.cpp -c -o $@ -I../../../src $(LOGGING_INCLUDE) -std=c++11 -O2 -msse3 -mavx -fPIC -DNDEBUG -DOS_LINUX -DUSE_KLOG
+	@$(CXX) ../../../src/EPollStream.cpp -c -o $@ -I../../../src $(LOGGING_INCLUDE) -std=c++11 -g -Og -msse3 -mavx -fPIC -DNDEBUG -DOS_LINUX -DUSE_KLOG
 
 __-__-__-src-EpollLoop_cpp.o: ../../../src/EPollLoop.cpp \
  ../../../src/EPollLoop.h \
@@ -177,24 +177,24 @@ __-__-__-src-EpollLoop_cpp.o: ../../../src/EPollLoop.cpp \
  ../../../src/DataSink.h \
  ../../../src/Common.h 
 	@echo -e "\e[32m[CXX] \033[0m../../../src/EpollLoop.cpp -> $@"
-	@$(CXX) ../../../src/EPollLoop.cpp -c -o $@ -I../../../src $(LOGGING_INCLUDE) -std=c++11 -O2 -msse3 -mavx -fPIC -DNDEBUG -DOS_LINUX -DUSE_KLOG
+	@$(CXX) ../../../src/EPollLoop.cpp -c -o $@ -I../../../src $(LOGGING_INCLUDE) -std=c++11 -g -Og -msse3 -mavx -fPIC -DNDEBUG -DOS_LINUX -DUSE_KLOG
 
 __-__-__-src-CommonUtils_cpp.o: ../../../src/CommonUtils.cpp \
  ../../../src/CommonUtils.h
 	@echo -e "\e[32m[CXX] \033[0m../../../src/CommonUtils.cpp -> $@"
-	@$(CXX) ../../../src/CommonUtils.cpp -c -o $@ -I../../../src $(LOGGING_INCLUDE) -std=c++11 -O2 -msse3 -mavx -fPIC -DNDEBUG -DOS_LINUX -DUSE_KLOG
+	@$(CXX) ../../../src/CommonUtils.cpp -c -o $@ -I../../../src $(LOGGING_INCLUDE) -std=c++11 -g -Og -msse3 -mavx -fPIC -DNDEBUG -DOS_LINUX -DUSE_KLOG
 
 __-__-__-src-http-String_cpp.o: ../../../src/http/String.cpp \
  ../../../src/http/String.h
 	@echo -e "\e[32m[CXX] \033[0m../../../src/http/String.cpp -> $@"
-	@$(CXX) ../../../src/http/String.cpp -c -o $@ -I../../../src $(LOGGING_INCLUDE) -std=c++11 -O2 -msse3 -mavx -fPIC -DNDEBUG -DOS_LINUX -DUSE_KLOG
+	@$(CXX) ../../../src/http/String.cpp -c -o $@ -I../../../src $(LOGGING_INCLUDE) -std=c++11 -g -Og -msse3 -mavx -fPIC -DNDEBUG -DOS_LINUX -DUSE_KLOG
 
 __-__-__-src-ThreadPool_cpp.o: ../../../src/ThreadPool.cpp \
  ../../../src/ThreadPool.h \
  ../../../src/ConcurrentQueue.h \
  ../../../src/thread_pool.tcc 
 	@echo -e "\e[32m[CXX] \033[0m../../../src/ThreadPool.cpp -> $@"
-	@$(CXX) ../../../src/ThreadPool.cpp -c -o $@ -I../../../src $(LOGGING_INCLUDE) -std=c++11 -O2 -msse3 -mavx -fPIC -DNDEBUG -DOS_LINUX -DUSE_KLOG
+	@$(CXX) ../../../src/ThreadPool.cpp -c -o $@ -I../../../src $(LOGGING_INCLUDE) -std=c++11 -g -Og -msse3 -mavx -fPIC -DNDEBUG -DOS_LINUX -DUSE_KLOG
 
 __-__-__-src-http-HttpConnection_cpp.o: ../../../src/http/HttpConnection.cpp \
  ../../../src/TransLayor.h ../../../src/IoLoop.h \
@@ -225,7 +225,7 @@ __-__-__-src-http-HttpConnection_cpp.o: ../../../src/http/HttpConnection.cpp \
  ../../../src/http/HttpContext.h \
  ../../../src/http/HttpResponse.h 
 	@echo -e "\e[32m[CXX] \033[0m../../../src/http/HttpConnection.cpp -> $@"
-	@$(CXX) ../../../src/http/HttpConnection.cpp -c -o $@ -I../../../include $(LOGGING_INCLUDE) -std=c++11 -O2 -msse3 -mavx -fPIC -DNDEBUG -DOS_LINUX -DUSE_KLOG
+	@$(CXX) ../../../src/http/HttpConnection.cpp -c -o $@ -I../../../include $(LOGGING_INCLUDE) -std=c++11 -g -Og -msse3 -mavx -fPIC -DNDEBUG -DOS_LINUX -DUSE_KLOG
 
 __-__-__-src-http-HttpContext_cpp.o: ../../../src/http/HttpContext.cpp \
  ../../../src/http/HttpContext.h \
@@ -233,7 +233,7 @@ __-__-__-src-http-HttpContext_cpp.o: ../../../src/http/HttpContext.cpp \
  ../../../src/Exendian.h \
  ../../../src/http/String.h
 	@echo -e "\e[32m[CXX] \033[0m../../../src/http/HttpContext.cpp -> $@"
-	@$(CXX) ../../../src/http/HttpContext.cpp -c -o $@ -I../../../src $(LOGGING_INCLUDE) -std=c++11 -O2 -msse3 -mavx -fPIC -DNDEBUG -DOS_LINUX -DUSE_KLOG
+	@$(CXX) ../../../src/http/HttpContext.cpp -c -o $@ -I../../../src $(LOGGING_INCLUDE) -std=c++11 -g -Og -msse3 -mavx -fPIC -DNDEBUG -DOS_LINUX -DUSE_KLOG
 
 __-__-__-src-http-HttpRequest_cpp.o: ../../../src/http/HttpRequest.cpp \
  ../../../src/http/HttpRequest.h \
@@ -242,7 +242,7 @@ __-__-__-src-http-HttpRequest_cpp.o: ../../../src/http/HttpRequest.cpp \
  ../../../src/Exendian.h \
  ../../../src/http/String.h
 	@echo -e "\e[32m[CXX] \033[0m../../../src/http/HttpRequest.cpp -> $@"
-	@$(CXX) ../../../src/http/HttpRequest.cpp -c -o $@ -I../../../src $(LOGGING_INCLUDE) -std=c++11 -O2 -msse3 -mavx -fPIC -DNDEBUG -DOS_LINUX -DUSE_KLOG
+	@$(CXX) ../../../src/http/HttpRequest.cpp -c -o $@ -I../../../src $(LOGGING_INCLUDE) -std=c++11 -g -Og -msse3 -mavx -fPIC -DNDEBUG -DOS_LINUX -DUSE_KLOG
 
 __-__-__-src-http-HttpResponse_cpp.o: ../../../src/http/HttpResponse.cpp \
  ../../../src/http/HttpResponse.h \
@@ -251,7 +251,7 @@ __-__-__-src-http-HttpResponse_cpp.o: ../../../src/http/HttpResponse.cpp \
  ../../../src/Exendian.h \
  ../../../src/http/String.h
 	@echo -e "\e[32m[CXX] \033[0m../../../src/http/HttpResponse.cpp -> $@"
-	@$(CXX) ../../../src/http/HttpResponse.cpp -c -o $@ -I../../../src $(LOGGING_INCLUDE) -std=c++11 -O2 -msse3 -mavx -fPIC -DNDEBUG -DOS_LINUX -DUSE_KLOG
+	@$(CXX) ../../../src/http/HttpResponse.cpp -c -o $@ -I../../../src $(LOGGING_INCLUDE) -std=c++11 -g -Og -msse3 -mavx -fPIC -DNDEBUG -DOS_LINUX -DUSE_KLOG
 
 __-__-__-src-http-HttpServer_cpp.o: ../../../src/http/HttpServer.cpp \
  ../../../src/http/HttpServer.h \
@@ -283,5 +283,5 @@ __-__-__-src-http-HttpServer_cpp.o: ../../../src/http/HttpServer.cpp \
  ../../../src/http/HttpContext.h \
  ../../../src/http/HttpResponse.h
 	@echo -e "\e[32m[CXX] \033[0m../../../src/http/HttpServer.cpp -> $@"
-	@$(CXX) ../../../src/http/HttpServer.cpp -c -o $@ -I../../../src $(LOGGING_INCLUDE) -std=c++11 -O2 -msse3 -mavx -fPIC -DNDEBUG -DOS_LINUX -DUSE_KLOG
+	@$(CXX) ../../../src/http/HttpServer.cpp -c -o $@ -I../../../src $(LOGGING_INCLUDE) -std=c++11 -g -Og -msse3 -mavx -fPIC -DNDEBUG -DOS_LINUX -DUSE_KLOG
 
