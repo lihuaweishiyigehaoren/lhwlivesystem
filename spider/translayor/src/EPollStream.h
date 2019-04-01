@@ -50,7 +50,7 @@ namespace translayor
 
     private:
         uint32_t _events;
-        DataHandler _dataHandler;
+        DataHandler _dataHandler; // 初始化为了PackageDataSink中Write()函数
     };
 
     typedef std::shared_ptr <EPollStream> EPollStreamPtr;

@@ -2,4 +2,4 @@ target/bin/*
 target/lib/*
 target/build/test-logging/test-logging
 target/run/test-klog/test-klog
-target/run/test-klog/*.log
+target/run/test-klog/*.logdddddd
