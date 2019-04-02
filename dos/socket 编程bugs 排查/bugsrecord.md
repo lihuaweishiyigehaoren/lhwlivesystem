@@ -16,5 +16,11 @@ terminate called after throwing an instance of 'std::bad_function_call'
 buildexe.sh: 行 3:  5114 已放弃               (核心已转储) ./chatserver
 ```
 
-排查方法:定位问题点:(gdb) catch throw  用来捕获异常
+排查方法:定位问题点:(gdb) catch throw  用来捕获异常,发现是std::function没有初始化为空
+
+**bug3**
+```
+"chatserver" received signal SIGSEGV, Segmentation fault.
+```
+排查方法:
 

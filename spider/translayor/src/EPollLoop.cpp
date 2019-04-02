@@ -114,6 +114,7 @@ namespace translayor {
             nfds = epoll_wait(_eventfd, events, MAX_EVENT_COUNT, -1);
             if (-1 == nfds) {
                 LOG(LOG_ERROR) << "FATAL epoll_wait failed!" ;
+                LOG(LOG_ERROR) << errno;
                 exit(EXIT_FAILURE);
             }
 

@@ -24,7 +24,7 @@ class EPollServer : public BasicServer<EPollConnectionPtr>
         _disconnectIndication = handler;
     }
 
-    EPollConnectionPtr Accept(int32_t sockfd);
+    EPollConnectionPtr Accept(int32_t sockfd);//供EPollLoop使用,用于接受并建立客户端连接
 
   private:
     int32_t _Bind(const std::string &host, int32_t port);

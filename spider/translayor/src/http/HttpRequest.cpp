@@ -1,6 +1,7 @@
 
 #include "HttpRequest.h"
 #include "String.h"
+#include <iostream>
 
 namespace  translayor {
 
@@ -27,6 +28,8 @@ namespace  translayor {
 
     void HttpRequest::ParseRequestLine(const std::string& requestLine) {
         StdStringList words = SplitString(requestLine, ' ');
+
+        std::cout<<words[0]<<std::endl;
 
         SetMethod(words[0]);
         SetPath(words[1]);
