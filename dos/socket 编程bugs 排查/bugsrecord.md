@@ -16,5 +16,5 @@ terminate called after throwing an instance of 'std::bad_function_call'
 buildexe.sh: 行 3:  5114 已放弃               (核心已转储) ./chatserver
 ```
 
-原因:
+排查方法:定位问题点:(gdb) catch throw  用来捕获异常
 

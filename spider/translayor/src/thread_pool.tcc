@@ -15,7 +15,7 @@ namespace translayor
             _threads = MIN_THREADS;
         }
         
-        for(int32_t i = 0;i<_threads;++i)
+        for(int32_t i = 0; i<_threads; ++i)
         {
             _workers.emplace_back(
                 [this] {
