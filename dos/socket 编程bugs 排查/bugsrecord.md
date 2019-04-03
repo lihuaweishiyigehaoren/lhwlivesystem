@@ -24,3 +24,10 @@ buildexe.sh: 行 3:  5114 已放弃               (核心已转储) ./chatserver
 ```
 排查方法:
 
+**bug4**
+阿里云部署
+```
+[ERROR][2019-04-03 08:56:30.690249][EPollLoop.cpp:116] FATAL epoll_wait failed!
+```
+排查方法：打印errno为4 ，系统调用被中断，需要重新调用，
+解决方法：写个判断：判断是否被中断，是就conntinue

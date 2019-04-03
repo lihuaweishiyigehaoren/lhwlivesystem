@@ -29,11 +29,11 @@ namespace  translayor {
     void HttpRequest::ParseRequestLine(const std::string& requestLine) {
         StdStringList words = SplitString(requestLine, ' ');
 
-        std::cout<<words[0]<<std::endl;
+        // std::cout<<words<<std::endl;
 
         SetMethod(words[0]);
-        SetPath(words[1]);
-        SetVersion(words[2]);// 第一个单词作为请求方法,第二个单词作为路径,第三个单词作为版本号
+        //SetPath(words[1]);
+        //SetVersion(words[2]);// 第一个单词作为请求方法,第二个单词作为路径,第三个单词作为版本号
     }
 
     HttpRequest HttpRequest::FromStdString(const std::string& text) {
