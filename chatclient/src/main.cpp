@@ -15,7 +15,7 @@
 
 using namespace std;
 
-const int32_t DefaultPort = 8080;
+const int32_t DefaultPort = 80;
 class SampleEventQueueLoop : public translayor::EventQueueLoop {
 public:
     SampleEventQueueLoop(translayor::EventQueue* eventQueue) :
@@ -46,7 +46,7 @@ int32_t main() {
 
     translayor::PackageDataSink dataSink(&mainEventQueue);
 
-    translayor::EPollClientPtr client = translayor::EPollClient::Connect("127.0.0.1", DefaultPort, &dataSink);
+    translayor::EPollClientPtr client = translayor::EPollClient::Connect("120.78.146.208", DefaultPort, &dataSink);
 
     client->Send(translayor::ByteArray("hello", 5));
 

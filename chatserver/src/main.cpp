@@ -26,7 +26,7 @@ int32_t main()
     translayor::TcpServer server;
 
     translayor::PackageDataSink* packageDataSink = &dataSink;
-    server.Listen("127.0.0.1", DefaultConnectPort);
+    server.Listen("0.0.0.0", DefaultConnectPort);
     server.OnConnect([=](translayor::IStream* stream)
     {
         stream->OnData(packageDataSink->StreamDataHandler(stream));
