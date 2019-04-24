@@ -12,7 +12,8 @@ namespace translayor {
 
     typedef std::shared_ptr<EPollClient> EPollClientPtr;
 
-class EPollClient : public EPollStream, public IConnectable {
+class EPollClient : public EPollStream, public IConnectable // 是一个可以主动发起连接的数据流
+{
 public:
     EPollClient(const EPollClient& client) = delete;
     virtual ~EPollClient() { }
@@ -20,11 +21,13 @@ public:
     virtual int32_t Receive(char* buffer, int32_t bufferSize, int32_t& readSize) override;
     virtual int32_t Send(const ByteArray& byteArray) override;
 
-    uint32_t GetEvents() const {
+    uint32_t GetEvents() const 
+    {
         return _events;
     }
 
-    void SetEvents(uint32_t events) {
+    void SetEvents(uint32_t events)
+    {
         _events = events;
     }
 

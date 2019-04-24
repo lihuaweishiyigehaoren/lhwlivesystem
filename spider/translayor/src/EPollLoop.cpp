@@ -65,7 +65,7 @@ namespace translayor {
         ev.events = events;
         ev.data.fd = fd;
 
-        return epoll_ctl(_eventfd, EPOLL_CTL_ADD, fd, &ev);
+        return epoll_ctl(_eventfd, EPOLL_CTL_ADD, fd, &ev); // 注册新的fd到_eventfd中
     }
 
     /*
@@ -96,7 +96,6 @@ namespace translayor {
     {
         auto func = std::bind(&EPollLoop::_EPollThread, this);
         std::thread listenThread(func);// 创建一个分支线程,回调到func函数
-        // std::cout << listenThread.get_id() << std::endl;
         listenThread.detach(); // 将子线程从主线程中剥离
     }
 

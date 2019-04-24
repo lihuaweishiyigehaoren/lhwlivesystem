@@ -15,9 +15,6 @@ int32_t main()
     logging::Logging::SetLogFile({ LOG_INFO, LOG_DEBUG}, "out.log");
     logging::Logging::SetLogFile({ LOG_WARNING, LOG_ERROR, LOG_FATAL}, "error.log");
 
-    // LOG(LOG_INFO) << "hello " << 123 << std::endl
-    //               << "lkdasjflajl";
-
     translayor::EventQueue mainEventQuene(5);
     translayor::IoLoop::Get()->Start();
 
@@ -26,7 +23,7 @@ int32_t main()
     translayor::TcpServer server;
 
     translayor::PackageDataSink* packageDataSink = &dataSink;
-    server.Listen("0.0.0.0", DefaultConnectPort);
+    server.Listen("127.0.0.1", DefaultConnectPort);
     server.OnConnect([=](translayor::IStream* stream)
     {
         stream->OnData(packageDataSink->StreamDataHandler(stream));

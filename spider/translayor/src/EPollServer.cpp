@@ -27,7 +27,7 @@ int32_t EPollServer::_Bind(const std::string &host, int32_t port)
 
     SetNativeSocket(listenfd);
     int32_t option = 1;
-    int opt = setsockopt(listenfd, SOL_SOCKET, SO_REUSEADDR, &option, sizeof(option));
+    int opt = setsockopt(listenfd, SOL_SOCKET, SO_REUSEADDR, &option, sizeof(option));// 详解https://baike.baidu.com/item/setsockopt/10069288?fr=aladdin
     if( opt == -1 )
     {
         LOG(LOG_ERROR) << "setsockopt failed";
@@ -89,8 +89,6 @@ EPollConnectionPtr EPollServer::Accept(int32_t sockfd)
     int32_t listenfd = GetNativeSocket();
     while ((conn_sock = accept(listenfd, (struct sockaddr *)&remote, (socklen_t *)&addrlen)) > 0)
     {
-
-        // std::cout << "connect one client" << std::endl;
 
         translayor::SetNonBlocking(conn_sock);
 
