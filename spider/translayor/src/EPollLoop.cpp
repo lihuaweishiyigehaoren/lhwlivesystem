@@ -134,7 +134,6 @@ namespace translayor {
     */
     void EPollLoop::_HandleEvent(int32_t eventfd, NativeSocketEvent* events, int32_t nfds)
     {
-
         for (int32_t i = 0; i < nfds; ++i) {
             int32_t fd;
             fd = events[i].data.fd;
