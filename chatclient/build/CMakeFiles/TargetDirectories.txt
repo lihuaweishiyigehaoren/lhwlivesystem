@@ -1,0 +1,3 @@
+/home/lihuawei/桌面/lhwlivesystem/chatclient/build/CMakeFiles/rebuild_cache.dir
+/home/lihuawei/桌面/lhwlivesystem/chatclient/build/CMakeFiles/chatclient.dir
+/home/lihuawei/桌面/lhwlivesystem/chatclient/build/CMakeFiles/edit_cache.dir

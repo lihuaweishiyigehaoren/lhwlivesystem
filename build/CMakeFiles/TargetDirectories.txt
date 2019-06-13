@@ -1,0 +1,11 @@
+/home/lihuawei/桌面/lhwlivesystem/build/CMakeFiles/rebuild_cache.dir
+/home/lihuawei/桌面/lhwlivesystem/build/CMakeFiles/edit_cache.dir
+/home/lihuawei/桌面/lhwlivesystem/build/spider/logging/CMakeFiles/rebuild_cache.dir
+/home/lihuawei/桌面/lhwlivesystem/build/spider/logging/CMakeFiles/logging.dir
+/home/lihuawei/桌面/lhwlivesystem/build/spider/logging/CMakeFiles/edit_cache.dir
+/home/lihuawei/桌面/lhwlivesystem/build/spider/translayor/CMakeFiles/rebuild_cache.dir
+/home/lihuawei/桌面/lhwlivesystem/build/spider/translayor/CMakeFiles/translayor.dir
+/home/lihuawei/桌面/lhwlivesystem/build/spider/translayor/CMakeFiles/edit_cache.dir
+/home/lihuawei/桌面/lhwlivesystem/build/chatserver/CMakeFiles/rebuild_cache.dir
+/home/lihuawei/桌面/lhwlivesystem/build/chatserver/CMakeFiles/chatserver.dir
+/home/lihuawei/桌面/lhwlivesystem/build/chatserver/CMakeFiles/edit_cache.dir

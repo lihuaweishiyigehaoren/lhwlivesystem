@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/lihuawei/桌面/lhwlivesystem/chatclient/main.cpp
+Net.h
+/home/lihuawei/桌面/lhwlivesystem/chatclient/Net.h
+EventQueue.h
+/home/lihuawei/桌面/lhwlivesystem/chatclient/EventQueue.h
+EventQueueLoop.h
+/home/lihuawei/桌面/lhwlivesystem/chatclient/EventQueueLoop.h
+IoLoop.h
+/home/lihuawei/桌面/lhwlivesystem/chatclient/IoLoop.h
+PackageDataSink.h
+/home/lihuawei/桌面/lhwlivesystem/chatclient/PackageDataSink.h
+EPollServer.h
+/home/lihuawei/桌面/lhwlivesystem/chatclient/EPollServer.h
+EPollClient.h
+/home/lihuawei/桌面/lhwlivesystem/chatclient/EPollClient.h
+Logging.h
+/home/lihuawei/桌面/lhwlivesystem/chatclient/Logging.h
+vector
+-
+iostream
+-
+string
+-
+thread
+-
+memory
+-
+

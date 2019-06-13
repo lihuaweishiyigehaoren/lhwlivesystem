@@ -1,2 +1,0 @@
-LOGGING_INCLUDE := -I"../../../../logging/src"
-LOGGING_LIB := ../../../../logging/target/lib
