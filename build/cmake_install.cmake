@@ -1,4 +1,4 @@
-# Install script for directory: /home/lihuawei/桌面/lhwlivesystem
+# Install script for directory: /home/lihuawei/桌面/usegit/lhwlivesystem
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,9 +39,10 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/lihuawei/桌面/lhwlivesystem/build/spider/logging/cmake_install.cmake")
-  include("/home/lihuawei/桌面/lhwlivesystem/build/spider/translayor/cmake_install.cmake")
-  include("/home/lihuawei/桌面/lhwlivesystem/build/chatserver/cmake_install.cmake")
+  include("/home/lihuawei/桌面/usegit/lhwlivesystem/build/spider/logging/cmake_install.cmake")
+  include("/home/lihuawei/桌面/usegit/lhwlivesystem/build/spider/translayor/cmake_install.cmake")
+  include("/home/lihuawei/桌面/usegit/lhwlivesystem/build/chatserver/cmake_install.cmake")
+  include("/home/lihuawei/桌面/usegit/lhwlivesystem/build/chatclient/cmake_install.cmake")
 
 endif()
 
@@ -53,5 +54,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/lihuawei/桌面/lhwlivesystem/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/lihuawei/桌面/usegit/lhwlivesystem/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

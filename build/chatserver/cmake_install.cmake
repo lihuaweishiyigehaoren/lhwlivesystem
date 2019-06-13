@@ -1,4 +1,4 @@
-# Install script for directory: /home/lihuawei/桌面/lhwlivesystem/chatserver
+# Install script for directory: /home/lihuawei/桌面/usegit/lhwlivesystem/chatserver
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/lihuawei/桌面/lhwlivesystem/chatserver/main.cpp" "/home/lihuawei/桌面/lhwlivesystem/build/chatserver/CMakeFiles/chatserver.dir/main.cpp.o"
+  "/home/lihuawei/桌面/usegit/lhwlivesystem/chatserver/main.cpp" "/home/lihuawei/桌面/usegit/lhwlivesystem/build/chatserver/CMakeFiles/chatserver.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -18,8 +18,8 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/lihuawei/桌面/lhwlivesystem/build/spider/translayor/CMakeFiles/translayor.dir/DependInfo.cmake"
-  "/home/lihuawei/桌面/lhwlivesystem/build/spider/logging/CMakeFiles/logging.dir/DependInfo.cmake"
+  "/home/lihuawei/桌面/usegit/lhwlivesystem/build/spider/translayor/CMakeFiles/translayor.dir/DependInfo.cmake"
+  "/home/lihuawei/桌面/usegit/lhwlivesystem/build/spider/logging/CMakeFiles/logging.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

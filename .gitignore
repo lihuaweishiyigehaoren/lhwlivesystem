@@ -1,8 +1,7 @@
 ./vscode
-spider/translayor/build
-spider/logging/build
-chatserver/build
-testlog/build
-.vscode/
-build-Qchatclient-Desktop_Qt_5_9_1_GCC_64bit-Debug/
-Qchatclient/moc_*
+#spider/translayor/build
+#spider/logging/build
+#chatserver/build
+#testlog/build
+build-qchatclient-Desktop_Qt_5_9_1_GCC_64bit-Debug/
+qchatclient/moc_*
