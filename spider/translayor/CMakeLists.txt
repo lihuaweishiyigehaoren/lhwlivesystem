@@ -3,6 +3,7 @@ cmake_minimum_required(VERSION 3.7)
 project(translayor)
 
 set(CMAKE_CXX_STANDARD 11)
+add_compile_options(-std=c++11 -gdwarf-2 -Og -msse3 -mavx -fPIC -DNDEBUG -DOS_LINUX -DUSE_KLOG)
 
 include_directories(.)
 include_directories(http)
@@ -14,6 +15,6 @@ EPollStream.cpp EventQueueLoop.cpp Net.cpp PackageDataSink.cpp ServerSample.cpp 
 http/HttpConnection.cpp http/HttpContext.cpp http/HttpRequest.cpp http/HttpResponse.cpp 
 http/HttpServer.cpp http/String.cpp)
 
-target_link_libraries(translayor logging)
+target_link_libraries(translayor logging pthread)
 
 install(TARGETS translayor DESTINATION lib)

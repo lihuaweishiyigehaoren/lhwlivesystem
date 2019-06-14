@@ -1,7 +1,7 @@
-/home/lihuawei/桌面/usegit/lhwlivesystem/spider/logging/build/CMakeFiles/install/strip.dir
-/home/lihuawei/桌面/usegit/lhwlivesystem/spider/logging/build/CMakeFiles/edit_cache.dir
-/home/lihuawei/桌面/usegit/lhwlivesystem/spider/logging/build/CMakeFiles/logging.dir
-/home/lihuawei/桌面/usegit/lhwlivesystem/spider/logging/build/CMakeFiles/rebuild_cache.dir
-/home/lihuawei/桌面/usegit/lhwlivesystem/spider/logging/build/CMakeFiles/list_install_components.dir
-/home/lihuawei/桌面/usegit/lhwlivesystem/spider/logging/build/CMakeFiles/install/local.dir
-/home/lihuawei/桌面/usegit/lhwlivesystem/spider/logging/build/CMakeFiles/install.dir
+/home/lihuawei/桌面/lhwlivesystem/spider/logging/build/CMakeFiles/install/strip.dir
+/home/lihuawei/桌面/lhwlivesystem/spider/logging/build/CMakeFiles/edit_cache.dir
+/home/lihuawei/桌面/lhwlivesystem/spider/logging/build/CMakeFiles/logging.dir
+/home/lihuawei/桌面/lhwlivesystem/spider/logging/build/CMakeFiles/rebuild_cache.dir
+/home/lihuawei/桌面/lhwlivesystem/spider/logging/build/CMakeFiles/list_install_components.dir
+/home/lihuawei/桌面/lhwlivesystem/spider/logging/build/CMakeFiles/install/local.dir
+/home/lihuawei/桌面/lhwlivesystem/spider/logging/build/CMakeFiles/install.dir

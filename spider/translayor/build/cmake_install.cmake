@@ -1,4 +1,4 @@
-# Install script for directory: /home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor
+# Install script for directory: /home/lihuawei/桌面/lhwlivesystem/spider/translayor
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,17 +44,20 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libtranslayor.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/build/libtranslayor.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/lihuawei/桌面/lhwlivesystem/spider/translayor/build/libtranslayor.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libtranslayor.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libtranslayor.so")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libtranslayor.so"
-         OLD_RPATH "/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/../logging/build:"
+         OLD_RPATH "/home/lihuawei/桌面/lhwlivesystem/spider/translayor/../logging/build:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libtranslayor.so")
     endif()
   endif()
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -65,5 +68,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/lihuawei/桌面/lhwlivesystem/spider/translayor/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
