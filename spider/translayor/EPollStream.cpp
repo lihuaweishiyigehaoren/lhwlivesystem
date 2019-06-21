@@ -1,7 +1,7 @@
 #include "EPollStream.h"
 
 #include "EPollStream.h"
-#include "EPollLoop.h"
+#include "LhwEpollLoop.h"
 #include "Logging.h"
 #include "ByteArray.h"
 
@@ -33,7 +33,7 @@ namespace translayor
         struct epoll_event ev;
         NativeSocket clientSocket = GetNativeSocket();
 
-        if (EPollLoop::Get()->ModifyEpollEvents(_events | EPOLLOUT, clientSocket))
+        if (LhwEpollLoop::Get()->modifyEpollEvents(_events | EPOLLOUT, clientSocket))
         {
             LOG(LOG_ERROR) << "FATAL epoll_ctl: mod failed!";
         }

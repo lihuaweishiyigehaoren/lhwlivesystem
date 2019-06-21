@@ -2,7 +2,7 @@
 
 #include "EPollClient.h"
 #include "CommonUtils.h"
-#include "EPollLoop.h"
+#include "LhwEpollLoop.h"
 #include "Logging.h"
 
 #include <unistd.h>
@@ -37,10 +37,10 @@ namespace translayor {
         client->Connect(ip, port);
 
         // 添加事件循环
-        EPollLoop* ePollLoop = EPollLoop::Get();
+        LhwEpollLoop* ePollLoop = LhwEpollLoop::Get();
 
         client->_events = EPOLLIN | EPOLLET;
-        if ( ePollLoop->AddEpollEvents(client->_events, clientSocket) == -1 ) // 将新创建的客户端套接字
+        if ( ePollLoop->addEpollEvents(client->_events, clientSocket) == -1 ) // 将新创建的客户端套接字
         {
             perror("epoll_ctl: add");
             exit(EXIT_FAILURE);
@@ -73,7 +73,7 @@ namespace translayor {
         struct epoll_event ev;
         NativeSocket clientSocket = GetNativeSocket();
 
-        if ( EPollLoop::Get()->ModifyEpollEvents(_events | EPOLLOUT, clientSocket) ) // 为客户端加上EPOLLOUT的事件监听.-表示对应的文件描述符可以写
+        if ( LhwEpollLoop::Get()->modifyEpollEvents(_events | EPOLLOUT, clientSocket) ) // 为客户端加上EPOLLOUT的事件监听.-表示对应的文件描述符可以写
         {
             LOG(LOG_ERROR) << "FATAL epoll_ctl: mod failed!";
         }

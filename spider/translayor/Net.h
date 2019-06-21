@@ -99,10 +99,10 @@ namespace translayor
 
         BasicServer() {}
 
-        virtual int32_t Listen(const std::string& host, int32_t port, int32_t backlog)=0;
+        virtual int32_t startBindListen(const std::string& host, int32_t port, int32_t backlog)=0;
         virtual void OnConnect(ConnectHandler handler)=0;
         virtual void OnDisconnect(DisconnectHandler handler)=0;
 
-        virtual ConnectionType Accept(int32_t listenfd)=0;
+        virtual ConnectionType acceptClientOfServer(int32_t listenfd)=0;
     };
 }

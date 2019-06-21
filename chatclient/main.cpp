@@ -1,9 +1,9 @@
 #include "Net.h"
 #include "EventQueue.h"
-#include "EventQueueLoop.h"
+#include "LhwEventQueueLoop.h"
 #include "IoLoop.h"
 #include "PackageDataSink.h"
-#include "EPollServer.h"
+#include "LhwServer.h"
 #include "EPollClient.h"
 #include "Logging.h"
 
@@ -16,10 +16,10 @@
 using namespace std;
 
 const int32_t DefaultPort = 8080;
-class SampleEventQueueLoop : public translayor::EventQueueLoop {
+class SampleEventQueueLoop : public translayor::LhwEventQueueLoop {
 public:
     SampleEventQueueLoop(translayor::EventQueue* eventQueue) :
-            EventQueueLoop(eventQueue) {}
+            LhwEventQueueLoop(eventQueue) {}
 
 protected:
     virtual void OnEvent(std::shared_ptr<translayor::BaseEvent> event) override {

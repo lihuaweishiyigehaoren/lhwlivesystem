@@ -1,7 +1,7 @@
-/home/lihuawei/桌面/lhwlivesystem/spider/translayor/build/CMakeFiles/install/strip.dir
-/home/lihuawei/桌面/lhwlivesystem/spider/translayor/build/CMakeFiles/edit_cache.dir
-/home/lihuawei/桌面/lhwlivesystem/spider/translayor/build/CMakeFiles/translayor.dir
-/home/lihuawei/桌面/lhwlivesystem/spider/translayor/build/CMakeFiles/rebuild_cache.dir
-/home/lihuawei/桌面/lhwlivesystem/spider/translayor/build/CMakeFiles/list_install_components.dir
-/home/lihuawei/桌面/lhwlivesystem/spider/translayor/build/CMakeFiles/install/local.dir
-/home/lihuawei/桌面/lhwlivesystem/spider/translayor/build/CMakeFiles/install.dir
+/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/build/CMakeFiles/install/strip.dir
+/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/build/CMakeFiles/edit_cache.dir
+/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/build/CMakeFiles/translayor.dir
+/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/build/CMakeFiles/rebuild_cache.dir
+/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/build/CMakeFiles/list_install_components.dir
+/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/build/CMakeFiles/install/local.dir
+/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/build/CMakeFiles/install.dir
