@@ -20,9 +20,6 @@ namespace translayor {
         translayor::SetNonBlocking(getSocket());
 
         ::connect(getSocket(), (struct sockaddr*)&serv_addr, sizeof(serv_addr));
-
-        std::cout << errno <<std::endl;
-
     }
 
     // 静态函数,参数dataSink,表示数据到来时的回调函数
@@ -34,8 +31,6 @@ namespace translayor {
         EPollClientPtr client = EPollClientPtr(new LhwClient(clientSocket));
         client->SetDataSink(dataSink); // 将数据收集器赋予客户端
         client->connect(ip, port);
-
-        // LOG(LOG_DEBUG) << clientSocket;
 
         // 添加事件循环
         LhwEpollLoop* ePollLoop = LhwEpollLoop::Get();
