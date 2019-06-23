@@ -2,7 +2,7 @@
 
 #include "LhwClientConnected.h"
 #include "Logging.h"
-#include "ByteArray.h"
+#include "LhwByteArray.h"
 
 #include <unistd.h>
 

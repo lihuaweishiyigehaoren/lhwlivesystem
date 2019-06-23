@@ -1,10 +1,9 @@
 
 #pragma once
 
-#include "NetLinux.h"
-#include "Net.h"
+#include "LhwLinuxEpoll.h"
 
-#include "EPollStream.h"
+#include "LhwEpollStream.h"
 
 #include <iostream>
 #include <string>
@@ -19,10 +18,12 @@ namespace translayor
 {
     class EPollLoop;
 
-    class LhwClientConnected : public EPollStream {
+    class LhwClientConnected : public LhwEpollStream 
+    {
     public:
         LhwClientConnected(NativeSocket nativeSocket) :
-                EPollStream(nativeSocket) { }
+                LhwEpollStream(nativeSocket) { }
+                
         virtual ~LhwClientConnected() { }
 
         LhwClientConnected(const LhwClientConnected& connection) = delete;

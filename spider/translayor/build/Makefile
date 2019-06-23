@@ -169,86 +169,32 @@ translayor/fast:
 	$(MAKE) -f CMakeFiles/translayor.dir/build.make CMakeFiles/translayor.dir/build
 .PHONY : translayor/fast
 
-CommonUtils.o: CommonUtils.cpp.o
+LhwClient.o: LhwClient.cpp.o
 
-.PHONY : CommonUtils.o
-
-# target to build an object file
-CommonUtils.cpp.o:
-	$(MAKE) -f CMakeFiles/translayor.dir/build.make CMakeFiles/translayor.dir/CommonUtils.cpp.o
-.PHONY : CommonUtils.cpp.o
-
-CommonUtils.i: CommonUtils.cpp.i
-
-.PHONY : CommonUtils.i
-
-# target to preprocess a source file
-CommonUtils.cpp.i:
-	$(MAKE) -f CMakeFiles/translayor.dir/build.make CMakeFiles/translayor.dir/CommonUtils.cpp.i
-.PHONY : CommonUtils.cpp.i
-
-CommonUtils.s: CommonUtils.cpp.s
-
-.PHONY : CommonUtils.s
-
-# target to generate assembly for a file
-CommonUtils.cpp.s:
-	$(MAKE) -f CMakeFiles/translayor.dir/build.make CMakeFiles/translayor.dir/CommonUtils.cpp.s
-.PHONY : CommonUtils.cpp.s
-
-EPollClient.o: EPollClient.cpp.o
-
-.PHONY : EPollClient.o
+.PHONY : LhwClient.o
 
 # target to build an object file
-EPollClient.cpp.o:
-	$(MAKE) -f CMakeFiles/translayor.dir/build.make CMakeFiles/translayor.dir/EPollClient.cpp.o
-.PHONY : EPollClient.cpp.o
+LhwClient.cpp.o:
+	$(MAKE) -f CMakeFiles/translayor.dir/build.make CMakeFiles/translayor.dir/LhwClient.cpp.o
+.PHONY : LhwClient.cpp.o
 
-EPollClient.i: EPollClient.cpp.i
+LhwClient.i: LhwClient.cpp.i
 
-.PHONY : EPollClient.i
-
-# target to preprocess a source file
-EPollClient.cpp.i:
-	$(MAKE) -f CMakeFiles/translayor.dir/build.make CMakeFiles/translayor.dir/EPollClient.cpp.i
-.PHONY : EPollClient.cpp.i
-
-EPollClient.s: EPollClient.cpp.s
-
-.PHONY : EPollClient.s
-
-# target to generate assembly for a file
-EPollClient.cpp.s:
-	$(MAKE) -f CMakeFiles/translayor.dir/build.make CMakeFiles/translayor.dir/EPollClient.cpp.s
-.PHONY : EPollClient.cpp.s
-
-EPollStream.o: EPollStream.cpp.o
-
-.PHONY : EPollStream.o
-
-# target to build an object file
-EPollStream.cpp.o:
-	$(MAKE) -f CMakeFiles/translayor.dir/build.make CMakeFiles/translayor.dir/EPollStream.cpp.o
-.PHONY : EPollStream.cpp.o
-
-EPollStream.i: EPollStream.cpp.i
-
-.PHONY : EPollStream.i
+.PHONY : LhwClient.i
 
 # target to preprocess a source file
-EPollStream.cpp.i:
-	$(MAKE) -f CMakeFiles/translayor.dir/build.make CMakeFiles/translayor.dir/EPollStream.cpp.i
-.PHONY : EPollStream.cpp.i
+LhwClient.cpp.i:
+	$(MAKE) -f CMakeFiles/translayor.dir/build.make CMakeFiles/translayor.dir/LhwClient.cpp.i
+.PHONY : LhwClient.cpp.i
 
-EPollStream.s: EPollStream.cpp.s
+LhwClient.s: LhwClient.cpp.s
 
-.PHONY : EPollStream.s
+.PHONY : LhwClient.s
 
 # target to generate assembly for a file
-EPollStream.cpp.s:
-	$(MAKE) -f CMakeFiles/translayor.dir/build.make CMakeFiles/translayor.dir/EPollStream.cpp.s
-.PHONY : EPollStream.cpp.s
+LhwClient.cpp.s:
+	$(MAKE) -f CMakeFiles/translayor.dir/build.make CMakeFiles/translayor.dir/LhwClient.cpp.s
+.PHONY : LhwClient.cpp.s
 
 LhwClientConnected.o: LhwClientConnected.cpp.o
 
@@ -277,6 +223,33 @@ LhwClientConnected.cpp.s:
 	$(MAKE) -f CMakeFiles/translayor.dir/build.make CMakeFiles/translayor.dir/LhwClientConnected.cpp.s
 .PHONY : LhwClientConnected.cpp.s
 
+LhwCommon.o: LhwCommon.cpp.o
+
+.PHONY : LhwCommon.o
+
+# target to build an object file
+LhwCommon.cpp.o:
+	$(MAKE) -f CMakeFiles/translayor.dir/build.make CMakeFiles/translayor.dir/LhwCommon.cpp.o
+.PHONY : LhwCommon.cpp.o
+
+LhwCommon.i: LhwCommon.cpp.i
+
+.PHONY : LhwCommon.i
+
+# target to preprocess a source file
+LhwCommon.cpp.i:
+	$(MAKE) -f CMakeFiles/translayor.dir/build.make CMakeFiles/translayor.dir/LhwCommon.cpp.i
+.PHONY : LhwCommon.cpp.i
+
+LhwCommon.s: LhwCommon.cpp.s
+
+.PHONY : LhwCommon.s
+
+# target to generate assembly for a file
+LhwCommon.cpp.s:
+	$(MAKE) -f CMakeFiles/translayor.dir/build.make CMakeFiles/translayor.dir/LhwCommon.cpp.s
+.PHONY : LhwCommon.cpp.s
+
 LhwEpollLoop.o: LhwEpollLoop.cpp.o
 
 .PHONY : LhwEpollLoop.o
@@ -303,6 +276,33 @@ LhwEpollLoop.s: LhwEpollLoop.cpp.s
 LhwEpollLoop.cpp.s:
 	$(MAKE) -f CMakeFiles/translayor.dir/build.make CMakeFiles/translayor.dir/LhwEpollLoop.cpp.s
 .PHONY : LhwEpollLoop.cpp.s
+
+LhwEpollStream.o: LhwEpollStream.cpp.o
+
+.PHONY : LhwEpollStream.o
+
+# target to build an object file
+LhwEpollStream.cpp.o:
+	$(MAKE) -f CMakeFiles/translayor.dir/build.make CMakeFiles/translayor.dir/LhwEpollStream.cpp.o
+.PHONY : LhwEpollStream.cpp.o
+
+LhwEpollStream.i: LhwEpollStream.cpp.i
+
+.PHONY : LhwEpollStream.i
+
+# target to preprocess a source file
+LhwEpollStream.cpp.i:
+	$(MAKE) -f CMakeFiles/translayor.dir/build.make CMakeFiles/translayor.dir/LhwEpollStream.cpp.i
+.PHONY : LhwEpollStream.cpp.i
+
+LhwEpollStream.s: LhwEpollStream.cpp.s
+
+.PHONY : LhwEpollStream.s
+
+# target to generate assembly for a file
+LhwEpollStream.cpp.s:
+	$(MAKE) -f CMakeFiles/translayor.dir/build.make CMakeFiles/translayor.dir/LhwEpollStream.cpp.s
+.PHONY : LhwEpollStream.cpp.s
 
 LhwEventQueueLoop.o: LhwEventQueueLoop.cpp.o
 
@@ -358,33 +358,6 @@ LhwServer.cpp.s:
 	$(MAKE) -f CMakeFiles/translayor.dir/build.make CMakeFiles/translayor.dir/LhwServer.cpp.s
 .PHONY : LhwServer.cpp.s
 
-Net.o: Net.cpp.o
-
-.PHONY : Net.o
-
-# target to build an object file
-Net.cpp.o:
-	$(MAKE) -f CMakeFiles/translayor.dir/build.make CMakeFiles/translayor.dir/Net.cpp.o
-.PHONY : Net.cpp.o
-
-Net.i: Net.cpp.i
-
-.PHONY : Net.i
-
-# target to preprocess a source file
-Net.cpp.i:
-	$(MAKE) -f CMakeFiles/translayor.dir/build.make CMakeFiles/translayor.dir/Net.cpp.i
-.PHONY : Net.cpp.i
-
-Net.s: Net.cpp.s
-
-.PHONY : Net.s
-
-# target to generate assembly for a file
-Net.cpp.s:
-	$(MAKE) -f CMakeFiles/translayor.dir/build.make CMakeFiles/translayor.dir/Net.cpp.s
-.PHONY : Net.cpp.s
-
 PackageDataSink.o: PackageDataSink.cpp.o
 
 .PHONY : PackageDataSink.o
@@ -412,194 +385,140 @@ PackageDataSink.cpp.s:
 	$(MAKE) -f CMakeFiles/translayor.dir/build.make CMakeFiles/translayor.dir/PackageDataSink.cpp.s
 .PHONY : PackageDataSink.cpp.s
 
-ServerSample.o: ServerSample.cpp.o
+http/LhwHttpConnection.o: http/LhwHttpConnection.cpp.o
 
-.PHONY : ServerSample.o
-
-# target to build an object file
-ServerSample.cpp.o:
-	$(MAKE) -f CMakeFiles/translayor.dir/build.make CMakeFiles/translayor.dir/ServerSample.cpp.o
-.PHONY : ServerSample.cpp.o
-
-ServerSample.i: ServerSample.cpp.i
-
-.PHONY : ServerSample.i
-
-# target to preprocess a source file
-ServerSample.cpp.i:
-	$(MAKE) -f CMakeFiles/translayor.dir/build.make CMakeFiles/translayor.dir/ServerSample.cpp.i
-.PHONY : ServerSample.cpp.i
-
-ServerSample.s: ServerSample.cpp.s
-
-.PHONY : ServerSample.s
-
-# target to generate assembly for a file
-ServerSample.cpp.s:
-	$(MAKE) -f CMakeFiles/translayor.dir/build.make CMakeFiles/translayor.dir/ServerSample.cpp.s
-.PHONY : ServerSample.cpp.s
-
-ThreadPool.o: ThreadPool.cpp.o
-
-.PHONY : ThreadPool.o
+.PHONY : http/LhwHttpConnection.o
 
 # target to build an object file
-ThreadPool.cpp.o:
-	$(MAKE) -f CMakeFiles/translayor.dir/build.make CMakeFiles/translayor.dir/ThreadPool.cpp.o
-.PHONY : ThreadPool.cpp.o
+http/LhwHttpConnection.cpp.o:
+	$(MAKE) -f CMakeFiles/translayor.dir/build.make CMakeFiles/translayor.dir/http/LhwHttpConnection.cpp.o
+.PHONY : http/LhwHttpConnection.cpp.o
 
-ThreadPool.i: ThreadPool.cpp.i
+http/LhwHttpConnection.i: http/LhwHttpConnection.cpp.i
 
-.PHONY : ThreadPool.i
+.PHONY : http/LhwHttpConnection.i
 
 # target to preprocess a source file
-ThreadPool.cpp.i:
-	$(MAKE) -f CMakeFiles/translayor.dir/build.make CMakeFiles/translayor.dir/ThreadPool.cpp.i
-.PHONY : ThreadPool.cpp.i
+http/LhwHttpConnection.cpp.i:
+	$(MAKE) -f CMakeFiles/translayor.dir/build.make CMakeFiles/translayor.dir/http/LhwHttpConnection.cpp.i
+.PHONY : http/LhwHttpConnection.cpp.i
 
-ThreadPool.s: ThreadPool.cpp.s
+http/LhwHttpConnection.s: http/LhwHttpConnection.cpp.s
 
-.PHONY : ThreadPool.s
+.PHONY : http/LhwHttpConnection.s
 
 # target to generate assembly for a file
-ThreadPool.cpp.s:
-	$(MAKE) -f CMakeFiles/translayor.dir/build.make CMakeFiles/translayor.dir/ThreadPool.cpp.s
-.PHONY : ThreadPool.cpp.s
+http/LhwHttpConnection.cpp.s:
+	$(MAKE) -f CMakeFiles/translayor.dir/build.make CMakeFiles/translayor.dir/http/LhwHttpConnection.cpp.s
+.PHONY : http/LhwHttpConnection.cpp.s
 
-http/HttpConnection.o: http/HttpConnection.cpp.o
+http/LhwHttpContext.o: http/LhwHttpContext.cpp.o
 
-.PHONY : http/HttpConnection.o
+.PHONY : http/LhwHttpContext.o
 
 # target to build an object file
-http/HttpConnection.cpp.o:
-	$(MAKE) -f CMakeFiles/translayor.dir/build.make CMakeFiles/translayor.dir/http/HttpConnection.cpp.o
-.PHONY : http/HttpConnection.cpp.o
+http/LhwHttpContext.cpp.o:
+	$(MAKE) -f CMakeFiles/translayor.dir/build.make CMakeFiles/translayor.dir/http/LhwHttpContext.cpp.o
+.PHONY : http/LhwHttpContext.cpp.o
 
-http/HttpConnection.i: http/HttpConnection.cpp.i
+http/LhwHttpContext.i: http/LhwHttpContext.cpp.i
 
-.PHONY : http/HttpConnection.i
+.PHONY : http/LhwHttpContext.i
 
 # target to preprocess a source file
-http/HttpConnection.cpp.i:
-	$(MAKE) -f CMakeFiles/translayor.dir/build.make CMakeFiles/translayor.dir/http/HttpConnection.cpp.i
-.PHONY : http/HttpConnection.cpp.i
+http/LhwHttpContext.cpp.i:
+	$(MAKE) -f CMakeFiles/translayor.dir/build.make CMakeFiles/translayor.dir/http/LhwHttpContext.cpp.i
+.PHONY : http/LhwHttpContext.cpp.i
 
-http/HttpConnection.s: http/HttpConnection.cpp.s
+http/LhwHttpContext.s: http/LhwHttpContext.cpp.s
 
-.PHONY : http/HttpConnection.s
+.PHONY : http/LhwHttpContext.s
 
 # target to generate assembly for a file
-http/HttpConnection.cpp.s:
-	$(MAKE) -f CMakeFiles/translayor.dir/build.make CMakeFiles/translayor.dir/http/HttpConnection.cpp.s
-.PHONY : http/HttpConnection.cpp.s
+http/LhwHttpContext.cpp.s:
+	$(MAKE) -f CMakeFiles/translayor.dir/build.make CMakeFiles/translayor.dir/http/LhwHttpContext.cpp.s
+.PHONY : http/LhwHttpContext.cpp.s
 
-http/HttpContext.o: http/HttpContext.cpp.o
+http/LhwHttpRequest.o: http/LhwHttpRequest.cpp.o
 
-.PHONY : http/HttpContext.o
+.PHONY : http/LhwHttpRequest.o
 
 # target to build an object file
-http/HttpContext.cpp.o:
-	$(MAKE) -f CMakeFiles/translayor.dir/build.make CMakeFiles/translayor.dir/http/HttpContext.cpp.o
-.PHONY : http/HttpContext.cpp.o
+http/LhwHttpRequest.cpp.o:
+	$(MAKE) -f CMakeFiles/translayor.dir/build.make CMakeFiles/translayor.dir/http/LhwHttpRequest.cpp.o
+.PHONY : http/LhwHttpRequest.cpp.o
 
-http/HttpContext.i: http/HttpContext.cpp.i
+http/LhwHttpRequest.i: http/LhwHttpRequest.cpp.i
 
-.PHONY : http/HttpContext.i
+.PHONY : http/LhwHttpRequest.i
 
 # target to preprocess a source file
-http/HttpContext.cpp.i:
-	$(MAKE) -f CMakeFiles/translayor.dir/build.make CMakeFiles/translayor.dir/http/HttpContext.cpp.i
-.PHONY : http/HttpContext.cpp.i
+http/LhwHttpRequest.cpp.i:
+	$(MAKE) -f CMakeFiles/translayor.dir/build.make CMakeFiles/translayor.dir/http/LhwHttpRequest.cpp.i
+.PHONY : http/LhwHttpRequest.cpp.i
 
-http/HttpContext.s: http/HttpContext.cpp.s
+http/LhwHttpRequest.s: http/LhwHttpRequest.cpp.s
 
-.PHONY : http/HttpContext.s
+.PHONY : http/LhwHttpRequest.s
 
 # target to generate assembly for a file
-http/HttpContext.cpp.s:
-	$(MAKE) -f CMakeFiles/translayor.dir/build.make CMakeFiles/translayor.dir/http/HttpContext.cpp.s
-.PHONY : http/HttpContext.cpp.s
+http/LhwHttpRequest.cpp.s:
+	$(MAKE) -f CMakeFiles/translayor.dir/build.make CMakeFiles/translayor.dir/http/LhwHttpRequest.cpp.s
+.PHONY : http/LhwHttpRequest.cpp.s
 
-http/HttpRequest.o: http/HttpRequest.cpp.o
+http/LhwHttpResponse.o: http/LhwHttpResponse.cpp.o
 
-.PHONY : http/HttpRequest.o
+.PHONY : http/LhwHttpResponse.o
 
 # target to build an object file
-http/HttpRequest.cpp.o:
-	$(MAKE) -f CMakeFiles/translayor.dir/build.make CMakeFiles/translayor.dir/http/HttpRequest.cpp.o
-.PHONY : http/HttpRequest.cpp.o
+http/LhwHttpResponse.cpp.o:
+	$(MAKE) -f CMakeFiles/translayor.dir/build.make CMakeFiles/translayor.dir/http/LhwHttpResponse.cpp.o
+.PHONY : http/LhwHttpResponse.cpp.o
 
-http/HttpRequest.i: http/HttpRequest.cpp.i
+http/LhwHttpResponse.i: http/LhwHttpResponse.cpp.i
 
-.PHONY : http/HttpRequest.i
+.PHONY : http/LhwHttpResponse.i
 
 # target to preprocess a source file
-http/HttpRequest.cpp.i:
-	$(MAKE) -f CMakeFiles/translayor.dir/build.make CMakeFiles/translayor.dir/http/HttpRequest.cpp.i
-.PHONY : http/HttpRequest.cpp.i
+http/LhwHttpResponse.cpp.i:
+	$(MAKE) -f CMakeFiles/translayor.dir/build.make CMakeFiles/translayor.dir/http/LhwHttpResponse.cpp.i
+.PHONY : http/LhwHttpResponse.cpp.i
 
-http/HttpRequest.s: http/HttpRequest.cpp.s
+http/LhwHttpResponse.s: http/LhwHttpResponse.cpp.s
 
-.PHONY : http/HttpRequest.s
+.PHONY : http/LhwHttpResponse.s
 
 # target to generate assembly for a file
-http/HttpRequest.cpp.s:
-	$(MAKE) -f CMakeFiles/translayor.dir/build.make CMakeFiles/translayor.dir/http/HttpRequest.cpp.s
-.PHONY : http/HttpRequest.cpp.s
+http/LhwHttpResponse.cpp.s:
+	$(MAKE) -f CMakeFiles/translayor.dir/build.make CMakeFiles/translayor.dir/http/LhwHttpResponse.cpp.s
+.PHONY : http/LhwHttpResponse.cpp.s
 
-http/HttpResponse.o: http/HttpResponse.cpp.o
+http/LhwHttpServer.o: http/LhwHttpServer.cpp.o
 
-.PHONY : http/HttpResponse.o
+.PHONY : http/LhwHttpServer.o
 
 # target to build an object file
-http/HttpResponse.cpp.o:
-	$(MAKE) -f CMakeFiles/translayor.dir/build.make CMakeFiles/translayor.dir/http/HttpResponse.cpp.o
-.PHONY : http/HttpResponse.cpp.o
+http/LhwHttpServer.cpp.o:
+	$(MAKE) -f CMakeFiles/translayor.dir/build.make CMakeFiles/translayor.dir/http/LhwHttpServer.cpp.o
+.PHONY : http/LhwHttpServer.cpp.o
 
-http/HttpResponse.i: http/HttpResponse.cpp.i
+http/LhwHttpServer.i: http/LhwHttpServer.cpp.i
 
-.PHONY : http/HttpResponse.i
-
-# target to preprocess a source file
-http/HttpResponse.cpp.i:
-	$(MAKE) -f CMakeFiles/translayor.dir/build.make CMakeFiles/translayor.dir/http/HttpResponse.cpp.i
-.PHONY : http/HttpResponse.cpp.i
-
-http/HttpResponse.s: http/HttpResponse.cpp.s
-
-.PHONY : http/HttpResponse.s
-
-# target to generate assembly for a file
-http/HttpResponse.cpp.s:
-	$(MAKE) -f CMakeFiles/translayor.dir/build.make CMakeFiles/translayor.dir/http/HttpResponse.cpp.s
-.PHONY : http/HttpResponse.cpp.s
-
-http/HttpServer.o: http/HttpServer.cpp.o
-
-.PHONY : http/HttpServer.o
-
-# target to build an object file
-http/HttpServer.cpp.o:
-	$(MAKE) -f CMakeFiles/translayor.dir/build.make CMakeFiles/translayor.dir/http/HttpServer.cpp.o
-.PHONY : http/HttpServer.cpp.o
-
-http/HttpServer.i: http/HttpServer.cpp.i
-
-.PHONY : http/HttpServer.i
+.PHONY : http/LhwHttpServer.i
 
 # target to preprocess a source file
-http/HttpServer.cpp.i:
-	$(MAKE) -f CMakeFiles/translayor.dir/build.make CMakeFiles/translayor.dir/http/HttpServer.cpp.i
-.PHONY : http/HttpServer.cpp.i
+http/LhwHttpServer.cpp.i:
+	$(MAKE) -f CMakeFiles/translayor.dir/build.make CMakeFiles/translayor.dir/http/LhwHttpServer.cpp.i
+.PHONY : http/LhwHttpServer.cpp.i
 
-http/HttpServer.s: http/HttpServer.cpp.s
+http/LhwHttpServer.s: http/LhwHttpServer.cpp.s
 
-.PHONY : http/HttpServer.s
+.PHONY : http/LhwHttpServer.s
 
 # target to generate assembly for a file
-http/HttpServer.cpp.s:
-	$(MAKE) -f CMakeFiles/translayor.dir/build.make CMakeFiles/translayor.dir/http/HttpServer.cpp.s
-.PHONY : http/HttpServer.cpp.s
+http/LhwHttpServer.cpp.s:
+	$(MAKE) -f CMakeFiles/translayor.dir/build.make CMakeFiles/translayor.dir/http/LhwHttpServer.cpp.s
+.PHONY : http/LhwHttpServer.cpp.s
 
 http/String.o: http/String.cpp.o
 
@@ -641,54 +560,45 @@ help:
 	@echo "... list_install_components"
 	@echo "... install/local"
 	@echo "... install"
-	@echo "... CommonUtils.o"
-	@echo "... CommonUtils.i"
-	@echo "... CommonUtils.s"
-	@echo "... EPollClient.o"
-	@echo "... EPollClient.i"
-	@echo "... EPollClient.s"
-	@echo "... EPollStream.o"
-	@echo "... EPollStream.i"
-	@echo "... EPollStream.s"
+	@echo "... LhwClient.o"
+	@echo "... LhwClient.i"
+	@echo "... LhwClient.s"
 	@echo "... LhwClientConnected.o"
 	@echo "... LhwClientConnected.i"
 	@echo "... LhwClientConnected.s"
+	@echo "... LhwCommon.o"
+	@echo "... LhwCommon.i"
+	@echo "... LhwCommon.s"
 	@echo "... LhwEpollLoop.o"
 	@echo "... LhwEpollLoop.i"
 	@echo "... LhwEpollLoop.s"
+	@echo "... LhwEpollStream.o"
+	@echo "... LhwEpollStream.i"
+	@echo "... LhwEpollStream.s"
 	@echo "... LhwEventQueueLoop.o"
 	@echo "... LhwEventQueueLoop.i"
 	@echo "... LhwEventQueueLoop.s"
 	@echo "... LhwServer.o"
 	@echo "... LhwServer.i"
 	@echo "... LhwServer.s"
-	@echo "... Net.o"
-	@echo "... Net.i"
-	@echo "... Net.s"
 	@echo "... PackageDataSink.o"
 	@echo "... PackageDataSink.i"
 	@echo "... PackageDataSink.s"
-	@echo "... ServerSample.o"
-	@echo "... ServerSample.i"
-	@echo "... ServerSample.s"
-	@echo "... ThreadPool.o"
-	@echo "... ThreadPool.i"
-	@echo "... ThreadPool.s"
-	@echo "... http/HttpConnection.o"
-	@echo "... http/HttpConnection.i"
-	@echo "... http/HttpConnection.s"
-	@echo "... http/HttpContext.o"
-	@echo "... http/HttpContext.i"
-	@echo "... http/HttpContext.s"
-	@echo "... http/HttpRequest.o"
-	@echo "... http/HttpRequest.i"
-	@echo "... http/HttpRequest.s"
-	@echo "... http/HttpResponse.o"
-	@echo "... http/HttpResponse.i"
-	@echo "... http/HttpResponse.s"
-	@echo "... http/HttpServer.o"
-	@echo "... http/HttpServer.i"
-	@echo "... http/HttpServer.s"
+	@echo "... http/LhwHttpConnection.o"
+	@echo "... http/LhwHttpConnection.i"
+	@echo "... http/LhwHttpConnection.s"
+	@echo "... http/LhwHttpContext.o"
+	@echo "... http/LhwHttpContext.i"
+	@echo "... http/LhwHttpContext.s"
+	@echo "... http/LhwHttpRequest.o"
+	@echo "... http/LhwHttpRequest.i"
+	@echo "... http/LhwHttpRequest.s"
+	@echo "... http/LhwHttpResponse.o"
+	@echo "... http/LhwHttpResponse.i"
+	@echo "... http/LhwHttpResponse.s"
+	@echo "... http/LhwHttpServer.o"
+	@echo "... http/LhwHttpServer.i"
+	@echo "... http/LhwHttpServer.s"
 	@echo "... http/String.o"
 	@echo "... http/String.i"
 	@echo "... http/String.s"

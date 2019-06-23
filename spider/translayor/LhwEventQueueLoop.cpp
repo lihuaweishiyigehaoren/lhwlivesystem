@@ -9,11 +9,10 @@
 */
 
 #include "LhwEventQueueLoop.h"
-#include "EventQueue.h"
 
 namespace translayor
 {
-    LhwEventQueueLoop::LhwEventQueueLoop(EventQueue* queue) : 
+    LhwEventQueueLoop::LhwEventQueueLoop(LhwEventVector * queue) : 
     _queue(queue)
     {
 

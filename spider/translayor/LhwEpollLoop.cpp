@@ -51,7 +51,7 @@ void LhwEpollLoop::addFdToServer(NativeSocket socket, LhwServer *server)
     **/
 void LhwEpollLoop::AddStream(EPollStreamPtr stream)
 {
-    _streams[stream->GetNativeSocket()] = stream;
+    _streams[stream->getSocket()] = stream;
 }
 
 int32_t LhwEpollLoop::addEpollEvents(int32_t events, int32_t fd)
@@ -139,7 +139,7 @@ void LhwEpollLoop::_handleEpollEvent(int32_t eventfd, NativeSocketEvent *events,
         int32_t n = 0;
         if (events[i].events & EPOLLIN)
         {
-            _Read(eventfd, fd, events[i].events);
+            _read(eventfd, fd, events[i].events);
         }
 
         if (events[i].events & EPOLLOUT)
@@ -158,24 +158,22 @@ int32_t LhwEpollLoop::_acceptClient(int32_t eventfd, int32_t listenfd)
 
     if (connection != nullptr)
     {
-        _streams[connection->GetNativeSocket()] = connection;
+        _streams[connection->getSocket()] = connection;
     }
 }
 
-    /*
-    *响应epoll中数据流的读取事件,对原始数据进行特殊处理,并通知事件所属的流对象来从流中读取数据
-    */
-void LhwEpollLoop::_Read(int32_t eventfd, int32_t fd, uint32_t events)
+    
+void LhwEpollLoop::_read(int32_t eventfd, int32_t fd, uint32_t events)
 {
-    LOG(LOG_DEBUG) << "_Read";
+    LOG(LOG_DEBUG) << "_read";
 
     EPollStreamPtr stream = _streams[fd];
 
     char buffer[BUFSIZ];
     int32_t readSize;
-    int32_t nread = stream->Receive(buffer, BUFSIZ, readSize);
+    int32_t nread = stream->receiveData(buffer, BUFSIZ, readSize);
 
-    stream->SetEvents(events);
+    stream->setEvents(events);
 
     if ((nread == -1 && errno != EAGAIN) || readSize == 0)
     {
@@ -185,19 +183,17 @@ void LhwEpollLoop::_Read(int32_t eventfd, int32_t fd, uint32_t events)
         return;
     }
 
-    _Enqueue(stream, buffer, readSize);
+    _enqueue(stream, buffer, readSize);
 }
 
-/*
-    *将读取到的内容发送到系统的数据读取队列中,通知数据监听方来获取处理后的数据
-    */
-void LhwEpollLoop::_Enqueue(EPollStreamPtr stream, const char *buf, int64_t nread)
+void LhwEpollLoop::_enqueue(EPollStreamPtr stream, const char *buf, int64_t nread)
 {
-    LOG(LOG_DEBUG) << "_Enqueue";
+    LOG(LOG_DEBUG) << "_enqueue";
 
-    if (stream->GetDataHandler())
+    if (stream->getDataHandler())
     {
-        stream->GetDataHandler()(buf, nread);
+        // 将读取到的内容发送到系统的数据读取队列中,通知数据监听方来获取处理后的数据
+        stream->getDataHandler()(buf, nread);
     }
 }
 

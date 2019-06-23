@@ -1,11 +1,13 @@
 
 #pragma once
-#include "Net.h"
-#include "HttpRequest.h"
+#include "LhwHttpRequest.h"
+#include "../LhwComponAlias.h"
 
 namespace translayor 
 {
-class HttpDataSink {
-    virtual OnDataIndication(TcpStream* stream, const HttpRequest& request) = 0;
-};
+    class HttpDataSink 
+    {
+        public:
+            virtual int OnDataIndication(Stream* stream, const LhwHttpRequest& request) = 0;
+    };
 }

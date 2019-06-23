@@ -24,13 +24,12 @@
 
 #include "LhwLoop.h"
 #include "LhwClientConnected.h"
-#include "EPollStream.h"
+#include "LhwEpollStream.h"
 #include "LhwServer.h"
-#include "EPollClient.h"
-#include "Net.h"
+#include "LhwClient.h"
 #include "DataSink.h"
-#include "NetLinux.h"
-#include "Common.h"
+#include "LhwLinuxEpoll.h"
+#include "LhwCommon.h"
 
 namespace translayor 
 {
@@ -113,9 +112,15 @@ namespace translayor
         */
         int32_t _acceptClient(int32_t eventfd, int32_t listenfd);
 
-        void _Read(int32_t eventfd, int32_t fd, uint32_t events);
+        /*
+        * 从客户端套接字读取数据
+        * @param eventfd 侦听套接字
+        * @param fd 客户端套接字
+        * @param events ev 套接字监听的属性
+        */
+        void _read(int32_t eventfd, int32_t fd, uint32_t events);
 
-        void _Enqueue(EPollStreamPtr connection, const char* buf, int64_t nread);
+        void _enqueue(EPollStreamPtr connection, const char* buf, int64_t nread);
 
     private:
 

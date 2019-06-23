@@ -1,45 +1,47 @@
 #include "PackageDataSink.h"
-#include "EventQueue.h"
+#include "LhwEventVector.h"
 #include "Logging.h"
-#include "Net.h"
-#include "http/HttpContext.h"
-#include "http/HttpRequest.h"
-#include "http/HttpResponse.h"
+#include "http/LhwHttpContext.h"
+#include "http/LhwHttpRequest.h"
+#include "http/LhwHttpResponse.h"
 
 namespace translayor 
 {
-    PackageDataSink::PackageDataSink(EventQueue* eventQueue) : _eventQueue(eventQueue), _totalSize(0) {
-        _threadPool = new ThreadPool<BaseEvent>(10, [&](BaseEvent& event) {
+    PackageDataSink::PackageDataSink(LhwEventVector* eventQueue) : 
+    _eventQueue(eventQueue), _totalSize(0) {
+        _threadPool = new LhwThreadPool<BaseEvent>(10, [&](BaseEvent& event) 
+        {
             LOG(LOG_DEBUG) << "Thread onEvent sink!";
 
             std::string requestText = event.GetData().ToStdString();
 
-            HttpRequest request;
-            request.ParseStdString(requestText);
+            LhwHttpRequest request;
+            request.parseStdString(requestText);
 
-            HttpResponse response;
-            response.SetVersion("HTTP/1.1");
-            response.SetStatusCode(200);
-            response.SetStatusMessage("OK");
-            response.SetContent("Hello! Sink in Thread!");
+            LhwHttpResponse response;
+            response.setVersion("HTTP/1.1");
+            response.setStatusCode(200);
+            response.setStatusMessage("OK");
+            response.setContent("Hello! Sink in Thread!");
 
-            event.GetStream()->Send(ByteArray(response.ToStdString())); // Send to peer
+            event.GetStream()->sendData(LhwByteArray(response.toStdString())); // Send to peer
 
             LOG(LOG_DEBUG) << "Thread onEvent sink end.";
         });
     }
 
-    PackageDataSink::~PackageDataSink() {
+    PackageDataSink::~PackageDataSink() 
+    {
         if (_threadPool) {
             delete _threadPool;
             _threadPool = nullptr;
         }
     }
 
-    int32_t PackageDataSink::Write(IStream* stream, const char* buf, int64_t bytes) 
+    int32_t PackageDataSink::Write(IOStream* stream, const char* buf, int64_t bytes) 
     {
-        _data.Concat(ByteArray(buf, static_cast<int32_t>(bytes)));
-        // The package is Complete
+        _data.Concat(LhwByteArray(buf, static_cast<int32_t>(bytes)));
+        // 保证是一个完整的包
         if (_data.size() >= _totalSize) {
             //_eventQueue->PostEvent(new BaseEvent("data", _data, connection));
             _threadPool->Submit(BaseEvent("data", _data, stream));

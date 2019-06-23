@@ -6,7 +6,7 @@
 using std::vector;
 using std::string;
 
-vector<string> SplitString(const string& value, char seperator)
+vector<string> splitString(const string& value, char seperator)
 {
     vector<string> splitedStrings;
 
@@ -33,7 +33,7 @@ vector<string> SplitString(const string& value, char seperator)
     return splitedStrings;
 }
 
-std::string  RandomString(const std::string& candidate, int32_t length)
+std::string  randomString(const std::string& candidate, int32_t length)
 {
     srand48(static_cast<uint32_t>(time(0)));
 

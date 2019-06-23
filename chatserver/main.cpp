@@ -1,9 +1,9 @@
 #include <iostream>
 
-#include "TransLayor.h"
+#include "LhwComponAlias.h"
 #include "Logging.h"
-#include "EventQueue.h"
-#include "IoLoop.h"
+#include "LhwEventVector.h"
+#include "LhwIOLoopConfig.h"
 
 #include "ServerEventQueueLoop.h"
 
@@ -15,18 +15,18 @@ int32_t main()
     logging::Logging::SetLogFile({ LOG_INFO, LOG_DEBUG}, "out.log");
     logging::Logging::SetLogFile({ LOG_WARNING, LOG_ERROR, LOG_FATAL}, "error.log");
 
-    translayor::EventQueue mainEventQuene(5);
+    translayor::LhwEventVector mainEventQuene(5);
     translayor::IoLoop::Get()->Start();
 
     translayor::PackageDataSink dataSink(&mainEventQuene);
 
-    translayor::TcpServer server;
+    translayor::Server server;
 
     translayor::PackageDataSink* packageDataSink = &dataSink;
     server.startBindListen("127.0.0.1", DefaultConnectPort);
-    server.OnConnect([=](translayor::IStream* stream)
+    server.onConnect([=](translayor::IOStream* stream)
     {
-        stream->OnData(packageDataSink->StreamDataHandler(stream));
+        stream->onData(packageDataSink->StreamDataHandler(stream));
     });
 
     ServerEventQueueLoop serverQueue(&mainEventQuene);

@@ -2,28 +2,28 @@
 #pragma once
 
 #include "DataSink.h"
-#include "ByteArray.h"
-#include "ThreadPool.h"
+#include "LhwByteArray.h"
+#include "LhwThreadPool.h"
 
 namespace translayor 
 {
-    class EventQueue;
+    class LhwEventVector;
 
     class BaseEvent;
 
     class PackageDataSink : public DataSink 
     {
     public:
-        PackageDataSink(EventQueue* eventQueue);
+        PackageDataSink(LhwEventVector* eventQueue);
 
         ~PackageDataSink();
 
-        int32_t Write(IStream* stream, const char* buf, int64_t bytes) override;
+        int32_t Write(IOStream* stream, const char* buf, int64_t bytes) override;
 
     private:
-        EventQueue* _eventQueue;
-        ThreadPool<BaseEvent>* _threadPool;
-        ByteArray _data;
+        LhwEventVector * _eventQueue;
+        LhwThreadPool<BaseEvent>* _threadPool;
+        LhwByteArray _data;
         int32_t _totalSize;
     };
 }

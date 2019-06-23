@@ -1,6 +1,6 @@
 #include "LhwServer.h"
 #include "LhwEpollLoop.h"
-#include "CommonUtils.h"
+#include "LhwCommon.h"
 #include "Logging.h"
 
 #include <cstdint>
@@ -26,7 +26,7 @@ int32_t LhwServer::_bind(const std::string &host, int32_t port)
         exit(1);
     }
 
-    SetNativeSocket(listenfd); // 设置该server端的套接字,便于访问
+    setSocket(listenfd); // 设置该server端的套接字,便于访问
     // 设置套接字属性,SO_REUSEADDR可以时服务器进入time-wait状态的时候进行地址再分配,那么就可以立马连上现在的地址
     int32_t option = 1;
     int opt = setsockopt(listenfd, SOL_SOCKET, SO_REUSEADDR, &option, sizeof(option));// 详解https://baike.baidu.com/item/setsockopt/10069288?fr=aladdin
@@ -60,7 +60,7 @@ int32_t LhwServer::startBindListen(const std::string &host, int32_t port, int32_
 {
     _bind(host, port); // 创建并绑定到套接字地址
 
-    int32_t listenfd = GetNativeSocket(); // 获取创建的套接字对象
+    int32_t listenfd = getSocket(); // 获取创建的套接字对象
 
     // 服务套接字用来监听连接来的客户端,一次最多监控backlog个
     int32_t errorCode = listen(listenfd, backlog);
@@ -91,7 +91,7 @@ Collectioner LhwServer::acceptClientOfServer(int32_t sockfd)
     int32_t addrlen = 0;
     int32_t remote = 0;
 
-    int32_t listenfd = GetNativeSocket();
+    int32_t listenfd = getSocket();
     while ((conn_sock = accept(listenfd, (struct sockaddr *)&remote, (socklen_t *)&addrlen)) > 0)
     {
 
@@ -110,6 +110,7 @@ Collectioner LhwServer::acceptClientOfServer(int32_t sockfd)
 
         // 建立对客户端套接字的连接对象connecter
         Collectioner connection = std::make_shared<LhwClientConnected>(conn_sock);
+        LOG(LOG_DEBUG) << conn_sock;
         if (_connectHandler)
         {
             _connectHandler(connection.get());
@@ -120,6 +121,7 @@ Collectioner LhwServer::acceptClientOfServer(int32_t sockfd)
 
     if (conn_sock == -1)
     {
+        // 自查
         if (errno != EAGAIN && errno != ECONNABORTED && errno != EPROTO && errno != EINTR)
         {
             perror("accept");

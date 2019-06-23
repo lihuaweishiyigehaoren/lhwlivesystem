@@ -4,22 +4,19 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/CommonUtils.cpp" "/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/build/CMakeFiles/translayor.dir/CommonUtils.cpp.o"
-  "/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/EPollClient.cpp" "/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/build/CMakeFiles/translayor.dir/EPollClient.cpp.o"
-  "/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/EPollStream.cpp" "/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/build/CMakeFiles/translayor.dir/EPollStream.cpp.o"
+  "/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/LhwClient.cpp" "/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/build/CMakeFiles/translayor.dir/LhwClient.cpp.o"
   "/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/LhwClientConnected.cpp" "/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/build/CMakeFiles/translayor.dir/LhwClientConnected.cpp.o"
+  "/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/LhwCommon.cpp" "/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/build/CMakeFiles/translayor.dir/LhwCommon.cpp.o"
   "/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/LhwEpollLoop.cpp" "/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/build/CMakeFiles/translayor.dir/LhwEpollLoop.cpp.o"
+  "/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/LhwEpollStream.cpp" "/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/build/CMakeFiles/translayor.dir/LhwEpollStream.cpp.o"
   "/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/LhwEventQueueLoop.cpp" "/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/build/CMakeFiles/translayor.dir/LhwEventQueueLoop.cpp.o"
   "/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/LhwServer.cpp" "/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/build/CMakeFiles/translayor.dir/LhwServer.cpp.o"
-  "/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/Net.cpp" "/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/build/CMakeFiles/translayor.dir/Net.cpp.o"
   "/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/PackageDataSink.cpp" "/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/build/CMakeFiles/translayor.dir/PackageDataSink.cpp.o"
-  "/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/ServerSample.cpp" "/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/build/CMakeFiles/translayor.dir/ServerSample.cpp.o"
-  "/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/ThreadPool.cpp" "/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/build/CMakeFiles/translayor.dir/ThreadPool.cpp.o"
-  "/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/http/HttpConnection.cpp" "/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/build/CMakeFiles/translayor.dir/http/HttpConnection.cpp.o"
-  "/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/http/HttpContext.cpp" "/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/build/CMakeFiles/translayor.dir/http/HttpContext.cpp.o"
-  "/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/http/HttpRequest.cpp" "/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/build/CMakeFiles/translayor.dir/http/HttpRequest.cpp.o"
-  "/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/http/HttpResponse.cpp" "/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/build/CMakeFiles/translayor.dir/http/HttpResponse.cpp.o"
-  "/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/http/HttpServer.cpp" "/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/build/CMakeFiles/translayor.dir/http/HttpServer.cpp.o"
+  "/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/http/LhwHttpConnection.cpp" "/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/build/CMakeFiles/translayor.dir/http/LhwHttpConnection.cpp.o"
+  "/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/http/LhwHttpContext.cpp" "/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/build/CMakeFiles/translayor.dir/http/LhwHttpContext.cpp.o"
+  "/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/http/LhwHttpRequest.cpp" "/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/build/CMakeFiles/translayor.dir/http/LhwHttpRequest.cpp.o"
+  "/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/http/LhwHttpResponse.cpp" "/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/build/CMakeFiles/translayor.dir/http/LhwHttpResponse.cpp.o"
+  "/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/http/LhwHttpServer.cpp" "/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/build/CMakeFiles/translayor.dir/http/LhwHttpServer.cpp.o"
   "/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/http/String.cpp" "/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/build/CMakeFiles/translayor.dir/http/String.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

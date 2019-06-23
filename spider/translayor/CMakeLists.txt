@@ -10,10 +10,10 @@ include_directories(http)
 include_directories(../logging)
 link_directories(../logging/build)
 
-add_library(translayor SHARED CommonUtils.cpp EPollClient.cpp LhwClientConnected.cpp LhwEpollLoop.cpp LhwServer.cpp 
-EPollStream.cpp LhwEventQueueLoop.cpp Net.cpp PackageDataSink.cpp ServerSample.cpp ThreadPool.cpp 
-http/HttpConnection.cpp http/HttpContext.cpp http/HttpRequest.cpp http/HttpResponse.cpp 
-http/HttpServer.cpp http/String.cpp)
+add_library(translayor SHARED LhwCommon.cpp LhwClient.cpp LhwClientConnected.cpp LhwEpollLoop.cpp LhwServer.cpp 
+LhwEpollStream.cpp LhwEventQueueLoop.cpp PackageDataSink.cpp 
+http/LhwHttpConnection.cpp http/LhwHttpContext.cpp http/LhwHttpRequest.cpp http/LhwHttpResponse.cpp 
+http/LhwHttpServer.cpp http/String.cpp)
 
 target_link_libraries(translayor logging pthread)
 

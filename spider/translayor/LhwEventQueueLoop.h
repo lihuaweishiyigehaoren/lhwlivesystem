@@ -10,34 +10,36 @@
 
 /*
  * LhwEpollLoop 事件循环
- * @desc:作用:epoll的事件循环类,负责不断的监听来自epoll的事件,并对事件进行处理
+ * @desc:作用:A等待一个事件,B触发事件,
  */
 
 #pragma once
 
 #include "LhwLoop.h"
+#include "LhwEventVector.h"
+
 #include <memory>
 
 namespace translayor
 {
-    class EventQueue;
+    class LhwEventVector;
 
     class BaseEvent;
 
     class LhwEventQueueLoop : public LhwLoop
     {
     public:
-        LhwEventQueueLoop(EventQueue* queue);
+        LhwEventQueueLoop(LhwEventVector * queue);
 
     protected:
         virtual void _run();
         
         /*
-        *函数说明:用于指定触发某个事件时的回调函数
+        * 用于指定触发某个事件时的回调函数
         */
         virtual void OnEvent(std::shared_ptr<BaseEvent> event)=0;
 
     private:
-        EventQueue* _queue;
+        LhwEventVector * _queue;
     };
 }

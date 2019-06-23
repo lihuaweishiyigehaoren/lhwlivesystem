@@ -57,52 +57,52 @@ include CMakeFiles/translayor.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/translayor.dir/flags.make
 
-CMakeFiles/translayor.dir/CommonUtils.cpp.o: CMakeFiles/translayor.dir/flags.make
-CMakeFiles/translayor.dir/CommonUtils.cpp.o: ../CommonUtils.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/translayor.dir/CommonUtils.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/translayor.dir/CommonUtils.cpp.o -c /home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/CommonUtils.cpp
+CMakeFiles/translayor.dir/LhwCommon.cpp.o: CMakeFiles/translayor.dir/flags.make
+CMakeFiles/translayor.dir/LhwCommon.cpp.o: ../LhwCommon.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/translayor.dir/LhwCommon.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/translayor.dir/LhwCommon.cpp.o -c /home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/LhwCommon.cpp
 
-CMakeFiles/translayor.dir/CommonUtils.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/translayor.dir/CommonUtils.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/CommonUtils.cpp > CMakeFiles/translayor.dir/CommonUtils.cpp.i
+CMakeFiles/translayor.dir/LhwCommon.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/translayor.dir/LhwCommon.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/LhwCommon.cpp > CMakeFiles/translayor.dir/LhwCommon.cpp.i
 
-CMakeFiles/translayor.dir/CommonUtils.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/translayor.dir/CommonUtils.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/CommonUtils.cpp -o CMakeFiles/translayor.dir/CommonUtils.cpp.s
+CMakeFiles/translayor.dir/LhwCommon.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/translayor.dir/LhwCommon.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/LhwCommon.cpp -o CMakeFiles/translayor.dir/LhwCommon.cpp.s
 
-CMakeFiles/translayor.dir/CommonUtils.cpp.o.requires:
+CMakeFiles/translayor.dir/LhwCommon.cpp.o.requires:
 
-.PHONY : CMakeFiles/translayor.dir/CommonUtils.cpp.o.requires
+.PHONY : CMakeFiles/translayor.dir/LhwCommon.cpp.o.requires
 
-CMakeFiles/translayor.dir/CommonUtils.cpp.o.provides: CMakeFiles/translayor.dir/CommonUtils.cpp.o.requires
-	$(MAKE) -f CMakeFiles/translayor.dir/build.make CMakeFiles/translayor.dir/CommonUtils.cpp.o.provides.build
-.PHONY : CMakeFiles/translayor.dir/CommonUtils.cpp.o.provides
+CMakeFiles/translayor.dir/LhwCommon.cpp.o.provides: CMakeFiles/translayor.dir/LhwCommon.cpp.o.requires
+	$(MAKE) -f CMakeFiles/translayor.dir/build.make CMakeFiles/translayor.dir/LhwCommon.cpp.o.provides.build
+.PHONY : CMakeFiles/translayor.dir/LhwCommon.cpp.o.provides
 
-CMakeFiles/translayor.dir/CommonUtils.cpp.o.provides.build: CMakeFiles/translayor.dir/CommonUtils.cpp.o
+CMakeFiles/translayor.dir/LhwCommon.cpp.o.provides.build: CMakeFiles/translayor.dir/LhwCommon.cpp.o
 
 
-CMakeFiles/translayor.dir/EPollClient.cpp.o: CMakeFiles/translayor.dir/flags.make
-CMakeFiles/translayor.dir/EPollClient.cpp.o: ../EPollClient.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/translayor.dir/EPollClient.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/translayor.dir/EPollClient.cpp.o -c /home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/EPollClient.cpp
+CMakeFiles/translayor.dir/LhwClient.cpp.o: CMakeFiles/translayor.dir/flags.make
+CMakeFiles/translayor.dir/LhwClient.cpp.o: ../LhwClient.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/translayor.dir/LhwClient.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/translayor.dir/LhwClient.cpp.o -c /home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/LhwClient.cpp
 
-CMakeFiles/translayor.dir/EPollClient.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/translayor.dir/EPollClient.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/EPollClient.cpp > CMakeFiles/translayor.dir/EPollClient.cpp.i
+CMakeFiles/translayor.dir/LhwClient.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/translayor.dir/LhwClient.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/LhwClient.cpp > CMakeFiles/translayor.dir/LhwClient.cpp.i
 
-CMakeFiles/translayor.dir/EPollClient.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/translayor.dir/EPollClient.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/EPollClient.cpp -o CMakeFiles/translayor.dir/EPollClient.cpp.s
+CMakeFiles/translayor.dir/LhwClient.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/translayor.dir/LhwClient.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/LhwClient.cpp -o CMakeFiles/translayor.dir/LhwClient.cpp.s
 
-CMakeFiles/translayor.dir/EPollClient.cpp.o.requires:
+CMakeFiles/translayor.dir/LhwClient.cpp.o.requires:
 
-.PHONY : CMakeFiles/translayor.dir/EPollClient.cpp.o.requires
+.PHONY : CMakeFiles/translayor.dir/LhwClient.cpp.o.requires
 
-CMakeFiles/translayor.dir/EPollClient.cpp.o.provides: CMakeFiles/translayor.dir/EPollClient.cpp.o.requires
-	$(MAKE) -f CMakeFiles/translayor.dir/build.make CMakeFiles/translayor.dir/EPollClient.cpp.o.provides.build
-.PHONY : CMakeFiles/translayor.dir/EPollClient.cpp.o.provides
+CMakeFiles/translayor.dir/LhwClient.cpp.o.provides: CMakeFiles/translayor.dir/LhwClient.cpp.o.requires
+	$(MAKE) -f CMakeFiles/translayor.dir/build.make CMakeFiles/translayor.dir/LhwClient.cpp.o.provides.build
+.PHONY : CMakeFiles/translayor.dir/LhwClient.cpp.o.provides
 
-CMakeFiles/translayor.dir/EPollClient.cpp.o.provides.build: CMakeFiles/translayor.dir/EPollClient.cpp.o
+CMakeFiles/translayor.dir/LhwClient.cpp.o.provides.build: CMakeFiles/translayor.dir/LhwClient.cpp.o
 
 
 CMakeFiles/translayor.dir/LhwClientConnected.cpp.o: CMakeFiles/translayor.dir/flags.make
@@ -177,28 +177,28 @@ CMakeFiles/translayor.dir/LhwServer.cpp.o.provides: CMakeFiles/translayor.dir/Lh
 CMakeFiles/translayor.dir/LhwServer.cpp.o.provides.build: CMakeFiles/translayor.dir/LhwServer.cpp.o
 
 
-CMakeFiles/translayor.dir/EPollStream.cpp.o: CMakeFiles/translayor.dir/flags.make
-CMakeFiles/translayor.dir/EPollStream.cpp.o: ../EPollStream.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/translayor.dir/EPollStream.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/translayor.dir/EPollStream.cpp.o -c /home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/EPollStream.cpp
+CMakeFiles/translayor.dir/LhwEpollStream.cpp.o: CMakeFiles/translayor.dir/flags.make
+CMakeFiles/translayor.dir/LhwEpollStream.cpp.o: ../LhwEpollStream.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/translayor.dir/LhwEpollStream.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/translayor.dir/LhwEpollStream.cpp.o -c /home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/LhwEpollStream.cpp
 
-CMakeFiles/translayor.dir/EPollStream.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/translayor.dir/EPollStream.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/EPollStream.cpp > CMakeFiles/translayor.dir/EPollStream.cpp.i
+CMakeFiles/translayor.dir/LhwEpollStream.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/translayor.dir/LhwEpollStream.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/LhwEpollStream.cpp > CMakeFiles/translayor.dir/LhwEpollStream.cpp.i
 
-CMakeFiles/translayor.dir/EPollStream.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/translayor.dir/EPollStream.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/EPollStream.cpp -o CMakeFiles/translayor.dir/EPollStream.cpp.s
+CMakeFiles/translayor.dir/LhwEpollStream.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/translayor.dir/LhwEpollStream.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/LhwEpollStream.cpp -o CMakeFiles/translayor.dir/LhwEpollStream.cpp.s
 
-CMakeFiles/translayor.dir/EPollStream.cpp.o.requires:
+CMakeFiles/translayor.dir/LhwEpollStream.cpp.o.requires:
 
-.PHONY : CMakeFiles/translayor.dir/EPollStream.cpp.o.requires
+.PHONY : CMakeFiles/translayor.dir/LhwEpollStream.cpp.o.requires
 
-CMakeFiles/translayor.dir/EPollStream.cpp.o.provides: CMakeFiles/translayor.dir/EPollStream.cpp.o.requires
-	$(MAKE) -f CMakeFiles/translayor.dir/build.make CMakeFiles/translayor.dir/EPollStream.cpp.o.provides.build
-.PHONY : CMakeFiles/translayor.dir/EPollStream.cpp.o.provides
+CMakeFiles/translayor.dir/LhwEpollStream.cpp.o.provides: CMakeFiles/translayor.dir/LhwEpollStream.cpp.o.requires
+	$(MAKE) -f CMakeFiles/translayor.dir/build.make CMakeFiles/translayor.dir/LhwEpollStream.cpp.o.provides.build
+.PHONY : CMakeFiles/translayor.dir/LhwEpollStream.cpp.o.provides
 
-CMakeFiles/translayor.dir/EPollStream.cpp.o.provides.build: CMakeFiles/translayor.dir/EPollStream.cpp.o
+CMakeFiles/translayor.dir/LhwEpollStream.cpp.o.provides.build: CMakeFiles/translayor.dir/LhwEpollStream.cpp.o
 
 
 CMakeFiles/translayor.dir/LhwEventQueueLoop.cpp.o: CMakeFiles/translayor.dir/flags.make
@@ -225,33 +225,9 @@ CMakeFiles/translayor.dir/LhwEventQueueLoop.cpp.o.provides: CMakeFiles/translayo
 CMakeFiles/translayor.dir/LhwEventQueueLoop.cpp.o.provides.build: CMakeFiles/translayor.dir/LhwEventQueueLoop.cpp.o
 
 
-CMakeFiles/translayor.dir/Net.cpp.o: CMakeFiles/translayor.dir/flags.make
-CMakeFiles/translayor.dir/Net.cpp.o: ../Net.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/translayor.dir/Net.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/translayor.dir/Net.cpp.o -c /home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/Net.cpp
-
-CMakeFiles/translayor.dir/Net.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/translayor.dir/Net.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/Net.cpp > CMakeFiles/translayor.dir/Net.cpp.i
-
-CMakeFiles/translayor.dir/Net.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/translayor.dir/Net.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/Net.cpp -o CMakeFiles/translayor.dir/Net.cpp.s
-
-CMakeFiles/translayor.dir/Net.cpp.o.requires:
-
-.PHONY : CMakeFiles/translayor.dir/Net.cpp.o.requires
-
-CMakeFiles/translayor.dir/Net.cpp.o.provides: CMakeFiles/translayor.dir/Net.cpp.o.requires
-	$(MAKE) -f CMakeFiles/translayor.dir/build.make CMakeFiles/translayor.dir/Net.cpp.o.provides.build
-.PHONY : CMakeFiles/translayor.dir/Net.cpp.o.provides
-
-CMakeFiles/translayor.dir/Net.cpp.o.provides.build: CMakeFiles/translayor.dir/Net.cpp.o
-
-
 CMakeFiles/translayor.dir/PackageDataSink.cpp.o: CMakeFiles/translayor.dir/flags.make
 CMakeFiles/translayor.dir/PackageDataSink.cpp.o: ../PackageDataSink.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/translayor.dir/PackageDataSink.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/translayor.dir/PackageDataSink.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/translayor.dir/PackageDataSink.cpp.o -c /home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/PackageDataSink.cpp
 
 CMakeFiles/translayor.dir/PackageDataSink.cpp.i: cmake_force
@@ -273,177 +249,129 @@ CMakeFiles/translayor.dir/PackageDataSink.cpp.o.provides: CMakeFiles/translayor.
 CMakeFiles/translayor.dir/PackageDataSink.cpp.o.provides.build: CMakeFiles/translayor.dir/PackageDataSink.cpp.o
 
 
-CMakeFiles/translayor.dir/ServerSample.cpp.o: CMakeFiles/translayor.dir/flags.make
-CMakeFiles/translayor.dir/ServerSample.cpp.o: ../ServerSample.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/translayor.dir/ServerSample.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/translayor.dir/ServerSample.cpp.o -c /home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/ServerSample.cpp
+CMakeFiles/translayor.dir/http/LhwHttpConnection.cpp.o: CMakeFiles/translayor.dir/flags.make
+CMakeFiles/translayor.dir/http/LhwHttpConnection.cpp.o: ../http/LhwHttpConnection.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/translayor.dir/http/LhwHttpConnection.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/translayor.dir/http/LhwHttpConnection.cpp.o -c /home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/http/LhwHttpConnection.cpp
 
-CMakeFiles/translayor.dir/ServerSample.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/translayor.dir/ServerSample.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/ServerSample.cpp > CMakeFiles/translayor.dir/ServerSample.cpp.i
+CMakeFiles/translayor.dir/http/LhwHttpConnection.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/translayor.dir/http/LhwHttpConnection.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/http/LhwHttpConnection.cpp > CMakeFiles/translayor.dir/http/LhwHttpConnection.cpp.i
 
-CMakeFiles/translayor.dir/ServerSample.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/translayor.dir/ServerSample.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/ServerSample.cpp -o CMakeFiles/translayor.dir/ServerSample.cpp.s
+CMakeFiles/translayor.dir/http/LhwHttpConnection.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/translayor.dir/http/LhwHttpConnection.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/http/LhwHttpConnection.cpp -o CMakeFiles/translayor.dir/http/LhwHttpConnection.cpp.s
 
-CMakeFiles/translayor.dir/ServerSample.cpp.o.requires:
+CMakeFiles/translayor.dir/http/LhwHttpConnection.cpp.o.requires:
 
-.PHONY : CMakeFiles/translayor.dir/ServerSample.cpp.o.requires
+.PHONY : CMakeFiles/translayor.dir/http/LhwHttpConnection.cpp.o.requires
 
-CMakeFiles/translayor.dir/ServerSample.cpp.o.provides: CMakeFiles/translayor.dir/ServerSample.cpp.o.requires
-	$(MAKE) -f CMakeFiles/translayor.dir/build.make CMakeFiles/translayor.dir/ServerSample.cpp.o.provides.build
-.PHONY : CMakeFiles/translayor.dir/ServerSample.cpp.o.provides
+CMakeFiles/translayor.dir/http/LhwHttpConnection.cpp.o.provides: CMakeFiles/translayor.dir/http/LhwHttpConnection.cpp.o.requires
+	$(MAKE) -f CMakeFiles/translayor.dir/build.make CMakeFiles/translayor.dir/http/LhwHttpConnection.cpp.o.provides.build
+.PHONY : CMakeFiles/translayor.dir/http/LhwHttpConnection.cpp.o.provides
 
-CMakeFiles/translayor.dir/ServerSample.cpp.o.provides.build: CMakeFiles/translayor.dir/ServerSample.cpp.o
-
-
-CMakeFiles/translayor.dir/ThreadPool.cpp.o: CMakeFiles/translayor.dir/flags.make
-CMakeFiles/translayor.dir/ThreadPool.cpp.o: ../ThreadPool.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/translayor.dir/ThreadPool.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/translayor.dir/ThreadPool.cpp.o -c /home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/ThreadPool.cpp
-
-CMakeFiles/translayor.dir/ThreadPool.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/translayor.dir/ThreadPool.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/ThreadPool.cpp > CMakeFiles/translayor.dir/ThreadPool.cpp.i
-
-CMakeFiles/translayor.dir/ThreadPool.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/translayor.dir/ThreadPool.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/ThreadPool.cpp -o CMakeFiles/translayor.dir/ThreadPool.cpp.s
-
-CMakeFiles/translayor.dir/ThreadPool.cpp.o.requires:
-
-.PHONY : CMakeFiles/translayor.dir/ThreadPool.cpp.o.requires
-
-CMakeFiles/translayor.dir/ThreadPool.cpp.o.provides: CMakeFiles/translayor.dir/ThreadPool.cpp.o.requires
-	$(MAKE) -f CMakeFiles/translayor.dir/build.make CMakeFiles/translayor.dir/ThreadPool.cpp.o.provides.build
-.PHONY : CMakeFiles/translayor.dir/ThreadPool.cpp.o.provides
-
-CMakeFiles/translayor.dir/ThreadPool.cpp.o.provides.build: CMakeFiles/translayor.dir/ThreadPool.cpp.o
+CMakeFiles/translayor.dir/http/LhwHttpConnection.cpp.o.provides.build: CMakeFiles/translayor.dir/http/LhwHttpConnection.cpp.o
 
 
-CMakeFiles/translayor.dir/http/HttpConnection.cpp.o: CMakeFiles/translayor.dir/flags.make
-CMakeFiles/translayor.dir/http/HttpConnection.cpp.o: ../http/HttpConnection.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/translayor.dir/http/HttpConnection.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/translayor.dir/http/HttpConnection.cpp.o -c /home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/http/HttpConnection.cpp
+CMakeFiles/translayor.dir/http/LhwHttpContext.cpp.o: CMakeFiles/translayor.dir/flags.make
+CMakeFiles/translayor.dir/http/LhwHttpContext.cpp.o: ../http/LhwHttpContext.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/translayor.dir/http/LhwHttpContext.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/translayor.dir/http/LhwHttpContext.cpp.o -c /home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/http/LhwHttpContext.cpp
 
-CMakeFiles/translayor.dir/http/HttpConnection.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/translayor.dir/http/HttpConnection.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/http/HttpConnection.cpp > CMakeFiles/translayor.dir/http/HttpConnection.cpp.i
+CMakeFiles/translayor.dir/http/LhwHttpContext.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/translayor.dir/http/LhwHttpContext.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/http/LhwHttpContext.cpp > CMakeFiles/translayor.dir/http/LhwHttpContext.cpp.i
 
-CMakeFiles/translayor.dir/http/HttpConnection.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/translayor.dir/http/HttpConnection.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/http/HttpConnection.cpp -o CMakeFiles/translayor.dir/http/HttpConnection.cpp.s
+CMakeFiles/translayor.dir/http/LhwHttpContext.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/translayor.dir/http/LhwHttpContext.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/http/LhwHttpContext.cpp -o CMakeFiles/translayor.dir/http/LhwHttpContext.cpp.s
 
-CMakeFiles/translayor.dir/http/HttpConnection.cpp.o.requires:
+CMakeFiles/translayor.dir/http/LhwHttpContext.cpp.o.requires:
 
-.PHONY : CMakeFiles/translayor.dir/http/HttpConnection.cpp.o.requires
+.PHONY : CMakeFiles/translayor.dir/http/LhwHttpContext.cpp.o.requires
 
-CMakeFiles/translayor.dir/http/HttpConnection.cpp.o.provides: CMakeFiles/translayor.dir/http/HttpConnection.cpp.o.requires
-	$(MAKE) -f CMakeFiles/translayor.dir/build.make CMakeFiles/translayor.dir/http/HttpConnection.cpp.o.provides.build
-.PHONY : CMakeFiles/translayor.dir/http/HttpConnection.cpp.o.provides
+CMakeFiles/translayor.dir/http/LhwHttpContext.cpp.o.provides: CMakeFiles/translayor.dir/http/LhwHttpContext.cpp.o.requires
+	$(MAKE) -f CMakeFiles/translayor.dir/build.make CMakeFiles/translayor.dir/http/LhwHttpContext.cpp.o.provides.build
+.PHONY : CMakeFiles/translayor.dir/http/LhwHttpContext.cpp.o.provides
 
-CMakeFiles/translayor.dir/http/HttpConnection.cpp.o.provides.build: CMakeFiles/translayor.dir/http/HttpConnection.cpp.o
-
-
-CMakeFiles/translayor.dir/http/HttpContext.cpp.o: CMakeFiles/translayor.dir/flags.make
-CMakeFiles/translayor.dir/http/HttpContext.cpp.o: ../http/HttpContext.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/translayor.dir/http/HttpContext.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/translayor.dir/http/HttpContext.cpp.o -c /home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/http/HttpContext.cpp
-
-CMakeFiles/translayor.dir/http/HttpContext.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/translayor.dir/http/HttpContext.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/http/HttpContext.cpp > CMakeFiles/translayor.dir/http/HttpContext.cpp.i
-
-CMakeFiles/translayor.dir/http/HttpContext.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/translayor.dir/http/HttpContext.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/http/HttpContext.cpp -o CMakeFiles/translayor.dir/http/HttpContext.cpp.s
-
-CMakeFiles/translayor.dir/http/HttpContext.cpp.o.requires:
-
-.PHONY : CMakeFiles/translayor.dir/http/HttpContext.cpp.o.requires
-
-CMakeFiles/translayor.dir/http/HttpContext.cpp.o.provides: CMakeFiles/translayor.dir/http/HttpContext.cpp.o.requires
-	$(MAKE) -f CMakeFiles/translayor.dir/build.make CMakeFiles/translayor.dir/http/HttpContext.cpp.o.provides.build
-.PHONY : CMakeFiles/translayor.dir/http/HttpContext.cpp.o.provides
-
-CMakeFiles/translayor.dir/http/HttpContext.cpp.o.provides.build: CMakeFiles/translayor.dir/http/HttpContext.cpp.o
+CMakeFiles/translayor.dir/http/LhwHttpContext.cpp.o.provides.build: CMakeFiles/translayor.dir/http/LhwHttpContext.cpp.o
 
 
-CMakeFiles/translayor.dir/http/HttpRequest.cpp.o: CMakeFiles/translayor.dir/flags.make
-CMakeFiles/translayor.dir/http/HttpRequest.cpp.o: ../http/HttpRequest.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/translayor.dir/http/HttpRequest.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/translayor.dir/http/HttpRequest.cpp.o -c /home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/http/HttpRequest.cpp
+CMakeFiles/translayor.dir/http/LhwHttpRequest.cpp.o: CMakeFiles/translayor.dir/flags.make
+CMakeFiles/translayor.dir/http/LhwHttpRequest.cpp.o: ../http/LhwHttpRequest.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/translayor.dir/http/LhwHttpRequest.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/translayor.dir/http/LhwHttpRequest.cpp.o -c /home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/http/LhwHttpRequest.cpp
 
-CMakeFiles/translayor.dir/http/HttpRequest.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/translayor.dir/http/HttpRequest.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/http/HttpRequest.cpp > CMakeFiles/translayor.dir/http/HttpRequest.cpp.i
+CMakeFiles/translayor.dir/http/LhwHttpRequest.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/translayor.dir/http/LhwHttpRequest.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/http/LhwHttpRequest.cpp > CMakeFiles/translayor.dir/http/LhwHttpRequest.cpp.i
 
-CMakeFiles/translayor.dir/http/HttpRequest.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/translayor.dir/http/HttpRequest.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/http/HttpRequest.cpp -o CMakeFiles/translayor.dir/http/HttpRequest.cpp.s
+CMakeFiles/translayor.dir/http/LhwHttpRequest.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/translayor.dir/http/LhwHttpRequest.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/http/LhwHttpRequest.cpp -o CMakeFiles/translayor.dir/http/LhwHttpRequest.cpp.s
 
-CMakeFiles/translayor.dir/http/HttpRequest.cpp.o.requires:
+CMakeFiles/translayor.dir/http/LhwHttpRequest.cpp.o.requires:
 
-.PHONY : CMakeFiles/translayor.dir/http/HttpRequest.cpp.o.requires
+.PHONY : CMakeFiles/translayor.dir/http/LhwHttpRequest.cpp.o.requires
 
-CMakeFiles/translayor.dir/http/HttpRequest.cpp.o.provides: CMakeFiles/translayor.dir/http/HttpRequest.cpp.o.requires
-	$(MAKE) -f CMakeFiles/translayor.dir/build.make CMakeFiles/translayor.dir/http/HttpRequest.cpp.o.provides.build
-.PHONY : CMakeFiles/translayor.dir/http/HttpRequest.cpp.o.provides
+CMakeFiles/translayor.dir/http/LhwHttpRequest.cpp.o.provides: CMakeFiles/translayor.dir/http/LhwHttpRequest.cpp.o.requires
+	$(MAKE) -f CMakeFiles/translayor.dir/build.make CMakeFiles/translayor.dir/http/LhwHttpRequest.cpp.o.provides.build
+.PHONY : CMakeFiles/translayor.dir/http/LhwHttpRequest.cpp.o.provides
 
-CMakeFiles/translayor.dir/http/HttpRequest.cpp.o.provides.build: CMakeFiles/translayor.dir/http/HttpRequest.cpp.o
-
-
-CMakeFiles/translayor.dir/http/HttpResponse.cpp.o: CMakeFiles/translayor.dir/flags.make
-CMakeFiles/translayor.dir/http/HttpResponse.cpp.o: ../http/HttpResponse.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/translayor.dir/http/HttpResponse.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/translayor.dir/http/HttpResponse.cpp.o -c /home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/http/HttpResponse.cpp
-
-CMakeFiles/translayor.dir/http/HttpResponse.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/translayor.dir/http/HttpResponse.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/http/HttpResponse.cpp > CMakeFiles/translayor.dir/http/HttpResponse.cpp.i
-
-CMakeFiles/translayor.dir/http/HttpResponse.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/translayor.dir/http/HttpResponse.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/http/HttpResponse.cpp -o CMakeFiles/translayor.dir/http/HttpResponse.cpp.s
-
-CMakeFiles/translayor.dir/http/HttpResponse.cpp.o.requires:
-
-.PHONY : CMakeFiles/translayor.dir/http/HttpResponse.cpp.o.requires
-
-CMakeFiles/translayor.dir/http/HttpResponse.cpp.o.provides: CMakeFiles/translayor.dir/http/HttpResponse.cpp.o.requires
-	$(MAKE) -f CMakeFiles/translayor.dir/build.make CMakeFiles/translayor.dir/http/HttpResponse.cpp.o.provides.build
-.PHONY : CMakeFiles/translayor.dir/http/HttpResponse.cpp.o.provides
-
-CMakeFiles/translayor.dir/http/HttpResponse.cpp.o.provides.build: CMakeFiles/translayor.dir/http/HttpResponse.cpp.o
+CMakeFiles/translayor.dir/http/LhwHttpRequest.cpp.o.provides.build: CMakeFiles/translayor.dir/http/LhwHttpRequest.cpp.o
 
 
-CMakeFiles/translayor.dir/http/HttpServer.cpp.o: CMakeFiles/translayor.dir/flags.make
-CMakeFiles/translayor.dir/http/HttpServer.cpp.o: ../http/HttpServer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/translayor.dir/http/HttpServer.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/translayor.dir/http/HttpServer.cpp.o -c /home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/http/HttpServer.cpp
+CMakeFiles/translayor.dir/http/LhwHttpResponse.cpp.o: CMakeFiles/translayor.dir/flags.make
+CMakeFiles/translayor.dir/http/LhwHttpResponse.cpp.o: ../http/LhwHttpResponse.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/translayor.dir/http/LhwHttpResponse.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/translayor.dir/http/LhwHttpResponse.cpp.o -c /home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/http/LhwHttpResponse.cpp
 
-CMakeFiles/translayor.dir/http/HttpServer.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/translayor.dir/http/HttpServer.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/http/HttpServer.cpp > CMakeFiles/translayor.dir/http/HttpServer.cpp.i
+CMakeFiles/translayor.dir/http/LhwHttpResponse.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/translayor.dir/http/LhwHttpResponse.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/http/LhwHttpResponse.cpp > CMakeFiles/translayor.dir/http/LhwHttpResponse.cpp.i
 
-CMakeFiles/translayor.dir/http/HttpServer.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/translayor.dir/http/HttpServer.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/http/HttpServer.cpp -o CMakeFiles/translayor.dir/http/HttpServer.cpp.s
+CMakeFiles/translayor.dir/http/LhwHttpResponse.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/translayor.dir/http/LhwHttpResponse.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/http/LhwHttpResponse.cpp -o CMakeFiles/translayor.dir/http/LhwHttpResponse.cpp.s
 
-CMakeFiles/translayor.dir/http/HttpServer.cpp.o.requires:
+CMakeFiles/translayor.dir/http/LhwHttpResponse.cpp.o.requires:
 
-.PHONY : CMakeFiles/translayor.dir/http/HttpServer.cpp.o.requires
+.PHONY : CMakeFiles/translayor.dir/http/LhwHttpResponse.cpp.o.requires
 
-CMakeFiles/translayor.dir/http/HttpServer.cpp.o.provides: CMakeFiles/translayor.dir/http/HttpServer.cpp.o.requires
-	$(MAKE) -f CMakeFiles/translayor.dir/build.make CMakeFiles/translayor.dir/http/HttpServer.cpp.o.provides.build
-.PHONY : CMakeFiles/translayor.dir/http/HttpServer.cpp.o.provides
+CMakeFiles/translayor.dir/http/LhwHttpResponse.cpp.o.provides: CMakeFiles/translayor.dir/http/LhwHttpResponse.cpp.o.requires
+	$(MAKE) -f CMakeFiles/translayor.dir/build.make CMakeFiles/translayor.dir/http/LhwHttpResponse.cpp.o.provides.build
+.PHONY : CMakeFiles/translayor.dir/http/LhwHttpResponse.cpp.o.provides
 
-CMakeFiles/translayor.dir/http/HttpServer.cpp.o.provides.build: CMakeFiles/translayor.dir/http/HttpServer.cpp.o
+CMakeFiles/translayor.dir/http/LhwHttpResponse.cpp.o.provides.build: CMakeFiles/translayor.dir/http/LhwHttpResponse.cpp.o
+
+
+CMakeFiles/translayor.dir/http/LhwHttpServer.cpp.o: CMakeFiles/translayor.dir/flags.make
+CMakeFiles/translayor.dir/http/LhwHttpServer.cpp.o: ../http/LhwHttpServer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/translayor.dir/http/LhwHttpServer.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/translayor.dir/http/LhwHttpServer.cpp.o -c /home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/http/LhwHttpServer.cpp
+
+CMakeFiles/translayor.dir/http/LhwHttpServer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/translayor.dir/http/LhwHttpServer.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/http/LhwHttpServer.cpp > CMakeFiles/translayor.dir/http/LhwHttpServer.cpp.i
+
+CMakeFiles/translayor.dir/http/LhwHttpServer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/translayor.dir/http/LhwHttpServer.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/http/LhwHttpServer.cpp -o CMakeFiles/translayor.dir/http/LhwHttpServer.cpp.s
+
+CMakeFiles/translayor.dir/http/LhwHttpServer.cpp.o.requires:
+
+.PHONY : CMakeFiles/translayor.dir/http/LhwHttpServer.cpp.o.requires
+
+CMakeFiles/translayor.dir/http/LhwHttpServer.cpp.o.provides: CMakeFiles/translayor.dir/http/LhwHttpServer.cpp.o.requires
+	$(MAKE) -f CMakeFiles/translayor.dir/build.make CMakeFiles/translayor.dir/http/LhwHttpServer.cpp.o.provides.build
+.PHONY : CMakeFiles/translayor.dir/http/LhwHttpServer.cpp.o.provides
+
+CMakeFiles/translayor.dir/http/LhwHttpServer.cpp.o.provides.build: CMakeFiles/translayor.dir/http/LhwHttpServer.cpp.o
 
 
 CMakeFiles/translayor.dir/http/String.cpp.o: CMakeFiles/translayor.dir/flags.make
 CMakeFiles/translayor.dir/http/String.cpp.o: ../http/String.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/translayor.dir/http/String.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/translayor.dir/http/String.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/translayor.dir/http/String.cpp.o -c /home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/http/String.cpp
 
 CMakeFiles/translayor.dir/http/String.cpp.i: cmake_force
@@ -467,47 +395,41 @@ CMakeFiles/translayor.dir/http/String.cpp.o.provides.build: CMakeFiles/translayo
 
 # Object files for target translayor
 translayor_OBJECTS = \
-"CMakeFiles/translayor.dir/CommonUtils.cpp.o" \
-"CMakeFiles/translayor.dir/EPollClient.cpp.o" \
+"CMakeFiles/translayor.dir/LhwCommon.cpp.o" \
+"CMakeFiles/translayor.dir/LhwClient.cpp.o" \
 "CMakeFiles/translayor.dir/LhwClientConnected.cpp.o" \
 "CMakeFiles/translayor.dir/LhwEpollLoop.cpp.o" \
 "CMakeFiles/translayor.dir/LhwServer.cpp.o" \
-"CMakeFiles/translayor.dir/EPollStream.cpp.o" \
+"CMakeFiles/translayor.dir/LhwEpollStream.cpp.o" \
 "CMakeFiles/translayor.dir/LhwEventQueueLoop.cpp.o" \
-"CMakeFiles/translayor.dir/Net.cpp.o" \
 "CMakeFiles/translayor.dir/PackageDataSink.cpp.o" \
-"CMakeFiles/translayor.dir/ServerSample.cpp.o" \
-"CMakeFiles/translayor.dir/ThreadPool.cpp.o" \
-"CMakeFiles/translayor.dir/http/HttpConnection.cpp.o" \
-"CMakeFiles/translayor.dir/http/HttpContext.cpp.o" \
-"CMakeFiles/translayor.dir/http/HttpRequest.cpp.o" \
-"CMakeFiles/translayor.dir/http/HttpResponse.cpp.o" \
-"CMakeFiles/translayor.dir/http/HttpServer.cpp.o" \
+"CMakeFiles/translayor.dir/http/LhwHttpConnection.cpp.o" \
+"CMakeFiles/translayor.dir/http/LhwHttpContext.cpp.o" \
+"CMakeFiles/translayor.dir/http/LhwHttpRequest.cpp.o" \
+"CMakeFiles/translayor.dir/http/LhwHttpResponse.cpp.o" \
+"CMakeFiles/translayor.dir/http/LhwHttpServer.cpp.o" \
 "CMakeFiles/translayor.dir/http/String.cpp.o"
 
 # External object files for target translayor
 translayor_EXTERNAL_OBJECTS =
 
-libtranslayor.so: CMakeFiles/translayor.dir/CommonUtils.cpp.o
-libtranslayor.so: CMakeFiles/translayor.dir/EPollClient.cpp.o
+libtranslayor.so: CMakeFiles/translayor.dir/LhwCommon.cpp.o
+libtranslayor.so: CMakeFiles/translayor.dir/LhwClient.cpp.o
 libtranslayor.so: CMakeFiles/translayor.dir/LhwClientConnected.cpp.o
 libtranslayor.so: CMakeFiles/translayor.dir/LhwEpollLoop.cpp.o
 libtranslayor.so: CMakeFiles/translayor.dir/LhwServer.cpp.o
-libtranslayor.so: CMakeFiles/translayor.dir/EPollStream.cpp.o
+libtranslayor.so: CMakeFiles/translayor.dir/LhwEpollStream.cpp.o
 libtranslayor.so: CMakeFiles/translayor.dir/LhwEventQueueLoop.cpp.o
-libtranslayor.so: CMakeFiles/translayor.dir/Net.cpp.o
 libtranslayor.so: CMakeFiles/translayor.dir/PackageDataSink.cpp.o
-libtranslayor.so: CMakeFiles/translayor.dir/ServerSample.cpp.o
-libtranslayor.so: CMakeFiles/translayor.dir/ThreadPool.cpp.o
-libtranslayor.so: CMakeFiles/translayor.dir/http/HttpConnection.cpp.o
-libtranslayor.so: CMakeFiles/translayor.dir/http/HttpContext.cpp.o
-libtranslayor.so: CMakeFiles/translayor.dir/http/HttpRequest.cpp.o
-libtranslayor.so: CMakeFiles/translayor.dir/http/HttpResponse.cpp.o
-libtranslayor.so: CMakeFiles/translayor.dir/http/HttpServer.cpp.o
+libtranslayor.so: CMakeFiles/translayor.dir/http/LhwHttpConnection.cpp.o
+libtranslayor.so: CMakeFiles/translayor.dir/http/LhwHttpContext.cpp.o
+libtranslayor.so: CMakeFiles/translayor.dir/http/LhwHttpRequest.cpp.o
+libtranslayor.so: CMakeFiles/translayor.dir/http/LhwHttpResponse.cpp.o
+libtranslayor.so: CMakeFiles/translayor.dir/http/LhwHttpServer.cpp.o
 libtranslayor.so: CMakeFiles/translayor.dir/http/String.cpp.o
 libtranslayor.so: CMakeFiles/translayor.dir/build.make
 libtranslayor.so: CMakeFiles/translayor.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Linking CXX shared library libtranslayor.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX shared library libtranslayor.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/translayor.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -515,22 +437,19 @@ CMakeFiles/translayor.dir/build: libtranslayor.so
 
 .PHONY : CMakeFiles/translayor.dir/build
 
-CMakeFiles/translayor.dir/requires: CMakeFiles/translayor.dir/CommonUtils.cpp.o.requires
-CMakeFiles/translayor.dir/requires: CMakeFiles/translayor.dir/EPollClient.cpp.o.requires
+CMakeFiles/translayor.dir/requires: CMakeFiles/translayor.dir/LhwCommon.cpp.o.requires
+CMakeFiles/translayor.dir/requires: CMakeFiles/translayor.dir/LhwClient.cpp.o.requires
 CMakeFiles/translayor.dir/requires: CMakeFiles/translayor.dir/LhwClientConnected.cpp.o.requires
 CMakeFiles/translayor.dir/requires: CMakeFiles/translayor.dir/LhwEpollLoop.cpp.o.requires
 CMakeFiles/translayor.dir/requires: CMakeFiles/translayor.dir/LhwServer.cpp.o.requires
-CMakeFiles/translayor.dir/requires: CMakeFiles/translayor.dir/EPollStream.cpp.o.requires
+CMakeFiles/translayor.dir/requires: CMakeFiles/translayor.dir/LhwEpollStream.cpp.o.requires
 CMakeFiles/translayor.dir/requires: CMakeFiles/translayor.dir/LhwEventQueueLoop.cpp.o.requires
-CMakeFiles/translayor.dir/requires: CMakeFiles/translayor.dir/Net.cpp.o.requires
 CMakeFiles/translayor.dir/requires: CMakeFiles/translayor.dir/PackageDataSink.cpp.o.requires
-CMakeFiles/translayor.dir/requires: CMakeFiles/translayor.dir/ServerSample.cpp.o.requires
-CMakeFiles/translayor.dir/requires: CMakeFiles/translayor.dir/ThreadPool.cpp.o.requires
-CMakeFiles/translayor.dir/requires: CMakeFiles/translayor.dir/http/HttpConnection.cpp.o.requires
-CMakeFiles/translayor.dir/requires: CMakeFiles/translayor.dir/http/HttpContext.cpp.o.requires
-CMakeFiles/translayor.dir/requires: CMakeFiles/translayor.dir/http/HttpRequest.cpp.o.requires
-CMakeFiles/translayor.dir/requires: CMakeFiles/translayor.dir/http/HttpResponse.cpp.o.requires
-CMakeFiles/translayor.dir/requires: CMakeFiles/translayor.dir/http/HttpServer.cpp.o.requires
+CMakeFiles/translayor.dir/requires: CMakeFiles/translayor.dir/http/LhwHttpConnection.cpp.o.requires
+CMakeFiles/translayor.dir/requires: CMakeFiles/translayor.dir/http/LhwHttpContext.cpp.o.requires
+CMakeFiles/translayor.dir/requires: CMakeFiles/translayor.dir/http/LhwHttpRequest.cpp.o.requires
+CMakeFiles/translayor.dir/requires: CMakeFiles/translayor.dir/http/LhwHttpResponse.cpp.o.requires
+CMakeFiles/translayor.dir/requires: CMakeFiles/translayor.dir/http/LhwHttpServer.cpp.o.requires
 CMakeFiles/translayor.dir/requires: CMakeFiles/translayor.dir/http/String.cpp.o.requires
 
 .PHONY : CMakeFiles/translayor.dir/requires
