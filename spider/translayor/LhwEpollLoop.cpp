@@ -162,7 +162,6 @@ int32_t LhwEpollLoop::_acceptClient(int32_t eventfd, int32_t listenfd)
     }
 }
 
-    
 void LhwEpollLoop::_read(int32_t eventfd, int32_t fd, uint32_t events)
 {
     LOG(LOG_DEBUG) << "_read";
@@ -193,6 +192,7 @@ void LhwEpollLoop::_enqueue(EPollStreamPtr stream, const char *buf, int64_t nrea
     if (stream->getDataHandler())
     {
         // 将读取到的内容发送到系统的数据读取队列中,通知数据监听方来获取处理后的数据
+        // 在这里getDataHandler调用的是DataSink中Write函数
         stream->getDataHandler()(buf, nread);
     }
 }

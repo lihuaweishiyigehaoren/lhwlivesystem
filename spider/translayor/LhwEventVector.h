@@ -80,7 +80,8 @@ namespace translayor
     {
     public:
         LhwEventVector(int32_t timeout=0) :
-        _timeout(timeout){
+        _timeout(timeout)
+        {
 
         }
 
@@ -105,7 +106,7 @@ namespace translayor
 
             if(_events.empty())
             {
-                if(_timeout==0)
+                if(_timeout == 0)
                 {
                     return nullptr;
                 }

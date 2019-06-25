@@ -43,6 +43,7 @@
         "tuple": "cpp",
         "typeinfo": "cpp",
         "utility": "cpp",
-        "cstddef": "cpp"
+        "cstddef": "cpp",
+        "cstdarg": "cpp"
     }
 }

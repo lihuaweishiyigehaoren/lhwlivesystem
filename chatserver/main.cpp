@@ -11,10 +11,6 @@ const int32_t DefaultConnectPort = 8080;
 
 int32_t main()
 {
-    logging::Logging::SetLogFile("all.log");
-    logging::Logging::SetLogFile({ LOG_INFO, LOG_DEBUG}, "out.log");
-    logging::Logging::SetLogFile({ LOG_WARNING, LOG_ERROR, LOG_FATAL}, "error.log");
-
     translayor::LhwEventVector mainEventQuene(5);
     translayor::IoLoop::Get()->Start();
 
@@ -24,10 +20,12 @@ int32_t main()
 
     translayor::PackageDataSink* packageDataSink = &dataSink;
     server.startBindListen("127.0.0.1", DefaultConnectPort);
+
+    // 通过server设置回调函数
     server.onConnect([=](translayor::IOStream* stream)
     {
         stream->onData(packageDataSink->StreamDataHandler(stream));
-    });
+    }); 
 
     ServerEventQueueLoop serverQueue(&mainEventQuene);
     serverQueue.Start();

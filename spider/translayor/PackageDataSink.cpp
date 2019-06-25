@@ -11,9 +11,11 @@ namespace translayor
     _eventQueue(eventQueue), _totalSize(0) {
         _threadPool = new LhwThreadPool<BaseEvent>(10, [&](BaseEvent& event) 
         {
-            LOG(LOG_DEBUG) << "Thread onEvent sink!";
+            LOG(LOG_DEBUG) << "into thread";
 
             std::string requestText = event.GetData().ToStdString();
+            
+            LOG(LOG_DEBUG) << requestText; // hello
 
             LhwHttpRequest request;
             request.parseStdString(requestText);
@@ -22,17 +24,18 @@ namespace translayor
             response.setVersion("HTTP/1.1");
             response.setStatusCode(200);
             response.setStatusMessage("OK");
-            response.setContent("Hello! Sink in Thread!");
+            response.setContent("I have got your message");
 
             event.GetStream()->sendData(LhwByteArray(response.toStdString())); // Send to peer
 
-            LOG(LOG_DEBUG) << "Thread onEvent sink end.";
+            LOG(LOG_DEBUG) << "get data";
         });
     }
 
     PackageDataSink::~PackageDataSink() 
     {
-        if (_threadPool) {
+        if (_threadPool) 
+        {
             delete _threadPool;
             _threadPool = nullptr;
         }
@@ -42,8 +45,9 @@ namespace translayor
     {
         _data.Concat(LhwByteArray(buf, static_cast<int32_t>(bytes)));
         // 保证是一个完整的包
-        if (_data.size() >= _totalSize) {
-            //_eventQueue->PostEvent(new BaseEvent("data", _data, connection));
+        if (_data.size() >= _totalSize) 
+        {
+            // _eventQueue->PostEvent(new BaseEvent("data", _data, stream));
             _threadPool->Submit(BaseEvent("data", _data, stream));
 
             _data.clear();

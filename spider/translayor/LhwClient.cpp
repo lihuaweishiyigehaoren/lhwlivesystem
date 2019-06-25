@@ -54,7 +54,8 @@ namespace translayor {
         int32_t nread = 0;
         NativeSocketEvent ev;
 
-        while ((nread = read(getSocket(), buffer + readSize, bufferSize - 1)) > 0) {
+        while ((nread = read(getSocket(), buffer + readSize, bufferSize - readSize)) > 0) 
+        {
             readSize += nread;
         }
 

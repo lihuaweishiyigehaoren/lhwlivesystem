@@ -110,7 +110,8 @@ Collectioner LhwServer::acceptClientOfServer(int32_t sockfd)
 
         // 建立对客户端套接字的连接对象connecter
         Collectioner connection = std::make_shared<LhwClientConnected>(conn_sock);
-        LOG(LOG_DEBUG) << conn_sock;
+        
+        // 通过main中初始化的回调函数,再次调用回调函数
         if (_connectHandler)
         {
             _connectHandler(connection.get());

@@ -51,5 +51,19 @@ namespace translayor
 
         int32_t _statusCode; // 状态代码
         std::string _statusMessage;
+
+        /*
+        * 结构
+        * 状态行: HTTP/1.1 200k
+        * 消息头: Server: SimpleWebServer
+        *        Content-type: text/html
+        *        Content-length: 2048
+        *        .......
+        * 消息体: <html>
+        *        .......
+        *        <body>
+        *        .......
+        *        <html>
+        */
     };
 }

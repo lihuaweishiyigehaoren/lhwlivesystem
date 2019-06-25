@@ -14,7 +14,7 @@ namespace translayor
         // NativeSocketEvent ev;
 
         // 这里用了read,后期换成linux的recv函数比较好
-        while((nread = read(getSocket(),buffer + readSize,bufferSize-1)) > 0) // bufferSize-1指定可以接收的最大字节数
+        while((nread = read(getSocket(),buffer + readSize,bufferSize-readSize)) > 0) // bufferSize-1指定可以接收的最大字节数
         {
             readSize += nread;
         }
@@ -36,6 +36,9 @@ namespace translayor
         }
         
         const char* buf = byteArray.data();
+
+        // LOG(LOG_DEBUG) << byteArray.size();
+        
         int32_t size = byteArray.size();
         int32_t n = size;
 

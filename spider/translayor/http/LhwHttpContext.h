@@ -78,7 +78,10 @@ public:
     static LhwHttpContext fromStdStringList(const StdStringList& stringList);
 
 private:
+    // 版本HTTP/1.1
     std::string _version;
+    // 消息头,如:user Agent: Mozilla/5.0
     std::map<std::string, std::string> _headers;
+    // 消息体,消息体仅在post方式请求时插入
     std::string _content;
 };

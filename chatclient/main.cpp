@@ -37,11 +37,8 @@ protected:
 
 // using hurricane::logging::Logging;
 
-int32_t main() {
-    logging::Logging::SetLogFile("client-all.log");
-    logging::Logging::SetLogFile({ LOG_INFO, LOG_DEBUG }, "client-output.log");
-    logging::Logging::SetLogFile({ LOG_WARNING, LOG_ERROR, LOG_FATAL }, "client-error.log");
-
+int32_t main() 
+{
     translayor::LhwEventVector mainEventQueue(5);
     translayor::IoLoop::Get()->Start();
 

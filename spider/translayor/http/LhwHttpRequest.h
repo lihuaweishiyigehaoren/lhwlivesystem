@@ -63,7 +63,15 @@ namespace translayor {
         void parseRequestLine(const std::string& requestLine);
 
     private:
-        std::string _method;
+        std::string _method; // Get Post等请求
         std::string _path;
+        /*
+        * 结构
+        * 请求行: GET /index.html HTTP/1.1
+        * 消息头: User Agent: Mozilla/5.0
+        *        Accept: image/gif, image/jpeg
+        *        .......
+        * 消息体: 消息体仅在post方式请求时候插入
+        */
     };
 }
