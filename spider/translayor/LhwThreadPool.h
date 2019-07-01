@@ -81,7 +81,7 @@ namespace translayor
                         while (!_shutdown) 
                         {
                             Type record;
-                            _tasks.pop(record, true);
+                            _tasks.pop(record);
                             _handler(record);
                         }
                     }

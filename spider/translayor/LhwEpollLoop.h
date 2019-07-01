@@ -119,6 +119,7 @@ namespace translayor
         * @param events ev 套接字监听的属性
         */
         void _read(int32_t eventfd, int32_t fd, uint32_t events);
+        void _write(int32_t eventfd,int32_t fd, uint32_t events);
 
         void _enqueue(EPollStreamPtr connection, const char* buf, int64_t nread);
 

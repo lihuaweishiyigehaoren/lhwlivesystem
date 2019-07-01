@@ -61,31 +61,38 @@ namespace translayor
         * @para record Type类型的消息
         * @para isBlocked 判断是否阻塞
         */
-        bool pop(Type &record,bool isBlocked = true)
-        {
-            if(isBlocked)
-            {
-                // 参考自C并发编程 unique_lock 更加灵活,但是成本比lock_grand高
-                std::unique_lock<std::mutex> lock(_mutex); 
-                // while(_queue.empty())
-                // {
-                //     // wait()函数将解锁互斥量,并且将这个线程置于阻塞或等待状态
-                //     _condition.wait(lock); 
-                // }
-                _condition.wait(lock,[this]{return !_queue.empty();}); // wait的时候锁是释放的,条件达成,获得锁,否则阻塞
-            }
-            else
-            {
-                std::lock_guard<std::mutex> lock(_mutex);
-                if(_queue.empty())
-                {
-                    return false;
-                }
-            }
+        // bool pop(Type &record,bool isBlocked = true)
+        // {
+        //     if(isBlocked)
+        //     {
+        //         // 参考自C并发编程 unique_lock 更加灵活,但是成本比lock_grand高
+        //         std::unique_lock<std::mutex> lock(_mutex); 
+        //         while(_queue.empty())
+        //         {
+        //             // wait()函数将解锁互斥量,并且将这个线程置于阻塞或等待状态
+        //             _condition.wait(lock); 
+        //         }
+        //         // _condition.wait(lock,[this]{return !_queue.empty();}); // wait的时候锁是释放的,条件达成,获得锁,否则阻塞
+        //     }
+        //     else
+        //     {
+        //         std::lock_guard<std::mutex> lock(_mutex);
+        //         if(_queue.empty())
+        //         {
+        //             return false;
+        //         }
+        //     }
 
-            record = std::move(_queue.front());
+        //     record = std::move(_queue.front());
+        //     _queue.pop();
+        //     return true;
+        // }
+        void pop(Type& record)
+        {
+            std::unique_lock<std::mutex> lk(_mutex);
+            _condition.wait(lk,[this]{return !_queue.empty();});
+            record = _queue.front();
             _queue.pop();
-            return true;
         }
 
         int32_t Size()

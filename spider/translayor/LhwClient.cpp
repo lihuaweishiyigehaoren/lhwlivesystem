@@ -59,6 +59,8 @@ namespace translayor {
             readSize += nread;
         }
 
+        LOG(LOG_DEBUG) << readSize;
+
         return nread;
     }
 

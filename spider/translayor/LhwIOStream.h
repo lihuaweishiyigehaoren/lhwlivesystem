@@ -17,6 +17,7 @@
 
 #include "LhwByteArray.h"
 #include <functional>
+#include <string>
 
 namespace translayor
 {
@@ -29,6 +30,9 @@ namespace translayor
         // 接收时候设置一个接收缓冲区
         virtual int32_t receiveData(char* buffer,int32_t bufferSize,int32_t& readSize)=0;
         virtual int32_t sendData(const LhwByteArray & LhwByteArray)=0;
+
+        // 投递数据到输出缓冲区
+        virtual void postDataToBuffer(const std::string &data) = 0;
     
         virtual void onData(DataHandler handler)=0;
         virtual DataHandler getDataHandler()=0;

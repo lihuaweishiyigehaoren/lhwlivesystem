@@ -95,6 +95,8 @@ Collectioner LhwServer::acceptClientOfServer(int32_t sockfd)
     while ((conn_sock = accept(listenfd, (struct sockaddr *)&remote, (socklen_t *)&addrlen)) > 0)
     {
 
+        LOG(LOG_DEBUG) << "accept";
+
         // 设置客户端套接字非阻塞
         translayor::SetNonBlocking(conn_sock);
 
@@ -110,10 +112,12 @@ Collectioner LhwServer::acceptClientOfServer(int32_t sockfd)
 
         // 建立对客户端套接字的连接对象connecter
         Collectioner connection = std::make_shared<LhwClientConnected>(conn_sock);
+        LOG(LOG_DEBUG) << "acceptconnection";
         
         // 通过main中初始化的回调函数,再次调用回调函数
         if (_connectHandler)
         {
+            LOG(LOG_DEBUG) << "connectHandler exist";
             _connectHandler(connection.get());
         }
 

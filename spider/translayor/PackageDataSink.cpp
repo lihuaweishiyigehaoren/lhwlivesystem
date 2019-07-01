@@ -26,7 +26,8 @@ namespace translayor
             response.setStatusMessage("OK");
             response.setContent("I have got your message");
 
-            event.GetStream()->sendData(LhwByteArray(response.toStdString())); // Send to peer
+            // LhwByteArray reply(response.toStdString());
+            event.GetStream()->postDataToBuffer(response.toStdString()); // Send to peer
 
             LOG(LOG_DEBUG) << "get data";
         });
@@ -43,6 +44,7 @@ namespace translayor
 
     int32_t PackageDataSink::Write(IOStream* stream, const char* buf, int64_t bytes) 
     {
+        LOG(LOG_DEBUG) << "Write";
         _data.Concat(LhwByteArray(buf, static_cast<int32_t>(bytes)));
         // 保证是一个完整的包
         if (_data.size() >= _totalSize) 

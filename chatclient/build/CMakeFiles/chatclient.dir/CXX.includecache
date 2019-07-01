@@ -175,6 +175,8 @@ LhwLinuxEpoll.h
 ../../spider/translayor/LhwLinuxEpoll.h
 LhwBaseStream.h
 ../../spider/translayor/LhwBaseStream.h
+LhwByteArray.h
+../../spider/translayor/LhwByteArray.h
 iostream
 -
 string
@@ -188,6 +190,12 @@ sys/time.h
 netinet/in.h
 -
 errno.h
+-
+vector
+-
+mutex
+-
+condition_variable
 -
 
 ../../spider/translayor/LhwEventQueueLoop.h
@@ -222,6 +230,8 @@ LhwEpollLoop.h
 LhwByteArray.h
 ../../spider/translayor/LhwByteArray.h
 functional
+-
+string
 -
 
 ../../spider/translayor/LhwLinuxEpoll.h
@@ -314,5 +324,7 @@ string
 thread
 -
 memory
+-
+time.h
 -
 

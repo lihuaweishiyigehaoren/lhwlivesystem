@@ -17,6 +17,7 @@
 
 #include "LhwLinuxEpoll.h"
 #include "LhwBaseStream.h"
+#include "LhwByteArray.h"
 
 #include <iostream>
 #include <string>
@@ -25,6 +26,10 @@
 #include <sys/time.h>
 #include <netinet/in.h>
 #include <errno.h>
+// #include <vector>
+#include <queue>
+#include <mutex>
+#include <condition_variable>
 
 namespace translayor
 {
@@ -52,7 +57,7 @@ namespace translayor
         */
         virtual int32_t sendData(const LhwByteArray& byteArray) override;
 
-        uint32_t getEvent() const
+        uint32_t getEvent()
         {
             return _events;
         }
@@ -72,9 +77,45 @@ namespace translayor
             return _dataHandler;
         }
 
+        /*
+        * 将数据加入到输出缓存
+        * @para event 事件
+        */
+        virtual void postDataToBuffer(const std::string &data) override;
+
+        /*
+        * 从输出缓存中获取容器
+        */
+        std::string getDataFromBuffer()
+        {
+            std::unique_lock<std::mutex> locker(_mutex);
+
+            if(_buffers.empty())
+            {
+                // return std::string("");
+                _waitCondition.wait_for(locker,std::chrono::microseconds(5));
+
+            }
+
+            if(!_buffers.empty())
+            {
+                std::string data = _buffers.front();
+                _buffers.pop();
+
+                return data;
+            }
+
+            return std::string("");
+        }
+
     private:
         uint32_t _events; // 加入epoll的事件属性
         DataHandler _dataHandler; // 初始化为了PackageDataSink中Write()函数
+
+        // 使用缓存
+        std::mutex _mutex;
+        std::condition_variable _waitCondition;
+        std::queue<std::string> _buffers;
     };
 
     typedef std::shared_ptr <LhwEpollStream> EPollStreamPtr;

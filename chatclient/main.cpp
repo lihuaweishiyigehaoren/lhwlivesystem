@@ -11,6 +11,7 @@
 #include <string>
 #include <thread>
 #include <memory>
+#include <time.h>
 
 using namespace std;
 
@@ -47,7 +48,14 @@ int32_t main()
     // translayor::EPollClientPtr client = translayor::EPollClient::Connect("120.78.146.208", DefaultPort, &dataSink);
     translayor::EPollClientPtr client = translayor::LhwClient::connect("127.0.0.1", DefaultPort, &dataSink);
 
-    client->sendData(translayor::LhwByteArray("hello", 5));
+    while (1)
+    {
+        client->sendData(translayor::LhwByteArray("hello", 5));
+        usleep(1000);
+    }
+    
+    
+    // client->sendData(translayor::LhwByteArray("woshiniba",9));
 
     SampleEventQueueLoop sampleQueue(&mainEventQueue);
     sampleQueue.Start();

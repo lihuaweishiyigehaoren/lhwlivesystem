@@ -99,6 +99,9 @@ void LhwEpollLoop::_processEpollEventThread()
     {
         int32_t nfds;
         nfds = epoll_wait(_eventfd, events, MAX_EVENT_COUNT, -1); // 返回套接字个数准备对I/O有需求
+
+        LOG(LOG_DEBUG) << nfds;
+
         if (-1 == nfds)
         // 有错误发生
         {
@@ -144,7 +147,7 @@ void LhwEpollLoop::_handleEpollEvent(int32_t eventfd, NativeSocketEvent *events,
 
         if (events[i].events & EPOLLOUT)
         {
-            
+            _write(eventfd, fd, events[i].events);
         }
     }
 }
@@ -167,6 +170,7 @@ void LhwEpollLoop::_read(int32_t eventfd, int32_t fd, uint32_t events)
     LOG(LOG_DEBUG) << "_read";
 
     EPollStreamPtr stream = _streams[fd];
+    if(!stream.get()) return;
 
     char buffer[BUFSIZ];
     int32_t readSize;
@@ -174,15 +178,21 @@ void LhwEpollLoop::_read(int32_t eventfd, int32_t fd, uint32_t events)
 
     stream->setEvents(events);
 
-    if ((nread == -1 && errno != EAGAIN) || readSize == 0)
+    if ((nread == -1 && errno != EAGAIN) || readSize == 0)// 前者表示缓冲区数据读完,但是连接还在,下次数据来的时候还会触发,后者表示连接被远程关闭
     {
+        // 读错误
         _streams.erase(fd);
+        shutdown(fd,SHUT_RD);// 关闭的同时也需要epoll_ctl del
 
         LOG(LOG_WARNING) << "errno: " << errno << ": " << strerror(errno) << ", nread: " << nread << ", n" << readSize;
         return;
     }
 
     _enqueue(stream, buffer, readSize);
+
+    // stream->setEvents(stream->getEvent() | EPOLLOUT);
+    // modifyEpollEvents(stream->getEvent(),fd);
+
 }
 
 void LhwEpollLoop::_enqueue(EPollStreamPtr stream, const char *buf, int64_t nread)
@@ -191,9 +201,37 @@ void LhwEpollLoop::_enqueue(EPollStreamPtr stream, const char *buf, int64_t nrea
 
     if (stream->getDataHandler())
     {
+        LOG(LOG_DEBUG) << "stream->handler";
         // 将读取到的内容发送到系统的数据读取队列中,通知数据监听方来获取处理后的数据
         // 在这里getDataHandler调用的是DataSink中Write函数
         stream->getDataHandler()(buf, nread);
+    }
+}
+void LhwEpollLoop::_write(int32_t eventfd,int32_t fd, uint32_t events)
+{
+    LOG(LOG_DEBUG) << "_write";
+
+    EPollStreamPtr stream = _streams[fd];
+    if(!stream.get()) return;
+
+    // 发送缓冲区数据
+    while (true)
+    {
+        std::string data = stream->getDataFromBuffer();
+        if(data.size())
+        {
+            int32_t nwrite = stream->sendData(LhwByteArray(data));
+            if(nwrite == -1 && errno != EAGAIN)
+            {
+                _streams.erase(fd);
+                shutdown(fd,SHUT_WR);
+                return;
+            }
+        }
+        else
+        {
+            break;
+        }   
     }
 }
 

@@ -19,12 +19,12 @@ namespace  translayor {
 
     void LhwHttpRequest::parseStdStringList(const StdStringList& stringList) 
     {
-        std::string requestLine = stringList.front();
-        parseRequestLine(requestLine); // 处理第一行
+        // std::string requestLine = stringList.front();
+        // parseRequestLine(requestLine); // 处理第一行
 
-        StdStringList contextLines = stringList;
-        contextLines.erase(contextLines.begin());
-        LhwHttpContext::parseStdStringList(contextLines);
+        // StdStringList contextLines = stringList;
+        // contextLines.erase(contextLines.begin());
+        // LhwHttpContext::parseStdStringList(contextLines);
     }
 
     void LhwHttpRequest::parseRequestLine(const std::string& requestLine) 
@@ -34,8 +34,8 @@ namespace  translayor {
         // std::cout<<words<<std::endl;
 
         setMethod(words[0]);
-        //SetPath(words[1]);
-        //SetVersion(words[2]);// 第一个单词作为请求方法,第二个单词作为路径,第三个单词作为版本号
+        // setPath(words[1]);
+        // setVersion(words[2]);// 第一个单词作为请求方法,第二个单词作为路径,第三个单词作为版本号
     }
 
     LhwHttpRequest LhwHttpRequest::fromStdString(const std::string& text) 

@@ -237,6 +237,8 @@ LhwLinuxEpoll.h
 /home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/LhwLinuxEpoll.h
 LhwBaseStream.h
 /home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/LhwBaseStream.h
+LhwByteArray.h
+/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/LhwByteArray.h
 iostream
 -
 string
@@ -250,6 +252,12 @@ sys/time.h
 netinet/in.h
 -
 errno.h
+-
+queue
+-
+mutex
+-
+condition_variable
 -
 
 /home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/LhwEventQueueLoop.cpp
@@ -288,6 +296,8 @@ LhwEpollLoop.h
 LhwByteArray.h
 /home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/LhwByteArray.h
 functional
+-
+string
 -
 
 /home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/LhwLinuxEpoll.h
