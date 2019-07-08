@@ -31,6 +31,7 @@ CMakeFiles/chatserver.dir/main.cpp.o: ../../spider/translayor/LhwServer.h
 CMakeFiles/chatserver.dir/main.cpp.o: ../../spider/translayor/LhwSocket.h
 CMakeFiles/chatserver.dir/main.cpp.o: ../../spider/translayor/LhwThreadPool.h
 CMakeFiles/chatserver.dir/main.cpp.o: ../../spider/translayor/LhwThreadSafeQuene.h
+CMakeFiles/chatserver.dir/main.cpp.o: ../../spider/translayor/LhwUser.h
 CMakeFiles/chatserver.dir/main.cpp.o: ../../spider/translayor/PackageDataSink.h
 CMakeFiles/chatserver.dir/main.cpp.o: ../ServerEventQueueLoop.h
 CMakeFiles/chatserver.dir/main.cpp.o: ../main.cpp

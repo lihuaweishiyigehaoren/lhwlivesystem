@@ -6,5 +6,5 @@ CXX_FLAGS = -fPIC   -std=c++11 -g -O0 -msse3 -mavx -fPIC -DNDEBUG -DOS_LINUX -DU
 
 CXX_DEFINES = -Dtranslayor_EXPORTS
 
-CXX_INCLUDES = -I/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/. -I/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/http -I/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/../logging 
+CXX_INCLUDES = -I/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/. -I/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/http -I/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/../logging -I/usr/include/mysql 
 

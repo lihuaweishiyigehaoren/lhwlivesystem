@@ -111,6 +111,8 @@ LhwEpollStream.h
 ../../spider/translayor/LhwEpollStream.h
 DataSink.h
 ../../spider/translayor/DataSink.h
+LhwUser.h
+../../spider/translayor/LhwUser.h
 memory
 -
 
@@ -203,9 +205,11 @@ netinet/in.h
 -
 errno.h
 -
-vector
+queue
 -
 mutex
+-
+condition_variable
 -
 
 ../../spider/translayor/LhwEventQueueLoop.h
@@ -301,6 +305,8 @@ mutex
 -
 condition_variable
 -
+
+../../spider/translayor/LhwUser.h
 
 ../../spider/translayor/PackageDataSink.h
 DataSink.h

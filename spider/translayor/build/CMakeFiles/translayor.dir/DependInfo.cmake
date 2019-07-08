@@ -4,13 +4,20 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/LhwChat.cpp" "/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/build/CMakeFiles/translayor.dir/LhwChat.cpp.o"
+  "/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/LhwChatManager.cpp" "/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/build/CMakeFiles/translayor.dir/LhwChatManager.cpp.o"
   "/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/LhwClient.cpp" "/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/build/CMakeFiles/translayor.dir/LhwClient.cpp.o"
   "/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/LhwClientConnected.cpp" "/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/build/CMakeFiles/translayor.dir/LhwClientConnected.cpp.o"
   "/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/LhwCommon.cpp" "/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/build/CMakeFiles/translayor.dir/LhwCommon.cpp.o"
+  "/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/LhwDBHelper.cpp" "/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/build/CMakeFiles/translayor.dir/LhwDBHelper.cpp.o"
   "/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/LhwEpollLoop.cpp" "/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/build/CMakeFiles/translayor.dir/LhwEpollLoop.cpp.o"
   "/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/LhwEpollStream.cpp" "/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/build/CMakeFiles/translayor.dir/LhwEpollStream.cpp.o"
   "/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/LhwEventQueueLoop.cpp" "/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/build/CMakeFiles/translayor.dir/LhwEventQueueLoop.cpp.o"
+  "/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/LhwOnLineDao.cpp" "/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/build/CMakeFiles/translayor.dir/LhwOnLineDao.cpp.o"
+  "/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/LhwOnLineDaoImp.cpp" "/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/build/CMakeFiles/translayor.dir/LhwOnLineDaoImp.cpp.o"
   "/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/LhwServer.cpp" "/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/build/CMakeFiles/translayor.dir/LhwServer.cpp.o"
+  "/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/LhwUserDao.cpp" "/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/build/CMakeFiles/translayor.dir/LhwUserDao.cpp.o"
+  "/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/LhwUserDaoImp.cpp" "/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/build/CMakeFiles/translayor.dir/LhwUserDaoImp.cpp.o"
   "/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/PackageDataSink.cpp" "/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/build/CMakeFiles/translayor.dir/PackageDataSink.cpp.o"
   "/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/http/LhwHttpConnection.cpp" "/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/build/CMakeFiles/translayor.dir/http/LhwHttpConnection.cpp.o"
   "/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/http/LhwHttpContext.cpp" "/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/build/CMakeFiles/translayor.dir/http/LhwHttpContext.cpp.o"
@@ -26,6 +33,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../."
   "../http"
   "../../logging"
+  "/usr/include/mysql"
   )
 
 # Targets to which this target links.

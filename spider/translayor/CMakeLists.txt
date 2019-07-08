@@ -8,13 +8,14 @@ add_compile_options(-std=c++11 -g -O0 -msse3 -mavx -fPIC -DNDEBUG -DOS_LINUX -DU
 include_directories(.)
 include_directories(http)
 include_directories(../logging)
+include_directories(/usr/include/mysql)
 link_directories(../logging/build)
 
 add_library(translayor SHARED LhwCommon.cpp LhwClient.cpp LhwClientConnected.cpp LhwEpollLoop.cpp LhwServer.cpp 
 LhwEpollStream.cpp LhwEventQueueLoop.cpp PackageDataSink.cpp 
-http/LhwHttpConnection.cpp http/LhwHttpContext.cpp http/LhwHttpRequest.cpp http/LhwHttpResponse.cpp 
+LhwUserDao.cpp LhwUserDaoImp.cpp LhwChat.cpp LhwChatManager.cpp LhwDBHelper.cpp LhwOnLineDao.cpp LhwOnLineDaoImp.cpp http/LhwHttpConnection.cpp http/LhwHttpContext.cpp http/LhwHttpRequest.cpp http/LhwHttpResponse.cpp 
 http/LhwHttpServer.cpp http/String.cpp)
 
-target_link_libraries(translayor logging pthread)
+target_link_libraries(translayor logging pthread mysqlclient)
 
 install(TARGETS translayor DESTINATION lib)

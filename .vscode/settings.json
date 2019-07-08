@@ -44,6 +44,7 @@
         "typeinfo": "cpp",
         "utility": "cpp",
         "cstddef": "cpp",
-        "cstdarg": "cpp"
+        "cstdarg": "cpp",
+        "string": "cpp"
     }
 }

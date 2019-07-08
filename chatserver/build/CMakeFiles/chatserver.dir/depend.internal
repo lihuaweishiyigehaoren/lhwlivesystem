@@ -32,6 +32,7 @@ CMakeFiles/chatserver.dir/main.cpp.o
  ../../spider/translayor/LhwSocket.h
  ../../spider/translayor/LhwThreadPool.h
  ../../spider/translayor/LhwThreadSafeQuene.h
+ ../../spider/translayor/LhwUser.h
  ../../spider/translayor/PackageDataSink.h
  /home/lihuawei/桌面/usegit/lhwlivesystem/chatserver/ServerEventQueueLoop.h
  /home/lihuawei/桌面/usegit/lhwlivesystem/chatserver/main.cpp

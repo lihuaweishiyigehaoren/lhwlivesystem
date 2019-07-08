@@ -17,6 +17,7 @@
 
 #include "LhwEpollStream.h"
 #include "DataSink.h"
+#include "LhwUser.h"
 
 #include <memory>
 
@@ -47,6 +48,65 @@ namespace translayor
         void connect(const std::string& host, int32_t port);
         static EPollClientPtr connect(const std::string& ip, int32_t port, DataSink* dataSink);
 
+        /*
+        * 读取服务器返回来的协议包
+        */
+       void onReadyRead();
+
+        /*
+        * 服务器套接字连接客户端
+        * @param sockfd epoll_create创建的侦听套接字
+        */
+        void serverReg(User user);
+
+        /*
+        * 服务器套接字连接客户端
+        * @param sockfd epoll_create创建的侦听套接字
+        */
+        void serverLogin(User user);
+
+        /*
+        * 服务器套接字连接客户端
+        * @param sockfd epoll_create创建的侦听套接字
+        */
+        void serverExit(User user);
+
+        /*
+        * 服务器套接字连接客户端
+        * @param sockfd epoll_create创建的侦听套接字
+        */
+        void serverRoomName(User user);
+
+        /*
+        * 服务器套接字连接客户端
+        * @param sockfd epoll_create创建的侦听套接字
+        */
+        void serverChatName(User user);
+
+        /*
+        * 服务器套接字连接客户端
+        * @param sockfd epoll_create创建的侦听套接字
+        */
+        void serverRoomList(User user);
+
+        /*
+        * 服务器套接字连接客户端
+        * @param sockfd epoll_create创建的侦听套接字
+        */
+        void serverChatList(User user);
+
+        /*
+        * 服务器套接字连接客户端
+        * @param sockfd epoll_create创建的侦听套接字
+        */
+        void serverChatText(User user);
+
+        /*
+        * 服务器套接字连接客户端
+        * @param sockfd epoll_create创建的侦听套接字
+        */
+        void serverQuit(User user);
+
     private:
         LhwClient(NativeSocket clientSocket) :
                 LhwEpollStream(clientSocket){
@@ -55,5 +115,8 @@ namespace translayor
 
     private:
         uint32_t _events;
+
+        static std::mutex _mutex1;
+        static std::mutex _mutex2;
     };
 }

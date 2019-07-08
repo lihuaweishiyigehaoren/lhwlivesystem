@@ -5,7 +5,8 @@
 
 #include <unistd.h>
 
-namespace translayor {
+namespace translayor 
+{
 
     // 该函数负责向服务器发起连接
     void LhwClient::connect(const std::string& host, int32_t port) 
@@ -98,5 +99,102 @@ namespace translayor {
         }
 
         return 0;
+    }
+
+    // 首先获取user的值,这样才能决定做哪个决定-可以说这里就是read-连接上的客户端的read
+    void LhwClient::onReadyRead()
+    {
+        User user;
+        memset(&user,0,sizeof(user));
+        if(1)
+        {
+            switch(user.type)
+            {
+                case REG:
+                    serverReg(user);       //注册
+                break;
+                case LOGIN:
+                    serverLogin (user);    //登录
+                break;
+                case EXIT:
+                    serverExit(user);    //用户下线
+                break;
+                case ROOMNAME:
+                    serverRoomName(user);  //聊天室列表
+                break;
+                case ROOMLIST:
+                    serverRoomList(user);  //刷新聊天室
+                break;
+                case CHATNAME:
+                    serverChatName (user); //用户列表
+                break;
+                case CHATLIST:
+                    serverChatList (user); //刷新用户列表
+                break;
+                case QUIT:
+                    serverQuit(user);      //退出聊天室
+                break;
+                case TEXT:
+                    serverChatText (user);  //文字聊天
+                break;
+                case VIDEO:
+                    serverChatText (user);     //视频聊天
+                break;
+                case UNVIDEO:
+                    serverChatText (user);     //关闭视频
+                break;
+                case BS:
+                    serverChatText (user);     //弹幕聊天
+                break;
+                default:break;
+            }
+        }
+    }
+
+    // 既然是异步的,这个时候应该把数据放入输出缓冲区
+    void LhwClient::serverReg(User user) 
+    {
+        // 解析的数据,然后做回应
+        // 最后的待发送的数据放入输出缓冲区
+    }
+
+    void LhwClient::serverLogin(User user)
+    {
+
+    }
+
+    void LhwClient::serverExit(User user)
+    {
+
+    }
+
+    void LhwClient::serverRoomName(User user)
+    {
+
+    }
+
+    void LhwClient::serverChatName(User user)
+    {
+
+    }
+
+    void LhwClient::serverRoomList(User user)
+    {
+
+    }
+
+    void LhwClient::serverChatList(User user)
+    {
+
+    }
+
+    void LhwClient::serverChatText(User user)
+    {
+
+    }
+
+    void LhwClient::serverQuit(User user)
+    {
+
     }
 }

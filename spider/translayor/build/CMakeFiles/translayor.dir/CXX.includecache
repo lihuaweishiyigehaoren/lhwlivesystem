@@ -106,6 +106,30 @@ cstdint
 string
 -
 
+/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/LhwChat.cpp
+LhwChat.h
+/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/LhwChat.h
+
+/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/LhwChat.h
+string
+-
+LhwSocket.h
+/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/LhwSocket.h
+
+/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/LhwChatManager.cpp
+LhwChatManager.h
+/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/LhwChatManager.h
+
+/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/LhwChatManager.h
+vector
+-
+string
+-
+mutex
+-
+LhwChat.h
+/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/LhwChat.h
+
 /home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/LhwClient.cpp
 LhwClient.h
 /home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/LhwClient.h
@@ -123,6 +147,8 @@ LhwEpollStream.h
 /home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/LhwEpollStream.h
 DataSink.h
 /home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/DataSink.h
+LhwUser.h
+/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/LhwUser.h
 memory
 -
 
@@ -181,6 +207,20 @@ LhwServer.h
 /home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/LhwServer.h
 LhwEpollStream.h
 /home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/LhwEpollStream.h
+
+/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/LhwDBHelper.cpp
+LhwDBHelper.h
+/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/LhwDBHelper.h
+iostream
+-
+cstdlib
+-
+
+/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/LhwDBHelper.h
+mysql/mysql.h
+-
+string
+-
 
 /home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/LhwEpollLoop.cpp
 LhwEpollLoop.h
@@ -314,6 +354,24 @@ sys/epoll.h
 
 /home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/LhwLoop.h
 
+/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/LhwOnLineDao.cpp
+LhwOnLineDao.h
+/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/LhwOnLineDao.h
+
+/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/LhwOnLineDao.h
+vector
+-
+LhwDBHelper.h
+/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/LhwDBHelper.h
+LhwUser.h
+/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/LhwUser.h
+
+/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/LhwOnLineDaoImp.cpp
+LhwOnLineDaoImp.h
+/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/LhwOnLineDaoImp.h
+
+/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/LhwOnLineDaoImp.h
+
 /home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/LhwServer.cpp
 LhwServer.h
 /home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/LhwServer.h
@@ -371,6 +429,26 @@ mutex
 -
 condition_variable
 -
+
+/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/LhwUser.h
+
+/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/LhwUserDao.cpp
+LhwUserDao.h
+/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/LhwUserDao.h
+
+/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/LhwUserDao.h
+LhwUser.h
+/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/LhwUser.h
+string
+-
+
+/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/LhwUserDaoImp.cpp
+LhwUserDaoImp.h
+/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/LhwUserDaoImp.h
+
+/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/LhwUserDaoImp.h
+LhwUserDao.h
+/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/LhwUserDao.h
 
 /home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/PackageDataSink.cpp
 PackageDataSink.h

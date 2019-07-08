@@ -1,12 +1,11 @@
 #include "mainwindow.h"
 #include <QApplication>
-#include "Net.h"
-#include "EventQueue.h"
-#include "EventQueueLoop.h"
-#include "IoLoop.h"
+#include "LhwEventVector.h"
+#include "LhwEventQueueLoop.h"
+#include "LhwIOLoopConfig.h"
 #include "PackageDataSink.h"
-#include "EPollServer.h"
-#include "EPollClient.h"
+#include "LhwServer.h"
+#include "LhwClient.h"
 #include "Logging.h"
 
 #include <vector>
@@ -17,14 +16,15 @@
 
 using namespace std;
 
-const int32_t DefaultPort = 80;
-class SampleEventQueueLoop : public translayor::EventQueueLoop {
+const int32_t DefaultPort = 8080;
+class SampleEventQueueLoop : public translayor::LhwEventQueueLoop {
 public:
-    SampleEventQueueLoop(translayor::EventQueue* eventQueue) :
-            EventQueueLoop(eventQueue) {}
+    SampleEventQueueLoop(translayor::LhwEventVector* eventQueue) :
+            LhwEventQueueLoop(eventQueue) {}
 
 protected:
-    virtual void OnEvent(std::shared_ptr<translayor::BaseEvent> event) override {
+    virtual void OnEvent(std::shared_ptr<translayor::BaseEvent> event) override
+    {
         /*
        LOG(KLOG_DEBUG) << ("SampleEventQueueLoop::OnEvent");
         char buf[BUFSIZ]; // BUFSIZ is 1024
@@ -40,18 +40,15 @@ int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
 
-    logging::Logging::SetLogFile("client-all.log");
-    logging::Logging::SetLogFile({ LOG_INFO, LOG_DEBUG }, "client-output.log");
-    logging::Logging::SetLogFile({ LOG_WARNING, LOG_ERROR, LOG_FATAL }, "client-error.log");
-
-    translayor::EventQueue mainEventQueue(5);
+    translayor::LhwEventVector mainEventQueue(5);
     translayor::IoLoop::Get()->Start();
 
     translayor::PackageDataSink dataSink(&mainEventQueue);
 
-    translayor::EPollClientPtr client = translayor::EPollClient::Connect("120.78.146.208", DefaultPort, &dataSink);
+    translayor::EPollClientPtr client =
+            translayor::LhwClient::connect("120.78.146.208", DefaultPort, &dataSink);
 
-    client->Send(translayor::ByteArray("hello", 5));
+    client->sendData(translayor::LhwByteArray("hello", 5));
 
     MainWindow w;
     w.show();

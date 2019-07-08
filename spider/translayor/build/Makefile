@@ -169,6 +169,60 @@ translayor/fast:
 	$(MAKE) -f CMakeFiles/translayor.dir/build.make CMakeFiles/translayor.dir/build
 .PHONY : translayor/fast
 
+LhwChat.o: LhwChat.cpp.o
+
+.PHONY : LhwChat.o
+
+# target to build an object file
+LhwChat.cpp.o:
+	$(MAKE) -f CMakeFiles/translayor.dir/build.make CMakeFiles/translayor.dir/LhwChat.cpp.o
+.PHONY : LhwChat.cpp.o
+
+LhwChat.i: LhwChat.cpp.i
+
+.PHONY : LhwChat.i
+
+# target to preprocess a source file
+LhwChat.cpp.i:
+	$(MAKE) -f CMakeFiles/translayor.dir/build.make CMakeFiles/translayor.dir/LhwChat.cpp.i
+.PHONY : LhwChat.cpp.i
+
+LhwChat.s: LhwChat.cpp.s
+
+.PHONY : LhwChat.s
+
+# target to generate assembly for a file
+LhwChat.cpp.s:
+	$(MAKE) -f CMakeFiles/translayor.dir/build.make CMakeFiles/translayor.dir/LhwChat.cpp.s
+.PHONY : LhwChat.cpp.s
+
+LhwChatManager.o: LhwChatManager.cpp.o
+
+.PHONY : LhwChatManager.o
+
+# target to build an object file
+LhwChatManager.cpp.o:
+	$(MAKE) -f CMakeFiles/translayor.dir/build.make CMakeFiles/translayor.dir/LhwChatManager.cpp.o
+.PHONY : LhwChatManager.cpp.o
+
+LhwChatManager.i: LhwChatManager.cpp.i
+
+.PHONY : LhwChatManager.i
+
+# target to preprocess a source file
+LhwChatManager.cpp.i:
+	$(MAKE) -f CMakeFiles/translayor.dir/build.make CMakeFiles/translayor.dir/LhwChatManager.cpp.i
+.PHONY : LhwChatManager.cpp.i
+
+LhwChatManager.s: LhwChatManager.cpp.s
+
+.PHONY : LhwChatManager.s
+
+# target to generate assembly for a file
+LhwChatManager.cpp.s:
+	$(MAKE) -f CMakeFiles/translayor.dir/build.make CMakeFiles/translayor.dir/LhwChatManager.cpp.s
+.PHONY : LhwChatManager.cpp.s
+
 LhwClient.o: LhwClient.cpp.o
 
 .PHONY : LhwClient.o
@@ -249,6 +303,33 @@ LhwCommon.s: LhwCommon.cpp.s
 LhwCommon.cpp.s:
 	$(MAKE) -f CMakeFiles/translayor.dir/build.make CMakeFiles/translayor.dir/LhwCommon.cpp.s
 .PHONY : LhwCommon.cpp.s
+
+LhwDBHelper.o: LhwDBHelper.cpp.o
+
+.PHONY : LhwDBHelper.o
+
+# target to build an object file
+LhwDBHelper.cpp.o:
+	$(MAKE) -f CMakeFiles/translayor.dir/build.make CMakeFiles/translayor.dir/LhwDBHelper.cpp.o
+.PHONY : LhwDBHelper.cpp.o
+
+LhwDBHelper.i: LhwDBHelper.cpp.i
+
+.PHONY : LhwDBHelper.i
+
+# target to preprocess a source file
+LhwDBHelper.cpp.i:
+	$(MAKE) -f CMakeFiles/translayor.dir/build.make CMakeFiles/translayor.dir/LhwDBHelper.cpp.i
+.PHONY : LhwDBHelper.cpp.i
+
+LhwDBHelper.s: LhwDBHelper.cpp.s
+
+.PHONY : LhwDBHelper.s
+
+# target to generate assembly for a file
+LhwDBHelper.cpp.s:
+	$(MAKE) -f CMakeFiles/translayor.dir/build.make CMakeFiles/translayor.dir/LhwDBHelper.cpp.s
+.PHONY : LhwDBHelper.cpp.s
 
 LhwEpollLoop.o: LhwEpollLoop.cpp.o
 
@@ -331,6 +412,60 @@ LhwEventQueueLoop.cpp.s:
 	$(MAKE) -f CMakeFiles/translayor.dir/build.make CMakeFiles/translayor.dir/LhwEventQueueLoop.cpp.s
 .PHONY : LhwEventQueueLoop.cpp.s
 
+LhwOnLineDao.o: LhwOnLineDao.cpp.o
+
+.PHONY : LhwOnLineDao.o
+
+# target to build an object file
+LhwOnLineDao.cpp.o:
+	$(MAKE) -f CMakeFiles/translayor.dir/build.make CMakeFiles/translayor.dir/LhwOnLineDao.cpp.o
+.PHONY : LhwOnLineDao.cpp.o
+
+LhwOnLineDao.i: LhwOnLineDao.cpp.i
+
+.PHONY : LhwOnLineDao.i
+
+# target to preprocess a source file
+LhwOnLineDao.cpp.i:
+	$(MAKE) -f CMakeFiles/translayor.dir/build.make CMakeFiles/translayor.dir/LhwOnLineDao.cpp.i
+.PHONY : LhwOnLineDao.cpp.i
+
+LhwOnLineDao.s: LhwOnLineDao.cpp.s
+
+.PHONY : LhwOnLineDao.s
+
+# target to generate assembly for a file
+LhwOnLineDao.cpp.s:
+	$(MAKE) -f CMakeFiles/translayor.dir/build.make CMakeFiles/translayor.dir/LhwOnLineDao.cpp.s
+.PHONY : LhwOnLineDao.cpp.s
+
+LhwOnLineDaoImp.o: LhwOnLineDaoImp.cpp.o
+
+.PHONY : LhwOnLineDaoImp.o
+
+# target to build an object file
+LhwOnLineDaoImp.cpp.o:
+	$(MAKE) -f CMakeFiles/translayor.dir/build.make CMakeFiles/translayor.dir/LhwOnLineDaoImp.cpp.o
+.PHONY : LhwOnLineDaoImp.cpp.o
+
+LhwOnLineDaoImp.i: LhwOnLineDaoImp.cpp.i
+
+.PHONY : LhwOnLineDaoImp.i
+
+# target to preprocess a source file
+LhwOnLineDaoImp.cpp.i:
+	$(MAKE) -f CMakeFiles/translayor.dir/build.make CMakeFiles/translayor.dir/LhwOnLineDaoImp.cpp.i
+.PHONY : LhwOnLineDaoImp.cpp.i
+
+LhwOnLineDaoImp.s: LhwOnLineDaoImp.cpp.s
+
+.PHONY : LhwOnLineDaoImp.s
+
+# target to generate assembly for a file
+LhwOnLineDaoImp.cpp.s:
+	$(MAKE) -f CMakeFiles/translayor.dir/build.make CMakeFiles/translayor.dir/LhwOnLineDaoImp.cpp.s
+.PHONY : LhwOnLineDaoImp.cpp.s
+
 LhwServer.o: LhwServer.cpp.o
 
 .PHONY : LhwServer.o
@@ -357,6 +492,60 @@ LhwServer.s: LhwServer.cpp.s
 LhwServer.cpp.s:
 	$(MAKE) -f CMakeFiles/translayor.dir/build.make CMakeFiles/translayor.dir/LhwServer.cpp.s
 .PHONY : LhwServer.cpp.s
+
+LhwUserDao.o: LhwUserDao.cpp.o
+
+.PHONY : LhwUserDao.o
+
+# target to build an object file
+LhwUserDao.cpp.o:
+	$(MAKE) -f CMakeFiles/translayor.dir/build.make CMakeFiles/translayor.dir/LhwUserDao.cpp.o
+.PHONY : LhwUserDao.cpp.o
+
+LhwUserDao.i: LhwUserDao.cpp.i
+
+.PHONY : LhwUserDao.i
+
+# target to preprocess a source file
+LhwUserDao.cpp.i:
+	$(MAKE) -f CMakeFiles/translayor.dir/build.make CMakeFiles/translayor.dir/LhwUserDao.cpp.i
+.PHONY : LhwUserDao.cpp.i
+
+LhwUserDao.s: LhwUserDao.cpp.s
+
+.PHONY : LhwUserDao.s
+
+# target to generate assembly for a file
+LhwUserDao.cpp.s:
+	$(MAKE) -f CMakeFiles/translayor.dir/build.make CMakeFiles/translayor.dir/LhwUserDao.cpp.s
+.PHONY : LhwUserDao.cpp.s
+
+LhwUserDaoImp.o: LhwUserDaoImp.cpp.o
+
+.PHONY : LhwUserDaoImp.o
+
+# target to build an object file
+LhwUserDaoImp.cpp.o:
+	$(MAKE) -f CMakeFiles/translayor.dir/build.make CMakeFiles/translayor.dir/LhwUserDaoImp.cpp.o
+.PHONY : LhwUserDaoImp.cpp.o
+
+LhwUserDaoImp.i: LhwUserDaoImp.cpp.i
+
+.PHONY : LhwUserDaoImp.i
+
+# target to preprocess a source file
+LhwUserDaoImp.cpp.i:
+	$(MAKE) -f CMakeFiles/translayor.dir/build.make CMakeFiles/translayor.dir/LhwUserDaoImp.cpp.i
+.PHONY : LhwUserDaoImp.cpp.i
+
+LhwUserDaoImp.s: LhwUserDaoImp.cpp.s
+
+.PHONY : LhwUserDaoImp.s
+
+# target to generate assembly for a file
+LhwUserDaoImp.cpp.s:
+	$(MAKE) -f CMakeFiles/translayor.dir/build.make CMakeFiles/translayor.dir/LhwUserDaoImp.cpp.s
+.PHONY : LhwUserDaoImp.cpp.s
 
 PackageDataSink.o: PackageDataSink.cpp.o
 
@@ -560,6 +749,12 @@ help:
 	@echo "... list_install_components"
 	@echo "... install/local"
 	@echo "... install"
+	@echo "... LhwChat.o"
+	@echo "... LhwChat.i"
+	@echo "... LhwChat.s"
+	@echo "... LhwChatManager.o"
+	@echo "... LhwChatManager.i"
+	@echo "... LhwChatManager.s"
 	@echo "... LhwClient.o"
 	@echo "... LhwClient.i"
 	@echo "... LhwClient.s"
@@ -569,6 +764,9 @@ help:
 	@echo "... LhwCommon.o"
 	@echo "... LhwCommon.i"
 	@echo "... LhwCommon.s"
+	@echo "... LhwDBHelper.o"
+	@echo "... LhwDBHelper.i"
+	@echo "... LhwDBHelper.s"
 	@echo "... LhwEpollLoop.o"
 	@echo "... LhwEpollLoop.i"
 	@echo "... LhwEpollLoop.s"
@@ -578,9 +776,21 @@ help:
 	@echo "... LhwEventQueueLoop.o"
 	@echo "... LhwEventQueueLoop.i"
 	@echo "... LhwEventQueueLoop.s"
+	@echo "... LhwOnLineDao.o"
+	@echo "... LhwOnLineDao.i"
+	@echo "... LhwOnLineDao.s"
+	@echo "... LhwOnLineDaoImp.o"
+	@echo "... LhwOnLineDaoImp.i"
+	@echo "... LhwOnLineDaoImp.s"
 	@echo "... LhwServer.o"
 	@echo "... LhwServer.i"
 	@echo "... LhwServer.s"
+	@echo "... LhwUserDao.o"
+	@echo "... LhwUserDao.i"
+	@echo "... LhwUserDao.s"
+	@echo "... LhwUserDaoImp.o"
+	@echo "... LhwUserDaoImp.i"
+	@echo "... LhwUserDaoImp.s"
 	@echo "... PackageDataSink.o"
 	@echo "... PackageDataSink.i"
 	@echo "... PackageDataSink.s"
