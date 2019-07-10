@@ -40,15 +40,15 @@ int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
 
-    translayor::LhwEventVector mainEventQueue(5);
-    translayor::IoLoop::Get()->Start();
+//    translayor::LhwEventVector mainEventQueue(5);
+//    translayor::IoLoop::Get()->Start();
 
-    translayor::PackageDataSink dataSink(&mainEventQueue);
+//    translayor::PackageDataSink dataSink(&mainEventQueue);
 
-    translayor::EPollClientPtr client =
-            translayor::LhwClient::connect("120.78.146.208", DefaultPort, &dataSink);
+//    translayor::EPollClientPtr client =
+//            translayor::LhwClient::connect("120.78.146.208", DefaultPort, &dataSink);
 
-    client->sendData(translayor::LhwByteArray("hello", 5));
+//    client->sendData(translayor::LhwByteArray("hello", 5));
 
     MainWindow w;
     w.show();

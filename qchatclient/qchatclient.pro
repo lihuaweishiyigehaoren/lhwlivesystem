@@ -5,6 +5,9 @@
 #-------------------------------------------------
 
 QT       += core gui
+QT      += network
+QT      += multimedia
+QT      += multimediawidgets
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -25,13 +28,25 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
         main.cpp \
-        mainwindow.cpp
+    chatroom.cpp \
+    clientsocket.cpp \
+    dialog.cpp \
+    roommanager.cpp \
+    videosurface.cpp \
+    mainwindow.cpp
 
 HEADERS += \
-        mainwindow.h
+    chatroom.h \
+    clientsocket.h \
+    dialog.h \
+    roommanager.h \
+    videosurface.h \
+    mainwindow.h
 
 FORMS += \
-        mainwindow.ui
+    chatroom.ui \
+    dialog.ui \
+    mainwindow.ui
 
 win32:CONFIG(release, debug|release): LIBS += -L$$PWD/../spider/logging/build/ -llogging
 else:win32:CONFIG(debug, debug|release): LIBS += -L$$PWD/../spider/logging/build/ -llogging

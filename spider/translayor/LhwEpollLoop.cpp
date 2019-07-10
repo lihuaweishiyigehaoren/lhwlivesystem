@@ -157,7 +157,7 @@ int32_t LhwEpollLoop::_acceptClient(int32_t eventfd, int32_t listenfd)
     LOG(LOG_DEBUG) << "_acceptClient";
 
     LhwServer *server = _servers.find(listenfd)->second;
-    Collectioner connection = server->acceptClientOfServer(eventfd); // 接收新客户端连接
+    Collecter connection = server->acceptClientOfServer(eventfd); // 接收新客户端连接
 
     if (connection != nullptr)
     {
@@ -172,9 +172,11 @@ void LhwEpollLoop::_read(int32_t eventfd, int32_t fd, uint32_t events)
     EPollStreamPtr stream = _streams[fd];
     if(!stream.get()) return;
 
-    char buffer[BUFSIZ];
+    // 这里使用User 代替buffer-统一数据格式
+    // char buffer[BUFSIZ];
+    User user;
     int32_t readSize;
-    int32_t nread = stream->receiveData(buffer, BUFSIZ, readSize);
+    int32_t nread = stream->receiveData((char*)&user, BUFSIZ, readSize);
 
     stream->setEvents(events);
 
@@ -188,14 +190,14 @@ void LhwEpollLoop::_read(int32_t eventfd, int32_t fd, uint32_t events)
         return;
     }
 
-    _enqueue(stream, buffer, readSize);
+    _enqueue(stream, user, readSize);
 
     // stream->setEvents(stream->getEvent() | EPOLLOUT);
     // modifyEpollEvents(stream->getEvent(),fd);
 
 }
 
-void LhwEpollLoop::_enqueue(EPollStreamPtr stream, const char *buf, int64_t nread)
+void LhwEpollLoop::_enqueue(EPollStreamPtr stream, User buf, int64_t nread)
 {
     LOG(LOG_DEBUG) << "_enqueue";
 
@@ -217,10 +219,10 @@ void LhwEpollLoop::_write(int32_t eventfd,int32_t fd, uint32_t events)
     // 发送缓冲区数据
     while (true)
     {
-        std::string data = stream->getDataFromBuffer();
-        if(data.size())
+        User user;
+        if(stream->getDataFromBuffer(user))
         {
-            int32_t nwrite = stream->sendData(LhwByteArray(data));
+            int32_t nwrite = stream->sendData(LhwByteArray((char*)&user,static_cast<int32_t>(sizeof(user))));
             if(nwrite == -1 && errno != EAGAIN)
             {
                 _streams.erase(fd);

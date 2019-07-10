@@ -27,9 +27,9 @@ namespace translayor
         typedef std::function<void(const LhwHttpRequest& request)> RequestHandler; // 请求到来时的回调函数
         typedef std::function<void(const std::string& data)> DataHandler; // 数据到来的回调函数
 
-        LhwHttpConnection(Connection * connection);
+        LhwHttpConnection(Client * connection);
 
-        int32_t handleData(const char* buffer, int64_t size);// 负责处理TCP连接的数据时间,将其翻译成HTTP消息
+        int32_t handleData(User buffer, int64_t size);// 负责处理TCP连接的数据时间,将其翻译成HTTP消息
 
         // 数据处理回调函数设置器
         void onData(DataHandler dataHandler) 
@@ -46,7 +46,7 @@ namespace translayor
         void sendResponse(const LhwHttpResponse& response);
 
     private:
-        Connection* _connection;
+        Client* _connection;
         LhwHttpRequest _request;
         LhwHttpResponse _response;
         DataHandler _dataHandler;

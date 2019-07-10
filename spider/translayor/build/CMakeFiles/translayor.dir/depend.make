@@ -40,6 +40,8 @@ CMakeFiles/translayor.dir/LhwClient.cpp.o: ../LhwSocket.h
 CMakeFiles/translayor.dir/LhwClient.cpp.o: ../LhwThreadPool.h
 CMakeFiles/translayor.dir/LhwClient.cpp.o: ../LhwThreadSafeQuene.h
 CMakeFiles/translayor.dir/LhwClient.cpp.o: ../LhwUser.h
+CMakeFiles/translayor.dir/LhwClient.cpp.o: ../LhwUserDao.h
+CMakeFiles/translayor.dir/LhwClient.cpp.o: ../LhwUserDaoImp.h
 CMakeFiles/translayor.dir/LhwClient.cpp.o: ../PackageDataSink.h
 
 CMakeFiles/translayor.dir/LhwClientConnected.cpp.o: ../../logging/Check.h
@@ -60,12 +62,24 @@ CMakeFiles/translayor.dir/LhwClientConnected.cpp.o: ../LhwEpollStream.h
 CMakeFiles/translayor.dir/LhwClientConnected.cpp.o: ../LhwIOStream.h
 CMakeFiles/translayor.dir/LhwClientConnected.cpp.o: ../LhwLinuxEpoll.h
 CMakeFiles/translayor.dir/LhwClientConnected.cpp.o: ../LhwSocket.h
+CMakeFiles/translayor.dir/LhwClientConnected.cpp.o: ../LhwUser.h
 
 CMakeFiles/translayor.dir/LhwCommon.cpp.o: ../LhwCommon.cpp
 CMakeFiles/translayor.dir/LhwCommon.cpp.o: ../LhwCommon.h
 
+CMakeFiles/translayor.dir/LhwDBHelper.cpp.o: ../../logging/Check.h
+CMakeFiles/translayor.dir/LhwDBHelper.cpp.o: ../../logging/CheckLogger.h
+CMakeFiles/translayor.dir/LhwDBHelper.cpp.o: ../../logging/ExpressionLogger.h
+CMakeFiles/translayor.dir/LhwDBHelper.cpp.o: ../../logging/IOStreamManager.h
+CMakeFiles/translayor.dir/LhwDBHelper.cpp.o: ../../logging/Interface.h
+CMakeFiles/translayor.dir/LhwDBHelper.cpp.o: ../../logging/Logger.h
+CMakeFiles/translayor.dir/LhwDBHelper.cpp.o: ../../logging/LoggerStream.h
+CMakeFiles/translayor.dir/LhwDBHelper.cpp.o: ../../logging/Logging.h
+CMakeFiles/translayor.dir/LhwDBHelper.cpp.o: ../../logging/Severity.h
+CMakeFiles/translayor.dir/LhwDBHelper.cpp.o: ../../logging/System.h
 CMakeFiles/translayor.dir/LhwDBHelper.cpp.o: ../LhwDBHelper.cpp
 CMakeFiles/translayor.dir/LhwDBHelper.cpp.o: ../LhwDBHelper.h
+CMakeFiles/translayor.dir/LhwDBHelper.cpp.o: ../LhwUser.h
 
 CMakeFiles/translayor.dir/LhwEpollLoop.cpp.o: ../../logging/Check.h
 CMakeFiles/translayor.dir/LhwEpollLoop.cpp.o: ../../logging/CheckLogger.h
@@ -132,6 +146,7 @@ CMakeFiles/translayor.dir/LhwEventQueueLoop.cpp.o: ../LhwEventQueueLoop.cpp
 CMakeFiles/translayor.dir/LhwEventQueueLoop.cpp.o: ../LhwEventQueueLoop.h
 CMakeFiles/translayor.dir/LhwEventQueueLoop.cpp.o: ../LhwEventVector.h
 CMakeFiles/translayor.dir/LhwEventQueueLoop.cpp.o: ../LhwLoop.h
+CMakeFiles/translayor.dir/LhwEventQueueLoop.cpp.o: ../LhwUser.h
 
 CMakeFiles/translayor.dir/LhwOnLineDao.cpp.o: ../LhwDBHelper.h
 CMakeFiles/translayor.dir/LhwOnLineDao.cpp.o: ../LhwOnLineDao.cpp
@@ -175,6 +190,17 @@ CMakeFiles/translayor.dir/LhwUserDao.cpp.o: ../LhwUser.h
 CMakeFiles/translayor.dir/LhwUserDao.cpp.o: ../LhwUserDao.cpp
 CMakeFiles/translayor.dir/LhwUserDao.cpp.o: ../LhwUserDao.h
 
+CMakeFiles/translayor.dir/LhwUserDaoImp.cpp.o: ../../logging/Check.h
+CMakeFiles/translayor.dir/LhwUserDaoImp.cpp.o: ../../logging/CheckLogger.h
+CMakeFiles/translayor.dir/LhwUserDaoImp.cpp.o: ../../logging/ExpressionLogger.h
+CMakeFiles/translayor.dir/LhwUserDaoImp.cpp.o: ../../logging/IOStreamManager.h
+CMakeFiles/translayor.dir/LhwUserDaoImp.cpp.o: ../../logging/Interface.h
+CMakeFiles/translayor.dir/LhwUserDaoImp.cpp.o: ../../logging/Logger.h
+CMakeFiles/translayor.dir/LhwUserDaoImp.cpp.o: ../../logging/LoggerStream.h
+CMakeFiles/translayor.dir/LhwUserDaoImp.cpp.o: ../../logging/Logging.h
+CMakeFiles/translayor.dir/LhwUserDaoImp.cpp.o: ../../logging/Severity.h
+CMakeFiles/translayor.dir/LhwUserDaoImp.cpp.o: ../../logging/System.h
+CMakeFiles/translayor.dir/LhwUserDaoImp.cpp.o: ../LhwDBHelper.h
 CMakeFiles/translayor.dir/LhwUserDaoImp.cpp.o: ../LhwUser.h
 CMakeFiles/translayor.dir/LhwUserDaoImp.cpp.o: ../LhwUserDao.h
 CMakeFiles/translayor.dir/LhwUserDaoImp.cpp.o: ../LhwUserDaoImp.cpp
@@ -196,6 +222,7 @@ CMakeFiles/translayor.dir/PackageDataSink.cpp.o: ../LhwEventVector.h
 CMakeFiles/translayor.dir/PackageDataSink.cpp.o: ../LhwIOStream.h
 CMakeFiles/translayor.dir/PackageDataSink.cpp.o: ../LhwThreadPool.h
 CMakeFiles/translayor.dir/PackageDataSink.cpp.o: ../LhwThreadSafeQuene.h
+CMakeFiles/translayor.dir/PackageDataSink.cpp.o: ../LhwUser.h
 CMakeFiles/translayor.dir/PackageDataSink.cpp.o: ../PackageDataSink.cpp
 CMakeFiles/translayor.dir/PackageDataSink.cpp.o: ../PackageDataSink.h
 CMakeFiles/translayor.dir/PackageDataSink.cpp.o: ../http/LhwHttpContext.h

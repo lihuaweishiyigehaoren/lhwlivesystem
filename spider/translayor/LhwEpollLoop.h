@@ -30,6 +30,7 @@
 #include "DataSink.h"
 #include "LhwLinuxEpoll.h"
 #include "LhwCommon.h"
+#include "LhwUser.h"
 
 namespace translayor 
 {
@@ -121,7 +122,7 @@ namespace translayor
         void _read(int32_t eventfd, int32_t fd, uint32_t events);
         void _write(int32_t eventfd,int32_t fd, uint32_t events);
 
-        void _enqueue(EPollStreamPtr connection, const char* buf, int64_t nread);
+        void _enqueue(EPollStreamPtr connection, User buf, int64_t nread);
 
     private:
 

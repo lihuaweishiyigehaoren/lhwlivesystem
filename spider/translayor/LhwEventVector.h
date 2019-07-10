@@ -17,6 +17,7 @@
 #pragma once
 
 #include "LhwByteArray.h"
+#include "LhwUser.h"
 
 #include <string>
 #include <mutex>
@@ -32,22 +33,22 @@ namespace translayor
     {
     public:
         BaseEvent(){}
-        BaseEvent(const std::string& type,const LhwByteArray& data,IOStream* stream) :
+        BaseEvent(const std::string& type,User data,IOStream* stream) :
                     _type(type),
-                    _data(data),
+                    _user(data),
                     _stream(stream)
         {
 
         }
 
-        void SetData(const LhwByteArray& data)
+        void SetData(User data)
         {
-            _data = data;
+            _user = data;
         }
 
-        const LhwByteArray& GetData() const
+        User GetData() const
         {
-            return _data;
+            return _user;
         }
 
         void SetType(const std::string& type)
@@ -72,7 +73,8 @@ namespace translayor
 
     private:
         std::string _type; // 事件类型
-        LhwByteArray _data; // 事件数据
+        // LhwByteArray _data; // 事件数据
+        User _user; // 表征用户的事件数据
         IOStream * _stream; // 事件对应的数据流
     };
 

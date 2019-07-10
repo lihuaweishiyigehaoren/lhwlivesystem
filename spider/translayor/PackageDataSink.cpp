@@ -13,12 +13,15 @@ namespace translayor
         {
             LOG(LOG_DEBUG) << "into thread";
 
-            std::string requestText = event.GetData().ToStdString();
+            // std::string requestText = event.GetData().ToStdString();
+            User requestText = event.GetData();
             
-            LOG(LOG_DEBUG) << requestText; // hello
+            LOG(LOG_DEBUG) << requestText.username; // 打印发送请求的用户名
 
-            LhwHttpRequest request;
-            request.parseStdString(requestText);
+            // LhwHttpRequest request;
+            // request.parseStdString(requestText);
+
+            // 根据不同的请求类型,发送相应的回复
 
             LhwHttpResponse response;
             response.setVersion("HTTP/1.1");
@@ -27,9 +30,10 @@ namespace translayor
             response.setContent("I have got your message");
 
             // LhwByteArray reply(response.toStdString());
-            event.GetStream()->postDataToBuffer(response.toStdString()); // Send to peer
+            event.GetStream()->dataProcess(requestText);
+            event.GetStream()->postDataToBuffer(requestText); // Send to peer
 
-            LOG(LOG_DEBUG) << "get data";
+            LOG(LOG_DEBUG) << "get data"; 
         });
     }
 
@@ -42,17 +46,17 @@ namespace translayor
         }
     }
 
-    int32_t PackageDataSink::Write(IOStream* stream, const char* buf, int64_t bytes) 
+    int32_t PackageDataSink::Write(IOStream* stream, User buf, int64_t bytes) 
     {
         LOG(LOG_DEBUG) << "Write";
-        _data.Concat(LhwByteArray(buf, static_cast<int32_t>(bytes)));
+        // _data.Concat(LhwByteArray(buf, static_cast<int32_t>(bytes)));
         // 保证是一个完整的包
-        if (_data.size() >= _totalSize) 
+        if (static_cast<int32_t>(bytes) >= _totalSize) 
         {
             // _eventQueue->PostEvent(new BaseEvent("data", _data, stream));
-            _threadPool->Submit(BaseEvent("data", _data, stream));
+            _threadPool->Submit(BaseEvent("data", buf, stream));
 
-            _data.clear();
+            // _data.clear();
             _totalSize = 0;
         }
 

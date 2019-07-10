@@ -65,7 +65,7 @@ namespace translayor
         return nwrite;
     }
 
-    void LhwEpollStream::postDataToBuffer(const std::string &data)
+    void LhwEpollStream::postDataToBuffer(const User &data)
     {
         std::lock_guard<std::mutex> locker(_mutex);
         _buffers.push(data); 

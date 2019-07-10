@@ -25,7 +25,7 @@ namespace translayor
     class DataSink
     {
     public:
-        virtual int32_t Write(IOStream* stream, const char* buf, int64_t bytes)=0;
+        virtual int32_t Write(IOStream* stream, User buf, int64_t bytes)=0;
         IOStream::DataHandler StreamDataHandler(IOStream* stream)
         {
             return std::bind(&DataSink::Write,this,stream,std::placeholders::_1,std::placeholders::_2);

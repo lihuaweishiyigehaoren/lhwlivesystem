@@ -1,12 +1,12 @@
 #pragma once
 
 #include "PackageDataSink.h"
-#include "LhwClientConnected.h"
+#include "LhwClient.h"
 #include "LhwBaseServer.h"
 
 namespace translayor
 {
-class LhwServer : public BasicServer<Collectioner>
+class LhwServer : public BasicServer<Collecter>
 {
   public:
     LhwServer() {}
@@ -42,7 +42,7 @@ class LhwServer : public BasicServer<Collectioner>
     * 服务器套接字连接客户端
     * @param sockfd epoll_create创建的侦听套接字
     */
-    Collectioner acceptClientOfServer(int32_t sockfd) override;
+    Collecter acceptClientOfServer(int32_t sockfd) override;
 
   private:
     /*

@@ -1,4 +1,6 @@
 #include "LhwDBHelper.h"
+#include "Logging.h"
+#include "LhwUser.h"
 
 #include <iostream>
 #include <cstdlib>
@@ -21,10 +23,18 @@ namespace translayor
         connection = mysql_init(NULL); // 初始化数据库连接变量
     	if(connection == NULL)
     	{
-    		std::cout << "Error:" << mysql_error(connection);
+    		LOG(LOG_DEBUG)  << "Error:" << mysql_error(connection);
     		exit(1);
     	}
     }
+
+	void LhwDBHelper::closeMysql()
+	{
+		if(connection != NULL)  // 关闭数据库连接
+    	{
+    		mysql_close(connection);
+    	}
+	}
 
     LhwDBHelper::~LhwDBHelper()
     {
@@ -42,18 +52,18 @@ namespace translayor
     			user.c_str(), pwd.c_str(), db_name.c_str(), 0, NULL, 0);
     	if(connection == NULL)
     	{
-    		std::cout << "Error:" << mysql_error(connection);
+    		LOG(LOG_DEBUG)  << "Error:" << mysql_error(connection);
     		exit(1);
     	}
     	return true;
     }
     
-    bool LhwDBHelper::exeSQL(std::string sql)
+    bool LhwDBHelper::exeSQL(std::string sql,User &user)
     {
     	// mysql_query()执行成功返回0，失败返回非0值。与PHP中不一样
     	if(mysql_query(connection, sql.c_str()))
     	{
-    		std::cout << "Query Error:" << mysql_error(connection);
+    		LOG(LOG_DEBUG) << "Query Error:" << mysql_error(connection);
     		exit(1);
     	}
     	else
@@ -71,9 +81,9 @@ namespace translayor
     			// mysql_num_fields()返回结果集中的字段数
     			for(int j=0; j < mysql_num_fields(result); ++j)
     			{
-    				std::cout << row[j] << " ";
+    				LOG(LOG_DEBUG) << row[j] << " ";
     			}
-    			std::cout << std::endl;
+    			// std::cout << std::endl;
     		}
     		// 释放结果集的内存
     		mysql_free_result(result);

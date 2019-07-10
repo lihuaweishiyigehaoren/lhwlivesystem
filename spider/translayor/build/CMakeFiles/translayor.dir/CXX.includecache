@@ -139,6 +139,8 @@ LhwEpollLoop.h
 /home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/LhwEpollLoop.h
 Logging.h
 /home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/Logging.h
+LhwUserDaoImp.h
+/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/LhwUserDaoImp.h
 unistd.h
 -
 
@@ -211,6 +213,10 @@ LhwEpollStream.h
 /home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/LhwDBHelper.cpp
 LhwDBHelper.h
 /home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/LhwDBHelper.h
+Logging.h
+/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/Logging.h
+LhwUser.h
+/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/LhwUser.h
 iostream
 -
 cstdlib
@@ -221,6 +227,8 @@ mysql/mysql.h
 -
 string
 -
+LhwUser.h
+/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/LhwUser.h
 
 /home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/LhwEpollLoop.cpp
 LhwEpollLoop.h
@@ -259,6 +267,8 @@ LhwLinuxEpoll.h
 /home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/LhwLinuxEpoll.h
 LhwCommon.h
 /home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/LhwCommon.h
+LhwUser.h
+/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/LhwUser.h
 
 /home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/LhwEpollStream.cpp
 LhwEpollStream.h
@@ -315,6 +325,8 @@ memory
 /home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/LhwEventVector.h
 LhwByteArray.h
 /home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/LhwByteArray.h
+LhwUser.h
+/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/LhwUser.h
 string
 -
 mutex
@@ -339,6 +351,8 @@ functional
 -
 string
 -
+LhwUser.h
+/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/LhwUser.h
 
 /home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/LhwLinuxEpoll.h
 cstdint
@@ -389,8 +403,8 @@ cassert
 /home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/LhwServer.h
 PackageDataSink.h
 /home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/PackageDataSink.h
-LhwClientConnected.h
-/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/LhwClientConnected.h
+LhwClient.h
+/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/LhwClient.h
 LhwBaseServer.h
 /home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/LhwBaseServer.h
 
@@ -445,6 +459,12 @@ string
 /home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/LhwUserDaoImp.cpp
 LhwUserDaoImp.h
 /home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/LhwUserDaoImp.h
+LhwDBHelper.h
+/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/LhwDBHelper.h
+Logging.h
+/home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/Logging.h
+string.h
+-
 
 /home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/LhwUserDaoImp.h
 LhwUserDao.h

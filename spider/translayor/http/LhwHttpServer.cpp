@@ -19,7 +19,7 @@ namespace  translayor {
 
         _server.onConnect([this](IOStream* stream) 
         {
-            Connection* connection = dynamic_cast<Connection*>(stream);
+            Client* connection = dynamic_cast<Client*>(stream);
             LhwHttpConnection* httpConnection = new LhwHttpConnection(connection);
             if ( _connectionHandler ) 
             {

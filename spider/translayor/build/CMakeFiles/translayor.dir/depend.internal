@@ -41,6 +41,8 @@ CMakeFiles/translayor.dir/LhwClient.cpp.o
  /home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/LhwThreadPool.h
  /home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/LhwThreadSafeQuene.h
  /home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/LhwUser.h
+ /home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/LhwUserDao.h
+ /home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/LhwUserDaoImp.h
  /home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/PackageDataSink.h
 CMakeFiles/translayor.dir/LhwClientConnected.cpp.o
  ../../logging/Check.h
@@ -61,12 +63,24 @@ CMakeFiles/translayor.dir/LhwClientConnected.cpp.o
  /home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/LhwIOStream.h
  /home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/LhwLinuxEpoll.h
  /home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/LhwSocket.h
+ /home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/LhwUser.h
 CMakeFiles/translayor.dir/LhwCommon.cpp.o
  /home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/LhwCommon.cpp
  /home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/LhwCommon.h
 CMakeFiles/translayor.dir/LhwDBHelper.cpp.o
+ ../../logging/Check.h
+ ../../logging/CheckLogger.h
+ ../../logging/ExpressionLogger.h
+ ../../logging/IOStreamManager.h
+ ../../logging/Interface.h
+ ../../logging/Logger.h
+ ../../logging/LoggerStream.h
+ ../../logging/Logging.h
+ ../../logging/Severity.h
+ ../../logging/System.h
  /home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/LhwDBHelper.cpp
  /home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/LhwDBHelper.h
+ /home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/LhwUser.h
 CMakeFiles/translayor.dir/LhwEpollLoop.cpp.o
  ../../logging/Check.h
  ../../logging/CheckLogger.h
@@ -133,6 +147,7 @@ CMakeFiles/translayor.dir/LhwEventQueueLoop.cpp.o
  /home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/LhwEventQueueLoop.h
  /home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/LhwEventVector.h
  /home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/LhwLoop.h
+ /home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/LhwUser.h
 CMakeFiles/translayor.dir/LhwOnLineDao.cpp.o
  /home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/LhwDBHelper.h
  /home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/LhwOnLineDao.cpp
@@ -176,6 +191,17 @@ CMakeFiles/translayor.dir/LhwUserDao.cpp.o
  /home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/LhwUserDao.cpp
  /home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/LhwUserDao.h
 CMakeFiles/translayor.dir/LhwUserDaoImp.cpp.o
+ ../../logging/Check.h
+ ../../logging/CheckLogger.h
+ ../../logging/ExpressionLogger.h
+ ../../logging/IOStreamManager.h
+ ../../logging/Interface.h
+ ../../logging/Logger.h
+ ../../logging/LoggerStream.h
+ ../../logging/Logging.h
+ ../../logging/Severity.h
+ ../../logging/System.h
+ /home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/LhwDBHelper.h
  /home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/LhwUser.h
  /home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/LhwUserDao.h
  /home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/LhwUserDaoImp.cpp
@@ -197,6 +223,7 @@ CMakeFiles/translayor.dir/PackageDataSink.cpp.o
  /home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/LhwIOStream.h
  /home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/LhwThreadPool.h
  /home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/LhwThreadSafeQuene.h
+ /home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/LhwUser.h
  /home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/PackageDataSink.cpp
  /home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/PackageDataSink.h
  /home/lihuawei/桌面/usegit/lhwlivesystem/spider/translayor/http/LhwHttpContext.h

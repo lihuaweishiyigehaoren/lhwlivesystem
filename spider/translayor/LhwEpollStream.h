@@ -26,7 +26,6 @@
 #include <sys/time.h>
 #include <netinet/in.h>
 #include <errno.h>
-// #include <vector>
 #include <queue>
 #include <mutex>
 #include <condition_variable>
@@ -81,31 +80,29 @@ namespace translayor
         * 将数据加入到输出缓存
         * @para event 事件
         */
-        virtual void postDataToBuffer(const std::string &data) override;
+        virtual void postDataToBuffer(const User &data) override;
 
         /*
         * 从输出缓存中获取容器
         */
-        std::string getDataFromBuffer()
+        bool getDataFromBuffer(User &data)
         {
             std::unique_lock<std::mutex> locker(_mutex);
 
             if(_buffers.empty())
             {
-                // return std::string("");
                 _waitCondition.wait_for(locker,std::chrono::microseconds(5));
-
             }
 
             if(!_buffers.empty())
             {
-                std::string data = _buffers.front();
+                data = _buffers.front();
                 _buffers.pop();
 
-                return data;
+                return true;
             }
 
-            return std::string("");
+            return false;
         }
 
     private:
@@ -115,7 +112,7 @@ namespace translayor
         // 使用缓存
         std::mutex _mutex;
         std::condition_variable _waitCondition;
-        std::queue<std::string> _buffers;
+        std::queue<User> _buffers;
     };
 
     typedef std::shared_ptr <LhwEpollStream> EPollStreamPtr;

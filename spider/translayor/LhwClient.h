@@ -24,16 +24,20 @@
 namespace translayor 
 {
     class LhwClient;
-    typedef std::shared_ptr<LhwClient> EPollClientPtr;
+    // typedef std::shared_ptr<LhwClient> EPollClientPtr;
 
     class LhwClient : public LhwEpollStream // 是一个可以主动发起连接的数据流
     {
     public:
+        LhwClient(NativeSocket clientSocket) :
+                LhwEpollStream(clientSocket){
+            this->setSocket(clientSocket);
+        }
         LhwClient(const LhwClient& client) = delete;
         virtual ~LhwClient() { }
 
-        virtual int32_t receiveData(char* buffer, int32_t bufferSize, int32_t& readSize) override;
-        virtual int32_t sendData(const LhwByteArray & byteArray) override;
+        // virtual int32_t receiveData(char* buffer, int32_t bufferSize, int32_t& readSize) override;
+        // virtual int32_t sendData(const LhwByteArray & byteArray) override;
 
         uint32_t getEvents() const 
         {
@@ -45,19 +49,19 @@ namespace translayor
             _events = events;
         }
 
-        void connect(const std::string& host, int32_t port);
-        static EPollClientPtr connect(const std::string& ip, int32_t port, DataSink* dataSink);
+        // void connect(const std::string& host, int32_t port);
+        // static EPollClientPtr connect(const std::string& ip, int32_t port, DataSink* dataSink);
 
         /*
         * 读取服务器返回来的协议包
         */
-       void onReadyRead();
+       void dataProcess(User &user) override;
 
         /*
         * 服务器套接字连接客户端
         * @param sockfd epoll_create创建的侦听套接字
         */
-        void serverReg(User user);
+        void serverReg(User &user);
 
         /*
         * 服务器套接字连接客户端
@@ -108,15 +112,11 @@ namespace translayor
         void serverQuit(User user);
 
     private:
-        LhwClient(NativeSocket clientSocket) :
-                LhwEpollStream(clientSocket){
-            this->setSocket(clientSocket);
-        }
-
-    private:
         uint32_t _events;
 
         static std::mutex _mutex1;
         static std::mutex _mutex2;
     };
+
+    typedef std::shared_ptr <LhwClient> Collecter;
 }

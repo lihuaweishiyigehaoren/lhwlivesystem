@@ -85,7 +85,7 @@ int32_t LhwServer::startBindListen(const std::string &host, int32_t port, int32_
     LhwEpollLoop::Get()->addFdToServer(listenfd, this);
 }
 
-Collectioner LhwServer::acceptClientOfServer(int32_t sockfd)
+Collecter LhwServer::acceptClientOfServer(int32_t sockfd)
 {
     int32_t conn_sock = 0;
     int32_t addrlen = 0;
@@ -111,13 +111,12 @@ Collectioner LhwServer::acceptClientOfServer(int32_t sockfd)
         }
 
         // 建立对客户端套接字的连接对象connecter
-        Collectioner connection = std::make_shared<LhwClientConnected>(conn_sock);
-        LOG(LOG_DEBUG) << "acceptconnection";
+        // Collectioner connection = std::make_shared<LhwClientConnected>(conn_sock);
+        Collecter connection = std::make_shared<LhwClient>(conn_sock);
         
         // 通过main中初始化的回调函数,再次调用回调函数
         if (_connectHandler)
         {
-            LOG(LOG_DEBUG) << "connectHandler exist";
             _connectHandler(connection.get());
         }
 
@@ -133,6 +132,6 @@ Collectioner LhwServer::acceptClientOfServer(int32_t sockfd)
         }
     }
 
-    return Collectioner(nullptr);
+    return Collecter(nullptr);
 }
 } 
